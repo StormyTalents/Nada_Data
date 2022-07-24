@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://codepen.io/anon/embed/pyedJE?height=450&theme-id=1&slug-hash=pyedJE&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - React-Motion and Color Animation Experiment</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="C6jHTyoZbSO2KtWx8WsoEeruUy+6r44oxKAqsu5T1N2V6O/L7mHYZoHOjyizFuhcVrkkrgXFYl3OrMW2Q1aMxg==">
+<link rel="stylesheet" media="all" href="./embed-cfcfc09d3a2a2d8442e259e76ffd024c6c4f053ad5f0a901b60b61cd48dd31e2.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #28282a;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./highcontrast-dark-6be871a736c4bb4dcfd61a856f05a32a290df49061bbbf884cd741080c0644eb.css">
+<link rel="stylesheet" href="./maVRwd.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/anon/embed/pyedJE?height=450&amp;theme-id=1&amp;slug-hash=pyedJE&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/anon/embed/pyedJE?height=450&amp;theme-id=1&amp;slug-hash=pyedJE&amp;default-tab=result#css-box" role="button" aria-pressed="false">
+SCSS
+</a>
+</li>
+<li class="code-type">
+<a id="js-link" href="https://codepen.io/anon/embed/pyedJE?height=450&amp;theme-id=1&amp;slug-hash=pyedJE&amp;default-tab=result#js-box" role="button" aria-pressed="false">
+Babel
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/anon/embed/pyedJE?height=450&amp;theme-id=1&amp;slug-hash=pyedJE&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/anon/embed/pyedJE?height=450&amp;theme-id=1&amp;slug-hash=pyedJE&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/sdras/pen/pyedJE" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"app"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code" class=" cm-s-default"><span class="cm-variable-2">$amt</span> : <span class="cm-number">350px</span>;
+
+<span class="cm-def">@mixin</span> <span class="cm-variable cm-callee">colors</span>(<span class="cm-variable-2">$max</span>, <span class="cm-variable-2">$color-frequency</span>){
+  <span class="cm-variable-2">$color</span>: <span class="cm-number">300</span><span class="cm-operator">/</span><span class="cm-variable-2">$max</span>;
+  
+  <span class="cm-comment">// fruit loops!</span>
+  <span class="cm-def">@for</span> <span class="cm-variable-2">$i</span> <span class="cm-tag">from</span> <span class="cm-number">1</span> <span class="cm-tag">through</span> <span class="cm-variable-2">$max</span> {
+    <span class="cm-qualifier">.s</span>#{<span class="cm-variable-2">$i</span>} {
+      <span class="cm-property">border-left</span>: <span class="cm-number">1px</span> <span class="cm-atom">solid</span> <span class="cm-variable cm-callee">hsl</span>((<span class="cm-variable-2">$i</span> - <span class="cm-number">10</span>)*(<span class="cm-variable-2">$color</span>*<span class="cm-number">1.25</span>), (<span class="cm-variable-2">$i</span> - <span class="cm-number">1</span>)*(<span class="cm-variable-2">$color</span> <span class="cm-operator">/</span> <span class="cm-variable-2">$color-frequency</span>), <span class="cm-number">40%</span>);
+      <span class="cm-property">border-right</span>: <span class="cm-number">1px</span> <span class="cm-atom">solid</span> <span class="cm-variable cm-callee">hsl</span>((<span class="cm-variable-2">$i</span> - <span class="cm-number">10</span>)*(<span class="cm-variable-2">$color</span>*<span class="cm-number">1.25</span>), (<span class="cm-variable-2">$i</span> - <span class="cm-number">1</span>)*(<span class="cm-variable-2">$color</span> <span class="cm-operator">/</span> <span class="cm-variable-2">$color-frequency</span>), <span class="cm-number">40%</span>);
+    }
+  }
+} 
+<span class="cm-qualifier">.demo</span> {
+  <span class="cm-def">@include</span> <span class="cm-variable cm-callee">colors</span>(<span class="cm-number">20</span>,<span class="cm-number">2</span>);
+  
+  <span class="cm-qualifier">.playthings</span> {
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">width</span>: <span class="cm-variable-2">$amt</span>; 
+    <span class="cm-property">height</span>: <span class="cm-variable-2">$amt</span>;
+    <span class="cm-property">backface-visibility</span>: <span class="cm-atom">hidden</span>;
+    <span class="cm-property">perspective</span>: <span class="cm-number">1000px</span>;
+  }
+}
+
+<span class="cm-tag">html</span>,
+<span class="cm-tag">body</span> {
+  <span class="cm-property">background</span>: <span class="cm-atom">#333</span>;
+  <span class="cm-property">font-family</span>: <span class="cm-string">'Lato'</span>, <span class="cm-atom">sans-serif</span>;
+  <span class="cm-property">overflow</span>: <span class="cm-atom">hidden</span>;
+}
+
+* {
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">cursor</span>: <span class="cm-atom">crosshair</span>;
+}
+
+<span class="cm-def">@media</span> <span class="cm-attribute">screen</span> <span class="cm-keyword">and</span> (<span class="cm-property">max-width</span>: <span class="cm-number">600px</span>) {
+  <span class="cm-qualifier">.demo</span> <span class="cm-qualifier">.playthings</span> {
+    <span class="cm-property">width</span>: <span class="cm-number">100px</span> <span class="cm-keyword">!important</span>; 
+    <span class="cm-property">height</span>: <span class="cm-number">100px</span> <span class="cm-keyword">!important</span>;
+  }
+}</code></pre>
+<a href="https://codepen.io/anon/embed/pyedJE?height=450&amp;theme-id=1&amp;slug-hash=pyedJE&amp;default-tab=result#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+View Compiled
+</a>
+</div>
+<div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+<pre tabindex="0"><code data-lang="jsx" id="actual-js-code" class=" cm-s-default"><span class="cm-keyword">const</span> { <span class="cm-def">StaggeredMotion</span>, <span class="cm-def">spring</span> } <span class="cm-operator">=</span> <span class="cm-variable">ReactMotion</span>
+
+<span class="cm-keyword">const</span> <span class="cm-def">Demo</span> <span class="cm-operator">=</span> <span class="cm-variable">React</span>.<span class="cm-property">createClass</span>({
+  <span class="cm-property">getInitialState</span>() {
+    <span class="cm-keyword">return</span> {<span class="cm-property">x</span>: <span class="cm-number">250</span>, <span class="cm-property">y</span>: <span class="cm-number">300</span>, <span class="cm-property">rotate</span>:<span class="cm-number">0</span>};
+  },
+
+  <span class="cm-property">componentDidMount</span>() {
+    <span class="cm-variable">window</span>.<span class="cm-property">addEventListener</span>(<span class="cm-string">'mousemove'</span>, <span class="cm-keyword">this</span>.<span class="cm-property">handleMouseMove</span>);
+    <span class="cm-variable">window</span>.<span class="cm-property">addEventListener</span>(<span class="cm-string">'touchmove'</span>, <span class="cm-keyword">this</span>.<span class="cm-property">handleTouchMove</span>);
+  },
+
+  <span class="cm-comment">//we're setting the state to be equal to the position</span>
+  <span class="cm-property">handleMouseMove</span>({<span class="cm-property">pageX</span>: <span class="cm-def">x</span>, <span class="cm-property">pageY</span>: <span class="cm-def">y</span>}) {
+    <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({<span class="cm-property">x</span>, <span class="cm-property">y</span>});
+  },
+
+  <span class="cm-property">handleTouchMove</span>({<span class="cm-def">touches</span>}) {
+    <span class="cm-keyword">this</span>.<span class="cm-property">handleMouseMove</span>(<span class="cm-variable-2">touches</span>[<span class="cm-number">0</span>]);
+  },
+
+  <span class="cm-property">getStyles</span>(<span class="cm-def">prevStyles</span>) {
+    <span class="cm-comment">// we're using the previous style to update the next ones placement</span>
+    <span class="cm-keyword">const</span> <span class="cm-def">endValue</span> <span class="cm-operator">=</span> <span class="cm-variable-2">prevStyles</span>.<span class="cm-property">map</span>((<span class="cm-def">_</span>, <span class="cm-def">i</span>) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-keyword">let</span> <span class="cm-def">stiff</span> <span class="cm-operator">=</span> <span class="cm-number">200</span>, <span class="cm-def">damp</span> <span class="cm-operator">=</span> <span class="cm-number">15</span>;
+      <span class="cm-keyword">return</span> <span class="cm-variable-2">i</span> <span class="cm-operator">===</span> <span class="cm-number">0</span>
+        <span class="cm-operator">?</span> <span class="cm-keyword">this</span>.<span class="cm-property">state</span>
+        : {
+            <span class="cm-property">x</span>: <span class="cm-variable">spring</span>(<span class="cm-variable-2">prevStyles</span>[<span class="cm-variable-2">i</span> <span class="cm-operator">-</span> <span class="cm-number">1</span>].<span class="cm-property">x</span>, {<span class="cm-property">stiffness</span>: <span class="cm-variable-2">stiff</span>, <span class="cm-property">damping</span>: <span class="cm-variable-2">damp</span>}),
+            <span class="cm-property">y</span>: <span class="cm-variable">spring</span>(<span class="cm-variable-2">prevStyles</span>[<span class="cm-variable-2">i</span> <span class="cm-operator">-</span> <span class="cm-number">1</span>].<span class="cm-property">y</span>, {<span class="cm-property">stiffness</span>: <span class="cm-variable-2">stiff</span>, <span class="cm-property">damping</span>: <span class="cm-variable-2">damp</span>}),
+            <span class="cm-property">rotate</span>: <span class="cm-variable">spring</span>((<span class="cm-variable-2">i</span> <span class="cm-operator">*</span> <span class="cm-number">10</span>), {<span class="cm-property">stiffness</span>: <span class="cm-variable-2">stiff</span>, <span class="cm-property">damping</span>: <span class="cm-variable-2">damp</span>})
+          };
+    });
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">endValue</span>;
+  },
+
+  <span class="cm-property">render</span>() {
+    <span class="cm-keyword">let</span> <span class="cm-def">arr</span> <span class="cm-operator">=</span> [], <span class="cm-def">amtHalf</span> <span class="cm-operator">=</span> <span class="cm-number">175</span>;
+    <span class="cm-keyword">for</span> (<span class="cm-keyword">var</span> <span class="cm-def">i</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>; <span class="cm-variable-2">i</span> <span class="cm-operator">&lt;</span> <span class="cm-number">50</span>; <span class="cm-variable-2">i</span><span class="cm-operator">++</span>) {
+      <span class="cm-variable-2">arr</span>.<span class="cm-property">push</span>({<span class="cm-property">x</span>: <span class="cm-number">0</span>, <span class="cm-property">y</span>:<span class="cm-number">0</span>, <span class="cm-property">rotate</span>:<span class="cm-number">0</span>});
+    }
+    <span class="cm-keyword">return</span> (
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">StaggeredMotion</span>
+          <span class="cm-attribute">defaultStyles</span> = {<span class="cm-variable">arr</span>} 
+          <span class="cm-attribute">styles</span>={<span class="cm-keyword">this</span>.<span class="cm-property">getStyles</span>}<span class="cm-tag cm-bracket">&gt;</span>
+          {<span class="cm-variable">lines</span> <span class="cm-operator">=&gt;</span>
+            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">className</span>=<span class="cm-string">"demo"</span><span class="cm-tag cm-bracket">&gt;</span>
+              {<span class="cm-variable">lines</span>.<span class="cm-property">map</span>(({<span class="cm-property">x</span>, <span class="cm-property">y</span>, <span class="cm-property">rotate</span>}, <span class="cm-variable">i</span>) <span class="cm-operator">=&gt;</span>
+                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span>
+                  <span class="cm-attribute">key</span>={<span class="cm-variable">i</span>}
+                  <span class="cm-attribute">className</span>={<span class="cm-string-2">`playthings s${</span><span class="cm-variable">i</span><span class="cm-string-2">}</span><span class="cm-string-2">`</span>}
+                  <span class="cm-comment">// we have to subtract half the amount of $amt in the CSS panel so that the mouse stays in the center of the object we're creating</span>
+                  <span class="cm-attribute">style</span>={{
+                    <span class="cm-variable">WebkitTransform</span>: <span class="cm-string-2">`translate3d(${</span><span class="cm-variable">x</span> <span class="cm-operator">-</span> <span class="cm-variable">amtHalf</span><span class="cm-string-2">}</span><span class="cm-string-2">px, ${</span><span class="cm-variable">y</span> <span class="cm-operator">-</span> <span class="cm-variable">amtHalf</span><span class="cm-string-2">}</span><span class="cm-string-2">px, 0) rotate(${</span><span class="cm-variable">rotate</span><span class="cm-string-2">}</span><span class="cm-string-2">deg)`</span>,
+                    <span class="cm-variable">transform</span>: <span class="cm-string-2">`translate3d(${</span><span class="cm-variable">x</span> <span class="cm-operator">-</span> <span class="cm-variable">amtHalf</span><span class="cm-string-2">}</span><span class="cm-string-2">px, ${</span><span class="cm-variable">y</span> <span class="cm-operator">-</span> <span class="cm-variable">amtHalf</span><span class="cm-string-2">}</span><span class="cm-string-2">px, 0) rotate(${</span><span class="cm-variable">rotate</span><span class="cm-string-2">}</span><span class="cm-string-2">deg)`</span>
+                  }} <span class="cm-tag cm-bracket">/&gt;</span>
+              )}
+            <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+          }
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">StaggeredMotion</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    );
+  },
+});
+
+<span class="cm-variable">React</span>.<span class="cm-property">render</span>(<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">Demo</span> <span class="cm-tag cm-bracket">/&gt;</span>, <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">'#app'</span>));</code></pre>
+<a href="https://codepen.io/anon/embed/pyedJE?height=450&amp;theme-id=1&amp;slug-hash=pyedJE&amp;default-tab=result#0" id="view-js-compiled-button" class="action-button bottom right view-compiled-button" data-type="js">
+View Compiled
+</a>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for React-Motion and Color Animation Experiment" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" scrolling="yes" title="CodePen Preview for React-Motion and Color Animation Experiment" data-src="https://cdpn.io/sdras/fullembedgrid/pyedJE?animations=run&amp;type=embed" src="./pyedJE.html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/sdras" target="_blank" rel="noopener"><img src="./default.png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/sdras" target="_blank" rel="noopener">Sarah Drasner</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/sdras" target="_blank" rel="noopener" class="about-user-more">
+See more by @sdras on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<ol class="list-of-resources">
+<li>
+<a href="https://fb.me/react-with-addons-0.14.0.js" target="_blank">https://fb.me/react-with-addons-0.14.0.js</a>
+</li>
+<li>
+<a href="https://npmcdn.com/react-motion/build/react-motion.js" target="_blank">https://npmcdn.com/react-motion/build/react-motion.js</a>
+</li>
+</ol>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;div id=&quot;app&quot;&gt;&lt;/div&gt;","css":".demo .s1 {\n  border-left: 1px solid #666666;\n  border-right: 1px solid #666666;\n}\n.demo .s2 {\n  border-left: 1px solid #5e666e;\n  border-right: 1px solid #5e666e;\n}\n.demo .s3 {\n  border-left: 1px solid #575c75;\n  border-right: 1px solid #575c75;\n}\n.demo .s4 {\n  border-left: 1px solid #554f7d;\n  border-right: 1px solid #554f7d;\n}\n.demo .s5 {\n  border-left: 1px solid #624785;\n  border-right: 1px solid #624785;\n}\n.demo .s6 {\n  border-left: 1px solid #79408c;\n  border-right: 1px solid #79408c;\n}\n.demo .s7 {\n  border-left: 1px solid #94388e;\n  border-right: 1px solid #94388e;\n}\n.demo .s8 {\n  border-left: 1px solid #9c3073;\n  border-right: 1px solid #9c3073;\n}\n.demo .s9 {\n  border-left: 1px solid #a3294f;\n  border-right: 1px solid #a3294f;\n}\n.demo .s10 {\n  border-left: 1px solid #ab2121;\n  border-right: 1px solid #ab2121;\n}\n.demo .s11 {\n  border-left: 1px solid #b3491a;\n  border-right: 1px solid #b3491a;\n}\n.demo .s12 {\n  border-left: 1px solid #ba7b12;\n  border-right: 1px solid #ba7b12;\n}\n.demo .s13 {\n  border-left: 1px solid #c2b60a;\n  border-right: 1px solid #c2b60a;\n}\n.demo .s14 {\n  border-left: 1px solid #98c903;\n  border-right: 1px solid #98c903;\n}\n.demo .s15 {\n  border-left: 1px solid #59cc00;\n  border-right: 1px solid #59cc00;\n}\n.demo .s16 {\n  border-left: 1px solid #1acc00;\n  border-right: 1px solid #1acc00;\n}\n.demo .s17 {\n  border-left: 1px solid #00cc26;\n  border-right: 1px solid #00cc26;\n}\n.demo .s18 {\n  border-left: 1px solid #00cc66;\n  border-right: 1px solid #00cc66;\n}\n.demo .s19 {\n  border-left: 1px solid #00cca6;\n  border-right: 1px solid #00cca6;\n}\n.demo .s20 {\n  border-left: 1px solid #00b3cc;\n  border-right: 1px solid #00b3cc;\n}\n.demo .playthings {\n  position: absolute;\n  width: 350px;\n  height: 350px;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  perspective: 1000px;\n}\n\nhtml,\nbody {\n  background: #333;\n  font-family: &quot;Lato&quot;, sans-serif;\n  overflow: hidden;\n}\n\n* {\n  margin: 0;\n  cursor: crosshair;\n}\n\n@media screen and (max-width: 600px) {\n  .demo .playthings {\n    width: 100px !important;\n    height: 100px !important;\n  }\n}","js":"const { StaggeredMotion, spring } = ReactMotion;\n\nconst Demo = React.createClass({ displayName: &quot;Demo&quot;,\n  getInitialState() {\n    return { x: 250, y: 300, rotate: 0 };\n  },\n\n  componentDidMount() {\n    window.addEventListener(&#39;mousemove&#39;, this.handleMouseMove);\n    window.addEventListener(&#39;touchmove&#39;, this.handleTouchMove);\n  },\n\n  //we&#39;re setting the state to be equal to the position\n  handleMouseMove({ pageX: x, pageY: y }) {\n    this.setState({ x, y });\n  },\n\n  handleTouchMove({ touches }) {\n    this.handleMouseMove(touches[0]);\n  },\n\n  getStyles(prevStyles) {\n    // we&#39;re using the previous style to update the next ones placement\n    const endValue = prevStyles.map((_, i) =&gt; {\n      let stiff = 200,damp = 15;\n      return i === 0 ?\n      this.state :\n      {\n        x: spring(prevStyles[i - 1].x, { stiffness: stiff, damping: damp }),\n        y: spring(prevStyles[i - 1].y, { stiffness: stiff, damping: damp }),\n        rotate: spring(i * 10, { stiffness: stiff, damping: damp }) };\n\n    });\n    return endValue;\n  },\n\n  render() {\n    let arr = [],amtHalf = 175;\n    for (var i = 0; i &lt; 50; i++) {if (window.CP.shouldStopExecution(0)) break;\n      arr.push({ x: 0, y: 0, rotate: 0 });\n    }window.CP.exitedLoop(0);\n    return /*#__PURE__*/(\n      React.createElement(&quot;div&quot;, null, /*#__PURE__*/\n      React.createElement(StaggeredMotion, {\n        defaultStyles: arr,\n        styles: this.getStyles },\n      (lines) =&gt; /*#__PURE__*/\n      React.createElement(&quot;div&quot;, { className: &quot;demo&quot; },\n      lines.map(({ x, y, rotate }, i) =&gt; /*#__PURE__*/\n      React.createElement(&quot;div&quot;, {\n        key: i,\n        className: `playthings s${i}`\n        // we have to subtract half the amount of $amt in the CSS panel so that the mouse stays in the center of the object we&#39;re creating\n        , style: {\n          WebkitTransform: `translate3d(${x - amtHalf}px, ${y - amtHalf}px, 0) rotate(${rotate}deg)`,\n          transform: `translate3d(${x - amtHalf}px, ${y - amtHalf}px, 0) rotate(${rotate}deg)` } }))))));\n\n\n\n\n\n\n\n  } });\n\n\nReact.render( /*#__PURE__*/React.createElement(Demo, null), document.querySelector(&#39;#app&#39;));"};
+    __preprocessors = {
+      "html": "none",
+      "css": "scss",
+      "js": "babel"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "SCSS",
+      "js": "Babel"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-2fdb1b1f31d291596e822bdc8654418037277f5fdfa32b43ee91e7729ea84388.js.download"></script>
+
+
+</body></html>

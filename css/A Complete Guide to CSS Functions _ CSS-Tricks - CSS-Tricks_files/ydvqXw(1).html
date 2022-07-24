@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://cdpn.io/ericwbailey/fullembedgrid/ydvqXw?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - hsl() and hsla()</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="./css" rel="stylesheet">
+  <link rel="stylesheet" href="./normalize.min.css">
+
+  
+  
+<style>
+@charset "UTF-8";
+:root {
+  --scale: 1.618;
+  --size-legal: 0.85rem;
+  --size-zeta: 1rem;
+  --size-epsilon: calc(var(--scale) * var(--size-zeta));
+  --size-delta: calc(var(--scale) * var(--size-epsilon));
+  --size-beta: calc(var(--scale) * var(--size-delta));
+  --size-alpha: calc(var(--scale) * var(--size-beta));
+  --size-giga: calc(var(--scale) * var(--size-alpha));
+  --border-radius-medium: 0.5rem;
+  --border-radius-small: 0.25rem;
+  --color-cerulean: #03a9f4;
+  --color-charade: #302c3b;
+  --color-cinder: #0e0c15;
+  --color-hibiscus: #c83361;
+  --color-fern: #53b256;
+  --color-jaffa: #f29235;
+  --color-sand: #f5d67b;
+  --color-topaz: #7a7a8b;
+  --color-white: #ffffff;
+  --font-body: "Rubik", sans-serif;
+  --font-code: "Inconsolata", monospace;
+  --transition-duration-short: 125ms;
+  --transition-duration-long: 200ms;
+  --transition-duration-longer: 750ms;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  margin: 0;
+  min-height: 100%;
+  overflow-y: scroll;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+}
+
+body {
+  background-color: var(--color-cinder);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: calc(var(--size-zeta) / 1.25);
+  line-height: var(--scale);
+  min-height: 100%;
+  overflow-x: hidden;
+  padding: var(--size-zeta) 0;
+}
+@media screen and (min-width: 48em) {
+  body {
+    font-size: var(--size-zeta);
+    padding: var(--size-epsilon);
+  }
+}
+
+h1 {
+  font-size: var(--size-epsilon);
+  line-height: 1;
+  margin: 0 var(--size-zeta) 0.5rem var(--size-zeta);
+}
+@media screen and (min-width: 48em) {
+  h1 {
+    margin-bottom: 0;
+  }
+}
+
+code {
+  font-family: var(--font-code);
+}
+p code, li code {
+  background-color: var(--color-cinder);
+  border-radius: var(--border-radius-small);
+  color: var(--color-white);
+  font-size: 110%;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  padding: 0.25em 0.4em;
+}
+
+small {
+  font-size: 85%;
+}
+small a {
+  color: var(--color-topaz);
+}
+small a:hover, small a:focus {
+  text-decoration: none;
+}
+
+p {
+  margin-top: var(--size-epsilon);
+  margin-bottom: 0;
+}
+aside p {
+  color: var(--color-topaz);
+  line-height: 1.2;
+  margin-left: var(--border-radius-medium);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 48em) {
+  .header {
+    align-items: baseline;
+    flex-direction: row;
+    font-size: var(--size-epsilon);
+    justify-content: space-between;
+  }
+}
+
+.header__title {
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 48em) {
+  .header__title {
+    margin-bottom: 0;
+  }
+}
+
+.header__reference {
+  margin-left: var(--size-zeta);
+}
+
+.reference-list {
+  list-style-type: none;
+  margin-top: auto;
+  padding: 0 var(--size-zeta) 0 0;
+}
+@media screen and (min-width: 48em) {
+  .reference-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.reference-list li {
+  line-height: 1.5;
+}
+@media screen and (min-width: 48em) {
+  .reference-list li {
+    line-height: 1;
+  }
+}
+.reference-list li::before {
+  content: "​";
+}
+.reference-list li:first-of-type {
+  margin-right: var(--size-zeta);
+}
+
+.reference-list__link {
+  color: var(--color-cerulean);
+  font-size: var(--size-legal);
+}
+.reference-list__link:hover, .reference-list__link:focus {
+  text-decoration: none;
+}
+
+.button {
+  border: 3px solid var(--color-topaz);
+  border-radius: 100rem;
+  background-color: transparent;
+  color: var(--color-white);
+  font-weight: bold;
+  letter-spacing: 0.025em;
+  margin-top: var(--size-zeta);
+  padding: 0.75rem 1.5rem;
+  transition: border-color var(--transition-duration-short) ease-in-out;
+}
+.button:hover, .button:focus {
+  border-color: var(--color-white);
+  outline: 0;
+  transition: border-color var(--transition-duration-short) ease-in-out;
+}
+.button:active, .button[aria-pressed=true] {
+  background-color: var(--color-white);
+  color: var(--color-cinder);
+}
+
+.support-warning {
+  background-color: var(--color-hibiscus);
+  border-radius: var(--border-radius-small);
+  font-size: var(--size-legal);
+  color: var(--color-white);
+  padding: var(--size-zeta);
+}
+
+.reduced-motion-notification {
+  display: none;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .reduced-motion-notification {
+    background-color: var(--color-sand);
+    border: 4px solid var(--color-white);
+    color: var(--color-charade);
+    display: block;
+    font-size: var(--size-zeta);
+    outline: 1000rem solid rgba(47, 43, 59, 0.75);
+    padding: var(--size-epsilon);
+    line-height: 1.4;
+    position: absolute;
+    top: var(--size-delta);
+    left: 8%;
+    width: 84%;
+  }
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .reduced-motion-notification p {
+    margin-top: 0;
+  }
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .reduced-motion-notification a {
+    color: var(--color-charade);
+    display: inline-block;
+    font-size: var(--size-legal);
+    margin-top: 0.75rem;
+  }
+}
+
+.example {
+  background-color: var(--color-charade);
+  padding: var(--size-zeta);
+}
+@media screen and (min-width: 48em) {
+  .example {
+    border-radius: var(--border-radius-medium);
+    padding: var(--size-epsilon);
+  }
+}
+.example a {
+  color: var(--color-white);
+}
+.example a:hover, .example a:focus {
+  text-decoration: none;
+}
+.example p:first-of-type {
+  margin-top: 0;
+}
+
+.example__demo {
+  background-color: var(--color-white);
+  margin-top: var(--size-epsilon);
+  padding: var(--size-epsilon);
+  width: 100%;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: normal;
+  margin: 1em 0;
+  overflow: visible;
+  text-transform: none;
+  width: 100%;
+}
+input[type=range]::-ms-clear {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: var(--color-topaz);
+  width: 100%;
+  height: 0.5em;
+}
+
+input[type=range]::-moz-range-track {
+  background: var(--color-topaz);
+  width: 100%;
+  height: 0.35em;
+}
+
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 1em 0;
+  color: transparent;
+  height: 0.4em;
+  width: 100%;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: var(--color-topaz);
+}
+
+input[type=range]::-ms-fill-upper {
+  background: var(--color-topaz);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-topaz);
+  border-radius: 0.1rem;
+  cursor: -webkit-grab;
+  cursor: grab;
+  position: relative;
+  z-index: 3;
+  height: 2em;
+  margin: -0.825em 0 0;
+  width: 1.25em;
+  -webkit-appearance: none;
+}
+
+input[type=range]::-moz-range-thumb {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-topaz);
+  border-radius: 0.1rem;
+  cursor: grab;
+  position: relative;
+  z-index: 3;
+  height: 1.825em;
+  width: 1.125em;
+}
+
+input[type=range]::-ms-thumb {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-topaz);
+  border-radius: 0.1rem;
+  cursor: grab;
+  position: relative;
+  z-index: 3;
+  height: 1.825em;
+  margin: 0;
+  width: 1.125em;
+}
+
+input[type=range]:not([disabled])::-webkit-slider-thumb:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+input[type=range]:not([disabled])::-moz-range-thumb:active {
+  cursor: grabbing;
+}
+
+.color-hibiscus {
+  color: var(--color-hibiscus);
+}
+
+.color-fern {
+  color: var(--color-fern);
+}
+
+.color-cerulean {
+  color: var(--color-cerulean);
+}
+
+.margin-top-zeta {
+  margin-top: var(--size-epsilon);
+}
+
+:root {
+  --hue: 50;
+  --saturation: 100%;
+  --lightness: 87%;
+}
+
+.warning__background {
+  background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+}
+
+.warning__icon {
+  --lightness: 40%;
+  fill: hsl(var(--hue), var(--saturation), var(--lightness));
+}
+
+.warning__body {
+  --lightness: 24%;
+  color: hsl(var(--hue), var(--saturation), var(--lightness));
+}
+
+.warning__title {
+  --lightness: 14%;
+  color: hsl(var(--hue), var(--saturation), var(--lightness));
+}
+
+.example__demo--hsl-and-hlsa {
+  align-items: center;
+  background-color: var(--color-cinder);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 15rem;
+  padding: 0;
+}
+
+.warning {
+  align-items: center;
+  border-radius: var(--border-radius-medium);
+  display: flex;
+  flex-direction: row;
+  padding: 0.75rem 2rem 0.75rem 1.25rem;
+}
+
+.warning__icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.warning__title {
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.warning__message {
+  margin-left: 1rem;
+}
+
+.warning__body {
+  margin-left: 0;
+  margin-bottom: 0.25rem;
+}
+
+.swatch {
+  background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+  border: 2px solid var(--color-cinder);
+  display: inline-block;
+  height: 0.8rem;
+  margin-left: 0.15rem;
+  margin-right: 0.15rem;
+  position: relative;
+  top: 1px;
+  width: 0.8rem;
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <header class="header">
+  <div class="header__title">
+    <h1>
+      <code>hsl() and hsla()</code>
+    </h1>
+  </div>
+  <div class="header__reference">
+    <ul class="reference-list">
+      <li><a class="reference-list__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#HSL_colors">MDN reference</a></li>
+      <li><a class="reference-list__link" href="https://caniuse.com/#feat=mdn-css_properties_color_alpha">caniuse Support</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="example">
+    <p>
+      In this example, we are declaring three CSS Custom Properties in the <code>:root</code> selector: 
+    </p>
+    <ol>
+      <li><code>--hue</code></li>
+      <li><code>--saturation</code></li>
+      <li><code>--lightness</code></li>
+    </ol>
+    <p>
+      The three CSS Custom Properties are then combined in a <code>hsl()</code> function in the order requried by its <code>h</code>, <code>s</code>, and <code>l</code> arguments. The <code>var()</code> function allows us to do this, creating a light yellow color&nbsp;(<span class="swatch"></span>). 
+    </p>
+    <p>
+      Then, within each of the classes that are used to construct the warning banner example, we redefine the <code>--lightness</code> CSS Custom property to darken the yellow color.
+    </p>
+
+    <div class="example__demo example__demo--hsl-and-hlsa">
+
+      <aside class="warning warning__background">
+        <div class="warning__icon">
+          <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28 56C12.536 56 0 43.464 0 28S12.536 0 28 0s28 12.536 28 28-12.536 28-28 28zm0-7c11.598 0 21-9.402 21-21S39.598 7 28 7 7 16.402 7 28s9.402 21 21 21zm0-7a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm-3.5-28h7v17.5h-7V14z" fill-rule="nonzero"></path>
+          </svg>
+        </div>
+        <div class="warning__message">
+          <h2 class="warning__title">Warning</h2>
+          <p class="warning__body">That thing you did also did other things.</p>
+        </div>
+    </aside></div>
+    <p>
+      Try changing <code>--hue</code>'s value in the <code>:root</code> selector in this Pen to adjust the warning banner's overall color. For example, using a value of <code>90</code> will turn everything different shades of green!
+    </p>
+  </div>
+</main>
+  
+  
+  
+  
+
+  <script src="./iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js.download"></script>
+
+
+
+ 
+</body></html>

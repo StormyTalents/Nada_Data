@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://cdpn.io/chriscoyier/fullembedgrid/zxwMQv?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - Inline SVG Fallback</title>
+  
+  
+  
+  
+<style>
+* {
+  box-sizing: border-box;
+}
+.visually-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+button {
+  border: 0;
+  padding: 0.5em 1.2em;
+  font-size: 2em;
+  margin: 5px;
+  outline: 0; /* add focus */
+  background: white;
+  border: 2px solid black;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+/* Fallbacks! */
+html.no-svg .icon > * {
+  display: none; /* just in case */
+}
+html.no-svg .icon-key {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  margin-right: 0.25em;
+  vertical-align: middle;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/key.png) no-repeat;
+}
+html.no-svg .icon-cart {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  margin-right: 0.25em;
+  vertical-align: middle;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cart.png) no-repeat;
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="visually-hidden">
+	<symbol id="icon-cart" viewBox="0 0 100 100">
+		<path d="M17.708,6.541H4.276c-2.33,0-4.22,1.889-4.22,4.22s1.89,4.22,4.22,4.22h13.432c2.561,0,4.643,2.083,4.643,4.643H22.7   c-2.63,0-4.388,2.132-3.925,4.765l4.591,26.027c-4.665,2.003-7.943,6.638-7.943,12.028c0,7.213,5.87,13.08,13.083,13.08h40.438   c2.333,0,4.222-1.889,4.222-4.219c0-2.332-1.889-4.221-4.222-4.221H28.506c-2.56,0-4.643-2.08-4.643-4.641s2.083-4.643,4.643-4.643   h0.91c0.006,0,0.011,0.002,0.016,0.002h1.512h27.135h18.396c2.631,0,5.916-2.135,7.337-4.768l15.479-28.647   c1.423-2.632,0.442-4.765-2.19-4.765H51.572c-0.037,0-0.076,0.005-0.112,0.005c-0.037,0-0.074-0.005-0.11-0.005H30.79   C30.79,12.409,24.922,6.541,17.708,6.541L17.708,6.541z"></path>
+	<path d="M65.5,78.125c-4.235,0-7.667,3.432-7.667,7.668c0,4.234,3.432,7.666,7.667,7.666c4.232,0,7.666-3.432,7.666-7.666   C73.166,81.557,69.732,78.125,65.5,78.125L65.5,78.125z"></path>
+		<path d="M32.583,78.125c-4.234,0-7.666,3.432-7.666,7.668c0,4.234,3.432,7.666,7.666,7.666s7.666-3.432,7.666-7.666   C40.249,81.557,36.817,78.125,32.583,78.125L32.583,78.125z"></path>
+	</symbol>
+	<symbol id="icon-key" viewBox="-149 151 100 100">
+		<path d="M-55.9,187.1h-60.7c-0.3-8.4-7.1-15.1-15.6-15.1l-1.3,0c-8.6,0-15.6,7-15.6,15.6v12.7c0,8.6,7,15.6,15.6,15.6l1.3,0
+		c8.4,0,15.3-6.7,15.6-15.1h36.3v12.6h6.9v-9.2h6.9v9.2h6.9v-12.6h3.8c3.8,0,6.9-3.1,6.9-6.9C-49,190.2-52.1,187.1-55.9,187.1z
+		 M-126.1,200.4c0,3.3-2.7,6-6,6.1h-1.3c-3.3,0-6-2.7-6-6.1v-12.7c0-3.3,2.7-6,6-6.1h1.3c3.3,0,6,2.7,6,6.1
+		C-126.1,187.6-126.1,200.4-126.1,200.4z"></path>
+	</symbol>
+</svg>
+
+<button>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-key">
+    <use xlink:href="#icon-key"></use>
+  </svg>
+  Sign In
+</button>
+
+<br>
+
+<button>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-cart">
+    <use xlink:href="#icon-cart"></use>
+  </svg>
+  View Cart
+</button>
+    <script src="./stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js.download"></script>
+
+  <script src="./html5shiv.js.download"></script>
+      <script id="rendered-js">
+// IE 8 doens't seem to need the shiv. IE 6/7 doesn't seem to work here, but should, and is likely fixable.
+
+var supportsSvg = function () {
+  var div = document.createElement('div');
+  div.innerHTML = '<svg/>';
+  return (div.firstChild && div.firstChild.namespaceURI) == 'http://www.w3.org/2000/svg';
+};
+
+if (!supportsSvg()) {
+  document.documentElement.className += " no-svg";
+};
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src="./iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js.download"></script>
+
+
+
+ 
+</body></html>

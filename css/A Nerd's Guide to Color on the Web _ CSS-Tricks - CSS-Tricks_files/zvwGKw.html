@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://cdpn.io/sdras/fullembedgrid/zvwGKw?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - Turtles that show Relative HSL tweening</title>
+  <link href="./css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./normalize.min.css">
+
+  
+  
+<style>
+body {
+  background-color: #333;
+  padding: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 2px #000;
+  margin: 20px 0 20px 30px;
+  text-align: center;
+}
+
+.hue, .saturation, .brightness {
+  width: 30%;
+  float: left;
+}
+
+.turtle1, .turtle2, .turtle3 {
+  cursor: hover;
+}
+
+.hue {
+  margin-left: 1.5%;
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <div class="hue">
+  <h3>HUE</h3>
+  <svg class="turtle1" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0" y="0" width="189.3" height="115.5" viewBox="0 0 189.3 115.5" enable-background="new 0 0 189.25 115.5" xml:space="preserve">
+  <g id="turtle">
+    <path class="tail" fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M169.3 60c0 0 13.3-0.7 15.3-5.3 0 0-4.7 17.1-15.3 14.6S169.3 60 169.3 60z" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)"></path>
+    <g id="eye_1_">
+      <circle id="eyeball_1_" fill="#FFFFFF" cx="8.8" cy="84.5" r="6.5"></circle>
+      <circle class="pupil" fill="#186D5D" cx="6.4" cy="84.6" r="3.3" data-svg-origin="0 0" transform="matrix(1,0,0,1,4,0)"></circle>
+      <circle class="glimmer" fill="#FFFFFF" cx="5.1" cy="84" r="1.3" data-svg-origin="0 0" transform="matrix(1,0,0,1,4,0)"></circle>
+    </g>
+    <g class="head" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)">
+      <path id="backlid" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M3.2 80.1c0 0 7.2-11.4 15.2-2 0 0 7.6 11.8-5.9 13.5C12.5 91.5-3.5 95.1 3.2 80.1z"></path>
+      <path id="neck" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M33.7 86.5c0 0 7.2 1.8 13.8-1.9L67.2 95.6c-28.5 4.8-28.9 5-35 7.2C25.4 105.2 33.7 86.5 33.7 86.5z"></path>
+      <ellipse id="mouth" transform="matrix(0.9911 -0.1334 0.1334 0.9911 -13.2155 2.564)" fill-rule="evenodd" clip-rule="evenodd" fill="#2A7765" cx="12.5" cy="99.9" rx="10.1" ry="4.9"></ellipse>
+      <path id="face" fill-rule="evenodd" clip-rule="evenodd" fill="#3EA367" d="M20.3 78.9c0 0-9.8-10.6-17.3 6.8 0 0-7.6 19.4 11.3 14.7 0 0-8.3 5.8-11.8 1.8 0 0 8.2 9.2 18.9 6.3 10.7-2.9 15.5-12.5 17-14.9C40 91.1 26.6 72.8 20.3 78.9z"></path>
+      <path id="frontlid" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M15.2 79.6c0 0 7.2-11.4 15.2-2 0 0 7.6 11.8-5.9 13.5C24.5 91 8.5 94.6 15.2 79.6z"></path>
+      <g class="eye">
+        <circle id="eyeball" fill="#FFFFFF" cx="19.8" cy="84.5" r="6.5"></circle>
+        <circle class="pupil" fill="#186D5D" cx="17.4" cy="84.6" r="3.3" data-svg-origin="0 0" transform="matrix(1,0,0,1,4,0)"></circle>
+        <circle class="glimmer" fill="#FFFFFF" cx="16.1" cy="84" r="1.3" data-svg-origin="0 0" transform="matrix(1,0,0,1,4,0)"></circle>
+      </g>
+    </g>
+    <ellipse id="backfootbehind" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" cx="142" cy="86.7" rx="10.3" ry="8.7"></ellipse>
+    <ellipse id="footbehind" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" cx="64" cy="86" rx="12.3" ry="11"></ellipse>
+    <ellipse id="belly" transform="matrix(0.9991 -0.0413 0.0413 0.9991 -3.5589 4.7701)" fill-rule="evenodd" clip-rule="evenodd" fill="#9E9143" cx="113.8" cy="88.6" rx="68.9" ry="17.5"></ellipse>
+    <g id="shell_1_">
+      <path id="rim" fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M49.3 69.3c0 0-10.6-1.3-12 8s0 15.3 6 15.3c0 0 9.3 6 48 6.7 0 0 64 0 76.7-4.7 0 0 19.3-3.3 20-13.3 0 0 0-12.8-10.7-12.1l-4.1 0 -10.6 6.1 -110 1.3L49.3 69.3z"></path>
+      <path id="shell" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M49.3 76c0 0-3.6-76.7 74.2-74.7 0 0 50.7 0 49.8 74.7C173.3 76 72.9 88 49.3 76z"></path>
+      <path id="shellshadow" opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" fill="#186D5D" d="M70.3 80.5c0 0 96.7-13.3 96.7-38.8 0-18.7 9.6 33.9 6.3 34.3C170.1 76.4 80.2 85.4 70.3 80.5z"></path>
+      <path id="rimshadow" opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M112.4 99.1c0 0 74.2-10.5 75.4-19.9 0 0 2.8 6.9-9.3 12.2C178.5 91.4 156.5 100.1 112.4 99.1z"></path>
+    </g>
+    <ellipse class="foot1" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" cx="81" cy="103" rx="12.3" ry="11" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)"></ellipse>
+    <ellipse class="foot2" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" cx="163" cy="100.7" rx="10.3" ry="8.7" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)"></ellipse>
+    <g id="tiles">
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M103 69c0 2.8-2.2 5-5 5H84c-2.8 0-5-2.2-5-5V55c0-2.8 2.2-5 5-5h14c2.8 0 5 2.2 5 5V69z"></path>
+      <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M133 69c0 2.8-2.2 5-5 5h-13c-2.8 0-5-2.2-5-5V56c0-2.8 2.2-5 5-5h13c2.8 0 5 2.2 5 5V69z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M131 40c0 2.8-2.2 5-5 5h-9c-2.8 0-5-2.2-5-5v-6c0-2.8 2.2-5 5-5h9c2.8 0 5 2.2 5 5V40z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M105 40c0 2.8-2.2 5-5 5h-7c-2.8 0-5-2.2-5-5v-8c0-2.8 2.2-5 5-5h7c2.8 0 5 2.2 5 5V40z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M127 20c0 2.8-2.2 5-5 5h-5c-2.8 0-5-2.2-5-5v-1c0-2.8 2.2-5 5-5h5c2.8 0 5 2.2 5 5V20z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M105 18.7c0 2.4-1.9 4.3-4.3 4.3h-5.3C92.9 23 91 21.1 91 18.7v-0.3C91 15.9 92.9 14 95.3 14h5.3c2.4 0 4.3 1.9 4.3 4.3V18.7z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M123 8.5c0 0.8-0.7 1.5-1.5 1.5h-8c-0.8 0-1.5-0.7-1.5-1.5l0 0c0-0.8 0.7-1.5 1.5-1.5h8C122.3 7 123 7.7 123 8.5L123 8.5z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M105 8.5c0 0.8-0.7 1.5-1.5 1.5h-9C93.7 10 93 9.3 93 8.5l0 0C93 7.7 93.7 7 94.5 7h9C104.3 7 105 7.7 105 8.5L105 8.5z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M118 3c0 0.6-0.4 1-1 1h-6c-0.6 0-1-0.4-1-1l0 0c0-0.6 0.4-1 1-1h6C117.6 2 118 2.4 118 3L118 3z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M73 67c0 2.8-2.2 5-5 5h-9c-2.8 0-5-2.2-5-5V56c0-2.8 2.2-5 5-5h9c2.8 0 5 2.2 5 5V67z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M81 40c0 2.8-2.2 5-5 5h-4c-2.8 0-5-2.2-5-5v-4c0-2.8 2.2-5 5-5h4c2.8 0 5 2.2 5 5V40z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M84 21c0 2.2-1.8 4-4 4h-1c-2.2 0-4-1.8-4-4l0 0c0-2.2 1.8-4 4-4h1C82.2 17 84 18.8 84 21L84 21z"></path>
+      <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M165 67c0 2.8-2.2 5-5 5h-14c-2.8 0-5-2.2-5-5V56c0-2.8 2.2-5 5-5h14c2.8 0 5 2.2 5 5V67z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M156 40c0 2.8-2.2 5-5 5h-6c-2.8 0-5-2.2-5-5v-4c0-2.8 2.2-5 5-5h6c2.8 0 5 2.2 5 5V40z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M146 24c0 2.8-2.2 5-5 5h-3c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h3c2.8 0 5 2.2 5 5V24z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M139 12c0 1.1-0.9 2-2 2h-6c-1.1 0-2-0.9-2-2l0 0c0-1.1 0.9-2 2-2h6C138.1 10 139 10.9 139 12L139 12z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M131 5.5c0 0.8-0.7 1.5-1.5 1.5h-3c-0.8 0-1.5-0.7-1.5-1.5l0 0c0-0.8 0.7-1.5 1.5-1.5h3C130.3 4 131 4.7 131 5.5L131 5.5z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M165 42.7c0 1.3-1 2.3-2.3 2.3h-0.4c-1.3 0-2.3-1-2.3-2.3v-9.4c0-1.3 1-2.3 2.3-2.3h0.4c1.3 0 2.3 1 2.3 2.3V42.7z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M156 24.5c0 1.4-1.1 2.5-2.5 2.5l0 0c-1.4 0-2.5-1.1-2.5-2.5v-5c0-1.4 1.1-2.5 2.5-2.5l0 0c1.4 0 2.5 1.1 2.5 2.5V24.5z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M149 13c0 0.6-0.4 1-1 1h-4c-0.6 0-1-0.4-1-1l0 0c0-0.6 0.4-1 1-1h4C148.6 12 149 12.4 149 13L149 13z"></path>
+    </g>
+  </g>
+</svg>
+</div>
+<div class="saturation">
+  <h3>SATURATION</h3>
+  <svg class="turtle2" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0" y="0" width="189.3" height="115.5" viewBox="0 0 189.3 115.5" enable-background="new 0 0 189.25 115.5" xml:space="preserve">
+  <g id="turtle">
+    <path class="tail" fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M169.3 60c0 0 13.3-0.7 15.3-5.3 0 0-4.7 17.1-15.3 14.6S169.3 60 169.3 60z" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)"></path>
+    <g class="eye">
+      <circle id="eyeball_1_" fill="#FFFFFF" cx="8.8" cy="84.5" r="6.5"></circle>
+      <circle class="pupil" fill="#186D5D" cx="6.4" cy="84.6" r="3.3" data-svg-origin="0 0" transform="matrix(1,0,0,1,4,0)"></circle>
+      <circle class="glimmer" fill="#FFFFFF" cx="5.1" cy="84" r="1.3" data-svg-origin="0 0" transform="matrix(1,0,0,1,4,0)"></circle>
+    </g>
+    <g class="head" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)">
+      <path id="backlid" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M3.2 80.1c0 0 7.2-11.4 15.2-2 0 0 7.6 11.8-5.9 13.5C12.5 91.5-3.5 95.1 3.2 80.1z"></path>
+      <path id="neck" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M33.7 86.5c0 0 7.2 1.8 13.8-1.9L67.2 95.6c-28.5 4.8-28.9 5-35 7.2C25.4 105.2 33.7 86.5 33.7 86.5z"></path>
+      <ellipse id="mouth" transform="matrix(0.9911 -0.1334 0.1334 0.9911 -13.2155 2.564)" fill-rule="evenodd" clip-rule="evenodd" fill="#2A7765" cx="12.5" cy="99.9" rx="10.1" ry="4.9"></ellipse>
+      <path id="face" fill-rule="evenodd" clip-rule="evenodd" fill="#3EA367" d="M20.3 78.9c0 0-9.8-10.6-17.3 6.8 0 0-7.6 19.4 11.3 14.7 0 0-8.3 5.8-11.8 1.8 0 0 8.2 9.2 18.9 6.3 10.7-2.9 15.5-12.5 17-14.9C40 91.1 26.6 72.8 20.3 78.9z"></path>
+      <path id="frontlid" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M15.2 79.6c0 0 7.2-11.4 15.2-2 0 0 7.6 11.8-5.9 13.5C24.5 91 8.5 94.6 15.2 79.6z"></path>
+      <g class="eye">
+        <circle id="eyeball" fill="#FFFFFF" cx="19.8" cy="84.5" r="6.5"></circle>
+        <circle class="pupil" fill="#186D5D" cx="17.4" cy="84.6" r="3.3" data-svg-origin="0 0" transform="matrix(1,0,0,1,4,0)"></circle>
+        <circle class="glimmer" fill="#FFFFFF" cx="16.1" cy="84" r="1.3" data-svg-origin="0 0" transform="matrix(1,0,0,1,4,0)"></circle>
+      </g>
+    </g>
+    <ellipse id="backfootbehind" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" cx="142" cy="86.7" rx="10.3" ry="8.7"></ellipse>
+    <ellipse id="footbehind" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" cx="64" cy="86" rx="12.3" ry="11"></ellipse>
+    <ellipse id="belly" transform="matrix(0.9991 -0.0413 0.0413 0.9991 -3.5589 4.7701)" fill-rule="evenodd" clip-rule="evenodd" fill="#9E9143" cx="113.8" cy="88.6" rx="68.9" ry="17.5"></ellipse>
+    <g id="shell_1_">
+      <path id="rim" fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M49.3 69.3c0 0-10.6-1.3-12 8s0 15.3 6 15.3c0 0 9.3 6 48 6.7 0 0 64 0 76.7-4.7 0 0 19.3-3.3 20-13.3 0 0 0-12.8-10.7-12.1l-4.1 0 -10.6 6.1 -110 1.3L49.3 69.3z"></path>
+      <path id="shell" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M49.3 76c0 0-3.6-76.7 74.2-74.7 0 0 50.7 0 49.8 74.7C173.3 76 72.9 88 49.3 76z"></path>
+      <path id="shellshadow" opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" fill="#186D5D" d="M70.3 80.5c0 0 96.7-13.3 96.7-38.8 0-18.7 9.6 33.9 6.3 34.3C170.1 76.4 80.2 85.4 70.3 80.5z"></path>
+      <path id="rimshadow" opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M112.4 99.1c0 0 74.2-10.5 75.4-19.9 0 0 2.8 6.9-9.3 12.2C178.5 91.4 156.5 100.1 112.4 99.1z"></path>
+    </g>
+    <ellipse class="foot1" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" cx="81" cy="103" rx="12.3" ry="11" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)"></ellipse>
+    <ellipse class="foot2" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" cx="163" cy="100.7" rx="10.3" ry="8.7" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)"></ellipse>
+    <g id="tiles">
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M103 69c0 2.8-2.2 5-5 5H84c-2.8 0-5-2.2-5-5V55c0-2.8 2.2-5 5-5h14c2.8 0 5 2.2 5 5V69z"></path>
+      <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M133 69c0 2.8-2.2 5-5 5h-13c-2.8 0-5-2.2-5-5V56c0-2.8 2.2-5 5-5h13c2.8 0 5 2.2 5 5V69z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M131 40c0 2.8-2.2 5-5 5h-9c-2.8 0-5-2.2-5-5v-6c0-2.8 2.2-5 5-5h9c2.8 0 5 2.2 5 5V40z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M105 40c0 2.8-2.2 5-5 5h-7c-2.8 0-5-2.2-5-5v-8c0-2.8 2.2-5 5-5h7c2.8 0 5 2.2 5 5V40z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M127 20c0 2.8-2.2 5-5 5h-5c-2.8 0-5-2.2-5-5v-1c0-2.8 2.2-5 5-5h5c2.8 0 5 2.2 5 5V20z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M105 18.7c0 2.4-1.9 4.3-4.3 4.3h-5.3C92.9 23 91 21.1 91 18.7v-0.3C91 15.9 92.9 14 95.3 14h5.3c2.4 0 4.3 1.9 4.3 4.3V18.7z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M123 8.5c0 0.8-0.7 1.5-1.5 1.5h-8c-0.8 0-1.5-0.7-1.5-1.5l0 0c0-0.8 0.7-1.5 1.5-1.5h8C122.3 7 123 7.7 123 8.5L123 8.5z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M105 8.5c0 0.8-0.7 1.5-1.5 1.5h-9C93.7 10 93 9.3 93 8.5l0 0C93 7.7 93.7 7 94.5 7h9C104.3 7 105 7.7 105 8.5L105 8.5z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M118 3c0 0.6-0.4 1-1 1h-6c-0.6 0-1-0.4-1-1l0 0c0-0.6 0.4-1 1-1h6C117.6 2 118 2.4 118 3L118 3z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M73 67c0 2.8-2.2 5-5 5h-9c-2.8 0-5-2.2-5-5V56c0-2.8 2.2-5 5-5h9c2.8 0 5 2.2 5 5V67z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M81 40c0 2.8-2.2 5-5 5h-4c-2.8 0-5-2.2-5-5v-4c0-2.8 2.2-5 5-5h4c2.8 0 5 2.2 5 5V40z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M84 21c0 2.2-1.8 4-4 4h-1c-2.2 0-4-1.8-4-4l0 0c0-2.2 1.8-4 4-4h1C82.2 17 84 18.8 84 21L84 21z"></path>
+      <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M165 67c0 2.8-2.2 5-5 5h-14c-2.8 0-5-2.2-5-5V56c0-2.8 2.2-5 5-5h14c2.8 0 5 2.2 5 5V67z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M156 40c0 2.8-2.2 5-5 5h-6c-2.8 0-5-2.2-5-5v-4c0-2.8 2.2-5 5-5h6c2.8 0 5 2.2 5 5V40z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M146 24c0 2.8-2.2 5-5 5h-3c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h3c2.8 0 5 2.2 5 5V24z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M139 12c0 1.1-0.9 2-2 2h-6c-1.1 0-2-0.9-2-2l0 0c0-1.1 0.9-2 2-2h6C138.1 10 139 10.9 139 12L139 12z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M131 5.5c0 0.8-0.7 1.5-1.5 1.5h-3c-0.8 0-1.5-0.7-1.5-1.5l0 0c0-0.8 0.7-1.5 1.5-1.5h3C130.3 4 131 4.7 131 5.5L131 5.5z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M165 42.7c0 1.3-1 2.3-2.3 2.3h-0.4c-1.3 0-2.3-1-2.3-2.3v-9.4c0-1.3 1-2.3 2.3-2.3h0.4c1.3 0 2.3 1 2.3 2.3V42.7z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M156 24.5c0 1.4-1.1 2.5-2.5 2.5l0 0c-1.4 0-2.5-1.1-2.5-2.5v-5c0-1.4 1.1-2.5 2.5-2.5l0 0c1.4 0 2.5 1.1 2.5 2.5V24.5z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M149 13c0 0.6-0.4 1-1 1h-4c-0.6 0-1-0.4-1-1l0 0c0-0.6 0.4-1 1-1h4C148.6 12 149 12.4 149 13L149 13z"></path>
+    </g>
+  </g>
+</svg>
+</div>
+<div class="brightness">
+  <h3>LIGHTNESS</h3>
+  <svg class="turtle3" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0" y="0" width="189.3" height="115.5" viewBox="0 0 189.3 115.5" enable-background="new 0 0 189.25 115.5" xml:space="preserve">
+  <g id="turtle">
+    <path class="tail" fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M169.3 60c0 0 13.3-0.7 15.3-5.3 0 0-4.7 17.1-15.3 14.6S169.3 60 169.3 60z" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)"></path>
+    <g class="eye">
+      <circle id="eyeball_1_" fill="#FFFFFF" cx="8.8" cy="84.5" r="6.5"></circle>
+      <circle class="pupil" fill="#186D5D" cx="6.4" cy="84.6" r="3.3" data-svg-origin="0 0" transform="matrix(1,0,0,1,4,0)"></circle>
+      <circle class="glimmer" fill="#FFFFFF" cx="5.1" cy="84" r="1.3" data-svg-origin="0 0" transform="matrix(1,0,0,1,4,0)"></circle>
+    </g>
+    <g class="head" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)">
+      <path id="backlid" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M3.2 80.1c0 0 7.2-11.4 15.2-2 0 0 7.6 11.8-5.9 13.5C12.5 91.5-3.5 95.1 3.2 80.1z"></path>
+      <path id="neck" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M33.7 86.5c0 0 7.2 1.8 13.8-1.9L67.2 95.6c-28.5 4.8-28.9 5-35 7.2C25.4 105.2 33.7 86.5 33.7 86.5z"></path>
+      <ellipse id="mouth" transform="matrix(0.9911 -0.1334 0.1334 0.9911 -13.2155 2.564)" fill-rule="evenodd" clip-rule="evenodd" fill="#2A7765" cx="12.5" cy="99.9" rx="10.1" ry="4.9"></ellipse>
+      <path id="face" fill-rule="evenodd" clip-rule="evenodd" fill="#3EA367" d="M20.3 78.9c0 0-9.8-10.6-17.3 6.8 0 0-7.6 19.4 11.3 14.7 0 0-8.3 5.8-11.8 1.8 0 0 8.2 9.2 18.9 6.3 10.7-2.9 15.5-12.5 17-14.9C40 91.1 26.6 72.8 20.3 78.9z"></path>
+      <path id="frontlid" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M15.2 79.6c0 0 7.2-11.4 15.2-2 0 0 7.6 11.8-5.9 13.5C24.5 91 8.5 94.6 15.2 79.6z"></path>
+      <g class="eye">
+        <circle id="eyeball" fill="#FFFFFF" cx="19.8" cy="84.5" r="6.5"></circle>
+        <circle class="pupil" fill="#186D5D" cx="17.4" cy="84.6" r="3.3" data-svg-origin="0 0" transform="matrix(1,0,0,1,4,0)"></circle>
+        <circle class="glimmer" fill="#FFFFFF" cx="16.1" cy="84" r="1.3" data-svg-origin="0 0" transform="matrix(1,0,0,1,4,0)"></circle>
+      </g>
+    </g>
+    <ellipse id="backfootbehind" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" cx="142" cy="86.7" rx="10.3" ry="8.7"></ellipse>
+    <ellipse id="footbehind" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" cx="64" cy="86" rx="12.3" ry="11"></ellipse>
+    <ellipse id="belly" transform="matrix(0.9991 -0.0413 0.0413 0.9991 -3.5589 4.7701)" fill-rule="evenodd" clip-rule="evenodd" fill="#9E9143" cx="113.8" cy="88.6" rx="68.9" ry="17.5"></ellipse>
+    <g id="shell_1_">
+      <path id="rim" fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M49.3 69.3c0 0-10.6-1.3-12 8s0 15.3 6 15.3c0 0 9.3 6 48 6.7 0 0 64 0 76.7-4.7 0 0 19.3-3.3 20-13.3 0 0 0-12.8-10.7-12.1l-4.1 0 -10.6 6.1 -110 1.3L49.3 69.3z"></path>
+      <path id="shell" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M49.3 76c0 0-3.6-76.7 74.2-74.7 0 0 50.7 0 49.8 74.7C173.3 76 72.9 88 49.3 76z"></path>
+      <path id="shellshadow" opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" fill="#186D5D" d="M70.3 80.5c0 0 96.7-13.3 96.7-38.8 0-18.7 9.6 33.9 6.3 34.3C170.1 76.4 80.2 85.4 70.3 80.5z"></path>
+      <path id="rimshadow" opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" d="M112.4 99.1c0 0 74.2-10.5 75.4-19.9 0 0 2.8 6.9-9.3 12.2C178.5 91.4 156.5 100.1 112.4 99.1z"></path>
+    </g>
+    <ellipse class="foot1" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" cx="81" cy="103" rx="12.3" ry="11" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)"></ellipse>
+    <ellipse class="foot2" fill-rule="evenodd" clip-rule="evenodd" fill="#34997F" cx="163" cy="100.7" rx="10.3" ry="8.7" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)"></ellipse>
+    <g id="tiles">
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M103 69c0 2.8-2.2 5-5 5H84c-2.8 0-5-2.2-5-5V55c0-2.8 2.2-5 5-5h14c2.8 0 5 2.2 5 5V69z"></path>
+      <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M133 69c0 2.8-2.2 5-5 5h-13c-2.8 0-5-2.2-5-5V56c0-2.8 2.2-5 5-5h13c2.8 0 5 2.2 5 5V69z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M131 40c0 2.8-2.2 5-5 5h-9c-2.8 0-5-2.2-5-5v-6c0-2.8 2.2-5 5-5h9c2.8 0 5 2.2 5 5V40z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M105 40c0 2.8-2.2 5-5 5h-7c-2.8 0-5-2.2-5-5v-8c0-2.8 2.2-5 5-5h7c2.8 0 5 2.2 5 5V40z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M127 20c0 2.8-2.2 5-5 5h-5c-2.8 0-5-2.2-5-5v-1c0-2.8 2.2-5 5-5h5c2.8 0 5 2.2 5 5V20z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M105 18.7c0 2.4-1.9 4.3-4.3 4.3h-5.3C92.9 23 91 21.1 91 18.7v-0.3C91 15.9 92.9 14 95.3 14h5.3c2.4 0 4.3 1.9 4.3 4.3V18.7z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M123 8.5c0 0.8-0.7 1.5-1.5 1.5h-8c-0.8 0-1.5-0.7-1.5-1.5l0 0c0-0.8 0.7-1.5 1.5-1.5h8C122.3 7 123 7.7 123 8.5L123 8.5z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M105 8.5c0 0.8-0.7 1.5-1.5 1.5h-9C93.7 10 93 9.3 93 8.5l0 0C93 7.7 93.7 7 94.5 7h9C104.3 7 105 7.7 105 8.5L105 8.5z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M118 3c0 0.6-0.4 1-1 1h-6c-0.6 0-1-0.4-1-1l0 0c0-0.6 0.4-1 1-1h6C117.6 2 118 2.4 118 3L118 3z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M73 67c0 2.8-2.2 5-5 5h-9c-2.8 0-5-2.2-5-5V56c0-2.8 2.2-5 5-5h9c2.8 0 5 2.2 5 5V67z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M81 40c0 2.8-2.2 5-5 5h-4c-2.8 0-5-2.2-5-5v-4c0-2.8 2.2-5 5-5h4c2.8 0 5 2.2 5 5V40z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M84 21c0 2.2-1.8 4-4 4h-1c-2.2 0-4-1.8-4-4l0 0c0-2.2 1.8-4 4-4h1C82.2 17 84 18.8 84 21L84 21z"></path>
+      <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M165 67c0 2.8-2.2 5-5 5h-14c-2.8 0-5-2.2-5-5V56c0-2.8 2.2-5 5-5h14c2.8 0 5 2.2 5 5V67z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M156 40c0 2.8-2.2 5-5 5h-6c-2.8 0-5-2.2-5-5v-4c0-2.8 2.2-5 5-5h6c2.8 0 5 2.2 5 5V40z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M146 24c0 2.8-2.2 5-5 5h-3c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h3c2.8 0 5 2.2 5 5V24z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M139 12c0 1.1-0.9 2-2 2h-6c-1.1 0-2-0.9-2-2l0 0c0-1.1 0.9-2 2-2h6C138.1 10 139 10.9 139 12L139 12z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M131 5.5c0 0.8-0.7 1.5-1.5 1.5h-3c-0.8 0-1.5-0.7-1.5-1.5l0 0c0-0.8 0.7-1.5 1.5-1.5h3C130.3 4 131 4.7 131 5.5L131 5.5z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M165 42.7c0 1.3-1 2.3-2.3 2.3h-0.4c-1.3 0-2.3-1-2.3-2.3v-9.4c0-1.3 1-2.3 2.3-2.3h0.4c1.3 0 2.3 1 2.3 2.3V42.7z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M156 24.5c0 1.4-1.1 2.5-2.5 2.5l0 0c-1.4 0-2.5-1.1-2.5-2.5v-5c0-1.4 1.1-2.5 2.5-2.5l0 0c1.4 0 2.5 1.1 2.5 2.5V24.5z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#59A578" d="M149 13c0 0.6-0.4 1-1 1h-4c-0.6 0-1-0.4-1-1l0 0c0-0.6 0.4-1 1-1h4C148.6 12 149 12.4 149 13L149 13z"></path>
+    </g>
+  </g>
+</svg>
+</div>
+    <script src="./stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js.download"></script>
+
+  <script src="./jquery.min.js.download"></script>
+<script src="./TweenMax.min.js(1).download"></script>
+      <script id="rendered-js">
+function turtBop(turtle) {
+  var tl = new TimelineMax({ paused: true });
+
+  var $tl1 = turtle.find(".tail"),
+  $t1h = turtle.find(".head"),
+  $te1 = turtle.find(".eye"),
+  $tp1 = turtle.find(".pupil, .glimmer"),
+  $tf1 = turtle.find(".foot1"),
+  $tf2 = turtle.find(".foot2");
+
+  tl.add("start");
+  tl.fromTo($tf1, 1, { x: 0 }, { x: -5, repeat: 4, ease: Back.easeInOut }, "start+=0.25").
+  fromTo($tf1, 1, { y: 0 }, { y: -5, repeat: 4, ease: Back.easeIn }, "start").
+  fromTo($tf2, 1, { x: 0 }, { x: -5, repeat: 4, ease: Back.easeInOut }, "start+=0.5").
+  fromTo($tf2, 1, { y: 0 }, { y: -3, repeat: 4, ease: Back.easeOut }, "start+=0.75").
+  fromTo($tl1, 1, { rotation: 0 }, { rotation: 10, transformOrigin: "50% 50%", repeat: 8, ease: Circ.easeInOut }, "start+=0.5").
+  fromTo($t1h, 3, { rotation: 0 }, { rotation: 10, transformOrigin: "100% 100%", x: -5, ease: Circ.easeInOut }, "start+=1").
+  fromTo($tp1, 3, { x: 4 }, { x: 0, ease: Linear.easeNone }, "start+=0.25").
+  to($tp1, 1.5, { x: 4, ease: Linear.easeNone }, "start+=4");
+
+  tl.timeScale(2.2);
+
+  return tl;
+}
+
+var tb1 = turtBop($(".turtle1"));
+var tb2 = turtBop($(".turtle2"));
+var tb3 = turtBop($(".turtle3"));
+
+$(".turtle1").mouseenter(function () {
+  TweenMax.to(".turtle1 path, .turtle1 circle, .turtle1 ellipse", 1.5, { fill: "hsl(+=50, +=0%, +=0%)" });
+  tb1.restart();
+});
+
+$(".turtle2").mouseenter(function () {
+  TweenMax.to(".turtle2 path, .turtle2 circle, .turtle2 ellipse", 1.5, { fill: "hsl(+=0, +=50%, +=0%)" });
+  tb2.restart();
+});
+
+$(".turtle3").mouseenter(function () {
+  TweenMax.to(".turtle3 path, .turtle3 circle, .turtle3 ellipse", 1.5, { fill: "hsl(+=0, +=0%, +=30%)" });
+  tb3.restart();
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src="./iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js.download"></script>
+
+
+
+ 
+</body></html>

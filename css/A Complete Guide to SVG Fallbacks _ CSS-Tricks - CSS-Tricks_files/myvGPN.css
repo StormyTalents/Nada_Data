@@ -1,0 +1,20 @@
+body, html {height: 100%; margin:0; padding: 0;}
+p {margin: 0.5em;}
+h1 {
+  display: inline; 
+  background: #444; 
+  color: #4CC;
+  padding: 0.5em;
+  line-height: 2em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+object {
+  display: block;
+  width: 248px; height: 248px;
+}
+.warning {
+  display: block;
+  border: #A00 solid;
+  background-color: #FB9;
+}

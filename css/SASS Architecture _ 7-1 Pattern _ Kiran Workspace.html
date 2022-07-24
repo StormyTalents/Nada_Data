@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://kiranworkspace.com/sass-architecture/ -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script type="text/javascript" async="" src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/analytics.js.download"></script><script async="" src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/js"></script>
+        <script>
+            if(window.location.hostname == "kiranworkspace.com"){
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-162812234-1');
+            }
+        </script>
+        <script data-ad-client="ca-pub-9651045166409389" async="" src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/f.txt"></script>
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>kiranworkspace - HTML5, CSS3 and JavaScript Snippets, free download.</title> -->
+        <link rel="icon" href="https://kiranworkspace.com/wp-content/themes/kiranworkspace/assets/img/favicon.png">
+        
+	<!-- This site is optimized with the Yoast SEO plugin v16.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>SASS Architecture | 7-1 Pattern | Kiran Workspace</title>
+	<meta name="description" content="7-1 SASS Pattern means 7 Folders and 1 FIle. 7 Folders have their meaningful labels which include sass snippets or partials.">
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="https://kiranworkspace.com/sass-architecture/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="SASS Architecture | 7-1 Pattern | Kiran Workspace">
+	<meta property="og:description" content="7-1 SASS Pattern means 7 Folders and 1 FIle. 7 Folders have their meaningful labels which include sass snippets or partials.">
+	<meta property="og:url" content="https://kiranworkspace.com/sass-architecture/">
+	<meta property="og:site_name" content="Kiran Workspace">
+	<meta property="article:published_time" content="2020-08-25T17:21:19+00:00">
+	<meta property="article:modified_time" content="2020-08-25T17:21:21+00:00">
+	<meta property="og:image" content="http://kiranworkspace.com/wp-content/uploads/2020/08/sass-architecture.jpg">
+	<meta property="og:image:width" content="1400">
+	<meta property="og:image:height" content="788">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Kiran Acharya">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="4 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://kiranworkspace.com/#website","url":"https://kiranworkspace.com/","name":"Kiran Workspace","description":"Free UI Design, Themes, Templates, Code Snippets &amp; Front-End Developer Blog","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://kiranworkspace.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://kiranworkspace.com/sass-architecture/#primaryimage","inLanguage":"en-US","url":"https://kiranworkspace.com/wp-content/uploads/2020/08/sass-architecture-e1608461475183.jpg","contentUrl":"https://kiranworkspace.com/wp-content/uploads/2020/08/sass-architecture-e1608461475183.jpg","width":1200,"height":675,"caption":"SASS Architecture design"},{"@type":"WebPage","@id":"https://kiranworkspace.com/sass-architecture/#webpage","url":"https://kiranworkspace.com/sass-architecture/","name":"SASS Architecture | 7-1 Pattern | Kiran Workspace","isPartOf":{"@id":"https://kiranworkspace.com/#website"},"primaryImageOfPage":{"@id":"https://kiranworkspace.com/sass-architecture/#primaryimage"},"datePublished":"2020-08-25T17:21:19+00:00","dateModified":"2020-08-25T17:21:21+00:00","author":{"@id":"https://kiranworkspace.com/#/schema/person/f000b057f78305efe3455e3305510b3d"},"description":"7-1 SASS Pattern means 7 Folders and 1 FIle. 7 Folders have their meaningful labels which include sass snippets or partials.","breadcrumb":{"@id":"https://kiranworkspace.com/sass-architecture/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://kiranworkspace.com/sass-architecture/"]}]},{"@type":"BreadcrumbList","@id":"https://kiranworkspace.com/sass-architecture/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://kiranworkspace.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://kiranworkspace.com/blog/"},{"@type":"ListItem","position":3,"name":"SASS Architecture"}]},{"@type":"Person","@id":"https://kiranworkspace.com/#/schema/person/f000b057f78305efe3455e3305510b3d","name":"Kiran Acharya","image":{"@type":"ImageObject","@id":"https://kiranworkspace.com/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/c6f0b1cc4df60e82a67d30c793a489bd?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/c6f0b1cc4df60e82a67d30c793a489bd?s=96&d=mm&r=g","caption":"Kiran Acharya"},"description":"Hi, I\u2019m Kiran. Based in Bangalore (Bengaluru, Karnataka, India). I\u2019m a UX/UI designer and Front-End Developer.","sameAs":["https://kiranworkspace.com"],"url":"https://kiranworkspace.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Kiran Workspace » SASS Architecture Comments Feed" href="https://kiranworkspace.com/sass-architecture/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/kiranworkspace.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.8"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="edd-styles-css" href="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/edd.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="main-css-css" href="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="kiranworkspace-main-css-css" href="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/kiranworkspace.css" type="text/css" media="all">
+<script type="text/javascript" src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script type="text/javascript" src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://kiranworkspace.com/wp-json/"><link rel="alternate" type="application/json" href="https://kiranworkspace.com/wp-json/wp/v2/posts/165"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kiranworkspace.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://kiranworkspace.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.6.8">
+<link rel="shortlink" href="https://kiranworkspace.com/?p=165">
+<link rel="alternate" type="application/json+oembed" href="https://kiranworkspace.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkiranworkspace.com%2Fsass-architecture%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://kiranworkspace.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkiranworkspace.com%2Fsass-architecture%2F&amp;format=xml">
+<meta name="generator" content="Easy Digital Downloads v2.10.6">
+        <script src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/highlight.pack.js.download"></script>
+        <script src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/kiranworkspace.js.download"></script>
+    </head>
+    <body class="post-template-default single single-post postid-165 single-format-standard" style="padding-bottom: 380.609px; padding-top: 86px;">
+        <a id="navbar-mobile-menu-close" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></a>
+                <nav class="navbar navbar-expand-lg navbar-light navbar-white navbar-top-fixed" id="main-nav" role="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="https://kiranworkspace.com/">
+                    <img class="logo logo-blue" src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/kiranworkspace.svg" alt="Kiranworkspace">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="line-bar"></span>
+                <span class="line-bar"></span>
+                <span class="line-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">                    
+                    <div class="ml-auto">
+                                                <div class="menu-menu-1-container"><ul id="menu-menu-1" class="menu"><li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="https://kiranworkspace.com/about/">About</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-31"><a href="https://kiranworkspace.com/downloads">Categories</a>
+<ul class="sub-menu">
+	<li id="menu-item-26" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-26"><a href="https://kiranworkspace.com/downloads/category/adobe-xd/">Adobe XD</a></li>
+	<li id="menu-item-27" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-27"><a href="https://kiranworkspace.com/downloads/category/code-snippets/">Code Snippets</a></li>
+	<li id="menu-item-29" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-29"><a href="https://kiranworkspace.com/downloads/category/templates/">Templates</a></li>
+</ul>
+</li>
+<li id="menu-item-94" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-94"><a href="https://kiranworkspace.com/blog/">Blog</a></li>
+<li id="menu-item-5757" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5757"><a href="https://kiranworkspace.com/sass-architecture/#!">Best Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-5758" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5758"><a href="https://1.envato.market/c/2737518/926787/4415">Best Themes</a></li>
+	<li id="menu-item-1415" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1415"><a href="https://www.bluehost.com/track/kiranworkspace">Best Hosting</a></li>
+</ul>
+</li>
+<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="https://kiranworkspace.com/checkout/">Cart</a></li>
+</ul></div>                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+	<section class="single-post-section">
+		<div class="single-post-section-overlay" style="background: linear-gradient(to top, rgba(64,178,215,0.98), rgba(29,147,210,0.96)),url(&#39;https://kiranworkspace.com/wp-content/uploads/2020/08/sass-architecture-e1608461475183.jpg&#39;);"></div>
+		<div class="container">
+								<div class="single-post-header">
+					    <div class="single-post-header_thumbnail-overlay">
+							<h1 class="single-post_title">SASS Architecture</h1>
+							<div class="single-post_cat-auth">								
+								<img src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/profile.png" class="post-auth-img m-r-10" alt="">
+								<span><a href="https://kiranworkspace.com/author/admin/" title="Posts by Kiran Acharya" rel="author">Kiran Acharya</a></span>
+								<span class="px-2">/</span>
+								<span>August 25, 2020</span>
+								<span class="px-2">/</span>
+								<span><a href="https://kiranworkspace.com/category/front-end/" rel="category tag">Front-End</a>, <a href="https://kiranworkspace.com/category/sass/" rel="category tag">SASS</a></span>
+							</div>
+						</div>
+						<div class="single-post-header_thumbnail">
+				        						        		<img width="1200" height="675" src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/sass-architecture-e1608461475183.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="SASS Architecture design" loading="lazy" data-xblocker="passed" style="visibility: visible;">					        					    </div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="single-post-content">
+								<div class="single-post_desc">
+									
+<p>It is always a good idea to keep things organized. It could be your room, bookshelf, computer, table, work, codebase, office, literally anything. When things are organized there are a lot of advantages. In simple it’s stress-free maintenance.</p>
+
+
+
+<p>Well, today let’s organize SASS code. It’s really good for Front-End Developers and especially for Big projects.&nbsp;</p>
+
+
+
+<p>Let me explain one of the best and well-organized SASS architecture i.e 7-1 SASS Pattern also known as 7-1 SASS Architecture.</p>
+
+
+
+<h2>7-1 SASS Architecture</h2>
+
+
+
+<pre class="wp-block-code"><code class="hljs ruby">sass/
+<span class="hljs-params">|
+|</span>– base/
+<span class="hljs-params">|   |</span>– _base.scss
+<span class="hljs-params">|   |</span>– _reset.scss
+<span class="hljs-params">|   |</span>– _typography.scss
+<span class="hljs-params">|   |</span>– _normalize.scss
+<span class="hljs-params">|
+|</span>– layout/
+<span class="hljs-params">|   |</span>– _navbar.scss
+<span class="hljs-params">|   |</span>– _footer.scss
+<span class="hljs-params">|   |</span>– _sidebar.scss
+<span class="hljs-params">|   |</span>– _header.scss
+<span class="hljs-params">|
+|</span>– abstracts/
+<span class="hljs-params">|   |</span>– _variables.scss
+<span class="hljs-params">|   |</span>– _colors.scss
+<span class="hljs-params">|   |</span>– _mixins.scss
+<span class="hljs-params">|
+|</span>– components/
+<span class="hljs-params">|   |</span>– _alert.scss
+<span class="hljs-params">|   |</span>– _button.scss
+<span class="hljs-params">|   |</span>– _label.scss
+<span class="hljs-params">|   |</span>– _modal.scss
+<span class="hljs-params">|   |</span>– _course-card.scss
+<span class="hljs-params">|   |</span>– _infobox.scss
+<span class="hljs-params">|   |</span>– _success-popup.scss
+<span class="hljs-params">|   |</span>– _profile-card.scss
+<span class="hljs-params">|
+|</span>– pages/
+<span class="hljs-params">|   |</span>– _product.scss
+<span class="hljs-params">|   |</span>– _product-single.scss
+<span class="hljs-params">|   |</span>– _blog.scss
+<span class="hljs-params">|   |</span>– _blog-single.scss
+<span class="hljs-params">|   |</span>– _invoice.scss
+<span class="hljs-params">|   |</span>– _login.scss
+<span class="hljs-params">|   |</span>– _signup.scss
+<span class="hljs-params">|
+|</span>– themes/
+<span class="hljs-params">|   |</span>– _dark-theme.scss
+<span class="hljs-params">|   |</span>– _light-theme.scss
+<span class="hljs-params">|   |</span>– _material-theme.scss
+<span class="hljs-params">|   |</span>– _flat-theme.scss
+<span class="hljs-params">|
+|</span>– vendors/
+<span class="hljs-params">|   |</span>– _bootstrap.scss
+<span class="hljs-params">|   |</span>– _owl-carousel.scss
+<span class="hljs-params">|   |</span>– _jqueryui.scss
+<span class="hljs-params">|
+ – main.scss</span></code></pre>
+
+
+
+<p>7-1 SASS Pattern means 7 Folders and 1 FIle. 7 Folders have their meaningful labels which include sass snippets or partials. Outside the 7 folders, 1 file will include all the partials or snippets from 7 folders and compile it to 1 CSS file.&nbsp;Amazing!</p>
+
+
+
+<h4>7 Folders in 7-1 SASS Architecture:</h4>
+
+
+
+<ol><li><a href="https://kiranworkspace.com/sass-architecture/#base">Base</a></li><li><a href="https://kiranworkspace.com/sass-architecture/#layout">Layout</a></li><li><a href="https://kiranworkspace.com/sass-architecture/#abstracts">Abstracts</a></li><li><a href="https://kiranworkspace.com/sass-architecture/#components">Components</a></li><li><a href="https://kiranworkspace.com/sass-architecture/#pages">Pages</a></li><li><a href="https://kiranworkspace.com/sass-architecture/#themes">Themes</a></li><li><a href="https://kiranworkspace.com/sass-architecture/#vendors">Vendors</a></li></ol>
+
+
+
+<p>Believe me, 7-1 SASS Architecture is so easy and well organized, so that I don’t have to worry about finding CSS properties or anything related to project style, I exactly know where they are located.&nbsp;</p>
+
+
+
+<p>I have been using a 7-1 SASS pattern for 3 years on my project and client’s projects as well.</p>
+
+
+
+<figure class="wp-block-image size-large is-style-default"><img loading="lazy" width="781" height="1024" src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/sass-pattern-file-structure-detailed-781x1024.jpg" alt="SASS pattern file structure and import detailed sass file" class="wp-image-178" srcset="https://kiranworkspace.com/wp-content/uploads/2020/08/sass-pattern-file-structure-detailed-781x1024.jpg 781w, https://kiranworkspace.com/wp-content/uploads/2020/08/sass-pattern-file-structure-detailed-229x300.jpg 229w, https://kiranworkspace.com/wp-content/uploads/2020/08/sass-pattern-file-structure-detailed-768x1007.jpg 768w, https://kiranworkspace.com/wp-content/uploads/2020/08/sass-pattern-file-structure-detailed.jpg 1000w" sizes="(max-width: 781px) 100vw, 781px" data-xblocker="passed" style="visibility: visible;"><figcaption>SASS pattern file structure and import detailed sass file</figcaption></figure>
+
+
+
+<h2 id="base">Base</h2>
+
+
+
+<p>The base folder is something like a foundation style for the project, as the name says. Something serves throughout the project. This includes the base, reset, typography, normalize. In my project, I just have base.scss with few styles which I need throughout the website.</p>
+
+
+
+<ul><li>_base.scss</li><li>_reset.scss</li><li>_typography.scss</li><li>_normalize.scss</li></ul>
+
+
+
+<h2 id="layout">Layout</h2>
+
+
+
+<p>The layout folder contains the style for a website layout, simple as the name suggests. This folder includes stylesheet for the navbar, sidebar, footer, header, etc.</p>
+
+
+
+<ul><li>_navbar.scss</li><li>_footer.scss</li><li>_sidebar.scss</li><li>_header.scss</li></ul>
+
+
+
+<h2 id="abstracts">Abstracts</h2>
+
+
+
+<p>The abstract folder is something different from other folders. Styles written in this folder do not compile to CSS. They are the helpers for other folders. Two major SASS Abstracts are variables and mixins.&nbsp;</p>
+
+
+
+<p>Variables are like a container that holds some value, later it can be used in other CSS property values. Later we can change the value of that variable so that the entire project gets updated with just one line of code.</p>
+
+
+
+<p>Mixins are something that helps in reducing the effort of writing long codes or reusable codes. The best example would be media queries. They are really effective and easy to use.</p>
+
+
+
+<ul><li>_variables.scss</li><li>_colors.scss</li><li>_mixins.scss</li></ul>
+
+
+
+<h2 id="components">Components</h2>
+
+
+
+<p>Components are a set of codes which has their character. It might be just one HTML element or a block of HTML elements.&nbsp;</p>
+
+
+
+<p>Alert box, button, label, badge, list group, panel, modal are some of the common components we see on websites.</p>
+
+
+
+<p>Apart from these common components, we can create our components. For example, Course card, infobox, product card, success popup, profile card, and more.</p>
+
+
+
+<ul><li>_alert.scss</li><li>_button.scss</li><li>_badge.scss</li><li>_label.scss</li><li>_modal.scss</li><li>_course-card.scss</li><li>_infobox.scss</li><li>_success-popup.scss</li><li>_profile-card.scss</li></ul>
+
+
+
+<h2 id="pages">Pages</h2>
+
+
+
+<p>The pages folder contains the style for targeting pages. It can be individual pages or a set of pages.&nbsp;</p>
+
+
+
+<p>In my experience, I haven’t used this folder much apart from one e-commerce project. I hade a few files in it, Login, Signup, Product, Product single, Blog, Blog single, and Invoice. Use this folder if it’s really required, if not just delete this folder, it is not something you have to use all the folder as the name says 7-1 SASS architecture. It’s all up to you on understanding it.</p>
+
+
+
+<ul><li>_product.scss</li><li>_product-single.scss</li><li>_blog.scss</li><li>_blog-single.scss</li><li>_invoice.scss</li><li>_login.scss</li><li>_signup.scss</li></ul>
+
+
+
+<h2 id="themes">Themes</h2>
+
+
+
+<p>Themes folder is related to an overview of the project look. It could be Light theme, dark theme, blue theme, etc.. This is also a folder used in very rare cases. Usually, this folder is used in template websites and open source projects.&nbsp;</p>
+
+
+
+<ul><li>_dark-theme.scss</li><li>_light-theme.scss</li><li>_material-theme.scss</li><li>_flat-theme.scss</li></ul>
+
+
+
+<h2 id="vendors">Vendors</h2>
+
+
+
+<p>All the external styles or 3rd party styles are placed in the Vendor folder. It could be libraries or frameworks. The most commonly used vendors are Bootstrap, Owl Carousel, JqueryUI, etc.</p>
+
+
+
+<ul><li>_bootstrap.scss</li><li>_owl-carousel.scss</li><li>_jqueryui.scss</li></ul>
+
+
+
+<h2>Vendors modifications (Optional additional folder)</h2>
+
+
+
+<p>In some rare cases, we have to override the vendor’s styles to match our theme or style. It is not recommended to overwrite styles in the vendor’s folder. Instead, we can create a separate folder for modifying or overriding the vendor styles. This will a good idea.</p>
+
+
+
+<ul><li>_bootstrap-button-mod.scss</li><li>_bootstrap-alert-mod.scss</li></ul>
+
+
+
+<h2>Conclusion</h2>
+
+
+
+<p>Architecture is important for all projects, its a form of discipline. In my experience, I have come across many projects. There are many projects without even basic code standards. Makes it difficult to understand the flow. It should not be, right?</p>
+
+
+
+<p>A good architecture and code standards make better productivity. Keep things clean and understandable. Along with this maintain proper documentation or simple information in the comment on each file so that your team members are comfortable with it.</p>
+
+
+
+<p>Reference: <a href="https://github.com/kiranacharyaa/SASS-7-1-pattern-architecture">GitHub link for 7-1 SASS Architecture</a></p>
+								</div>
+							</div>
+							
+							<hr>
+																						<h3 class="section-title">Related Post</h3>
+								<div class="row">
+																		        
+									        <div class="col-sm-6">
+									            		<div class="blog-card">
+		    <div class="blog-card_img">
+		        <a href="https://kiranworkspace.com/sticky-navbar-on-scroll/">
+		        				        		<img width="768" height="432" src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/sticky-nav-bar-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Fixed sticky navbar on scroll" loading="lazy" srcset="https://kiranworkspace.com/wp-content/uploads/2021/07/sticky-nav-bar-768x432.jpg 768w, https://kiranworkspace.com/wp-content/uploads/2021/07/sticky-nav-bar-300x169.jpg 300w, https://kiranworkspace.com/wp-content/uploads/2021/07/sticky-nav-bar-1024x576.jpg 1024w, https://kiranworkspace.com/wp-content/uploads/2021/07/sticky-nav-bar.jpg 1200w" sizes="(max-width: 768px) 100vw, 768px" data-xblocker="passed" style="visibility: visible;">			        		        </a>
+		    </div>
+		    <div class="blog-card_content">
+		        <h5 class="blog-card_content-title" title="Fixed or Sticky Navbar on scroll"><a href="https://kiranworkspace.com/sticky-navbar-on-scroll/">
+		            Fixed or Sticky Navbar on scroll		        </a></h5>
+		        <div class="blog-card_content-desc">
+		            Hello, I have been working on the E-Learning platform for a while now. On the course description page, there is…		        </div>
+		        <p class="blog-card_cat py-3">
+		            <span class="text-uppercase"><a href="https://kiranworkspace.com/category/front-end/" rel="category tag">Front-End</a>, <a href="https://kiranworkspace.com/category/javascript/" rel="category tag">JavaScript</a></span> 
+		            <span class="px-2">/</span>
+		            <span>July 31, 2021</span> 
+		        </p>
+		    </div>
+		</div>
+										        </div>
+									    									        
+									        <div class="col-sm-6">
+									            		<div class="blog-card">
+		    <div class="blog-card_img">
+		        <a href="https://kiranworkspace.com/ellipsis-to-multiline-text-in-css/">
+		        				        		<img width="768" height="432" src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/ellipsis-multiline-css-768x432.png" class="attachment-medium_large size-medium_large wp-post-image" alt="how to ellipsis on multiline text css" loading="lazy" srcset="https://kiranworkspace.com/wp-content/uploads/2020/12/ellipsis-multiline-css-768x432.png 768w, https://kiranworkspace.com/wp-content/uploads/2020/12/ellipsis-multiline-css-300x169.png 300w, https://kiranworkspace.com/wp-content/uploads/2020/12/ellipsis-multiline-css.png 1000w" sizes="(max-width: 768px) 100vw, 768px" data-xblocker="passed" style="visibility: visible;">			        		        </a>
+		    </div>
+		    <div class="blog-card_content">
+		        <h5 class="blog-card_content-title" title="How to make Ellipsis to multiline text in CSS"><a href="https://kiranworkspace.com/ellipsis-to-multiline-text-in-css/">
+		            How to make Ellipsis to multiline text in CSS		        </a></h5>
+		        <div class="blog-card_content-desc">
+		            Showing 1 or 2 lines of the title looks good on designs like card or excerpt, also important to handle…		        </div>
+		        <p class="blog-card_cat py-3">
+		            <span class="text-uppercase"><a href="https://kiranworkspace.com/category/css/" rel="category tag">CSS</a>, <a href="https://kiranworkspace.com/category/front-end/" rel="category tag">Front-End</a></span> 
+		            <span class="px-2">/</span>
+		            <span>December 31, 2020</span> 
+		        </p>
+		    </div>
+		</div>
+										        </div>
+									    								</div>
+													</div>
+										<div class="col-md-4">
+							<div class="widget">
+								<div class="embed-responsive embed-responsive-16by9">
+    <iframe src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/mcb4ejO9flc.html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+<a href="https://www.youtube.com/channel/UCM5MlhOAAbu3a2ZsCC50Qtw" target="_blank" class="btn btn-youtube btn-block mt-2">Subscribe to YouTube channel</a>							</div>
+							<div class="widget">
+								<h3 class="section-title section-title--sidebar mb-3">Categories</h3>
+																<ul class="sidebar-category-list">
+										<li class="cat-item cat-item-82"><a href="https://kiranworkspace.com/category/bootstrap/">Bootstrap</a> (1)
+</li>
+	<li class="cat-item cat-item-67"><a href="https://kiranworkspace.com/category/css/">CSS</a> (3)
+</li>
+	<li class="cat-item cat-item-28"><a href="https://kiranworkspace.com/category/front-end/">Front-End</a> (6)
+</li>
+	<li class="cat-item cat-item-87"><a href="https://kiranworkspace.com/category/javascript/">JavaScript</a> (1)
+</li>
+	<li class="cat-item cat-item-29"><a href="https://kiranworkspace.com/category/laravel/">Laravel</a> (1)
+</li>
+	<li class="cat-item cat-item-34"><a href="https://kiranworkspace.com/category/sass/">SASS</a> (1)
+</li>
+	<li class="cat-item cat-item-83"><a href="https://kiranworkspace.com/category/wordpress/">Wordpress</a> (1)
+</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+		</div>
+	</section>
+
+		
+
+        <footer id="footer">
+            <div class="container">
+            	<div class="footer-tags">
+            		            		<ul class="footer-tags-list">
+            		    	<li class="cat-item cat-item-46"><a href="https://kiranworkspace.com/downloads/tag/accordion/">Accordion</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="https://kiranworkspace.com/downloads/tag/action/">Action</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://kiranworkspace.com/downloads/tag/adobe-xd/">Adobe XD</a>
+</li>
+	<li class="cat-item cat-item-68"><a href="https://kiranworkspace.com/downloads/tag/alert/">Alert</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://kiranworkspace.com/downloads/tag/blog/">Blog</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://kiranworkspace.com/downloads/tag/bootstrap/">Bootstrap</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://kiranworkspace.com/downloads/tag/bootstrap-4/">Bootstrap 4</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://kiranworkspace.com/downloads/tag/card/">Card</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="https://kiranworkspace.com/downloads/tag/carousel/">Carousel</a>
+</li>
+	<li class="cat-item cat-item-42"><a href="https://kiranworkspace.com/downloads/tag/contact/">Contact</a>
+</li>
+	<li class="cat-item cat-item-55"><a href="https://kiranworkspace.com/downloads/tag/course/">Course</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="https://kiranworkspace.com/downloads/tag/danger/">danger</a>
+</li>
+	<li class="cat-item cat-item-72"><a href="https://kiranworkspace.com/downloads/tag/dashboard/">Dashboard</a>
+</li>
+	<li class="cat-item cat-item-79"><a href="https://kiranworkspace.com/downloads/tag/delete/">Delete</a>
+</li>
+	<li class="cat-item cat-item-86"><a href="https://kiranworkspace.com/downloads/tag/doctor/">Doctor</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="https://kiranworkspace.com/downloads/tag/ecommerce/">Ecommerce</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="https://kiranworkspace.com/downloads/tag/faq/">FAQ</a>
+</li>
+	<li class="cat-item cat-item-43"><a href="https://kiranworkspace.com/downloads/tag/fontawesome/">Fontawesome</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://kiranworkspace.com/downloads/tag/form/">Form</a>
+</li>
+	<li class="cat-item cat-item-40"><a href="https://kiranworkspace.com/downloads/tag/green/">green</a>
+</li>
+	<li class="cat-item cat-item-49"><a href="https://kiranworkspace.com/downloads/tag/help/">Help</a>
+</li>
+	<li class="cat-item cat-item-84"><a href="https://kiranworkspace.com/downloads/tag/hotel/">Hotel</a>
+</li>
+	<li class="cat-item cat-item-47"><a href="https://kiranworkspace.com/downloads/tag/job/">Job</a>
+</li>
+	<li class="cat-item cat-item-75"><a href="https://kiranworkspace.com/downloads/tag/list/">List</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="https://kiranworkspace.com/downloads/tag/login/">Login</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://kiranworkspace.com/downloads/tag/material-design/">Material Design</a>
+</li>
+	<li class="cat-item cat-item-71"><a href="https://kiranworkspace.com/downloads/tag/news/">News</a>
+</li>
+	<li class="cat-item cat-item-35"><a href="https://kiranworkspace.com/downloads/tag/notification/">Notification</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://kiranworkspace.com/downloads/tag/one-page-design/">One page design</a>
+</li>
+	<li class="cat-item cat-item-39"><a href="https://kiranworkspace.com/downloads/tag/orange/">orange</a>
+</li>
+	<li class="cat-item cat-item-85"><a href="https://kiranworkspace.com/downloads/tag/payment/">Payment</a>
+</li>
+	<li class="cat-item cat-item-78"><a href="https://kiranworkspace.com/downloads/tag/popup/">Popup</a>
+</li>
+	<li class="cat-item cat-item-58"><a href="https://kiranworkspace.com/downloads/tag/post/">Post</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://kiranworkspace.com/downloads/tag/pricing/">Pricing</a>
+</li>
+	<li class="cat-item cat-item-76"><a href="https://kiranworkspace.com/downloads/tag/product/">Product</a>
+</li>
+	<li class="cat-item cat-item-69"><a href="https://kiranworkspace.com/downloads/tag/profile/">Profile</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="https://kiranworkspace.com/downloads/tag/progress/">Progress</a>
+</li>
+	<li class="cat-item cat-item-66"><a href="https://kiranworkspace.com/downloads/tag/project/">Project</a>
+</li>
+	<li class="cat-item cat-item-41"><a href="https://kiranworkspace.com/downloads/tag/red/">red</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://kiranworkspace.com/downloads/tag/sass/">SASS</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="https://kiranworkspace.com/downloads/tag/section/">Section</a>
+</li>
+	<li class="cat-item cat-item-48"><a href="https://kiranworkspace.com/downloads/tag/service/">Service</a>
+</li>
+	<li class="cat-item cat-item-70"><a href="https://kiranworkspace.com/downloads/tag/setting/">Setting</a>
+</li>
+	<li class="cat-item cat-item-74"><a href="https://kiranworkspace.com/downloads/tag/shopping/">Shopping</a>
+</li>
+	<li class="cat-item cat-item-57"><a href="https://kiranworkspace.com/downloads/tag/social/">Social</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="https://kiranworkspace.com/downloads/tag/success/">success</a>
+</li>
+	<li class="cat-item cat-item-59"><a href="https://kiranworkspace.com/downloads/tag/tab/">Tab</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="https://kiranworkspace.com/downloads/tag/table/">Table</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="https://kiranworkspace.com/downloads/tag/team/">Team</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://kiranworkspace.com/downloads/tag/testimonial/">Testimonial</a>
+</li>
+	<li class="cat-item cat-item-44"><a href="https://kiranworkspace.com/downloads/tag/timeline/">Timeline</a>
+</li>
+	<li class="cat-item cat-item-77"><a href="https://kiranworkspace.com/downloads/tag/toast/">Toast</a>
+</li>
+	<li class="cat-item cat-item-54"><a href="https://kiranworkspace.com/downloads/tag/travel/">Travel</a>
+</li>
+	<li class="cat-item cat-item-53"><a href="https://kiranworkspace.com/downloads/tag/users/">Users</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="https://kiranworkspace.com/downloads/tag/video/">Video</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="https://kiranworkspace.com/downloads/tag/warning/">warning</a>
+</li>
+            		</ul>
+				</div>
+				<div class="d-flex justify-content-center align-items-center mb-3">
+					<a class="p-1 mx-1 text-light" href="https://dribbble.com/KiranAcharya/" target="_blank" title="Dribbble">
+						Dribbble
+					</a>
+					<a class="p-1 mx-1 text-light" href="https://github.com/kiranacharyaa" target="_blank" title="Github">
+						Github
+					</a>
+					<a class="p-1 mx-1 text-light" href="https://www.linkedin.com/in/kiran-acharya-2b8034110/" target="_blank" title="LinkedIn">
+						LinkedIn
+					</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container d-block text-center d-sm-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+					<div class="footer-copyright">© Copyright 2018 - 2022. All rights reserved.</div>
+					<div class="footer-bottom-links ml-sm-5">
+												<div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="https://kiranworkspace.com/about/">About</a></li>
+<li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-99"><a href="https://kiranworkspace.com/blog/">Blog</a></li>
+<li id="menu-item-980" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-980"><a href="https://kiranworkspace.com/privacy-policy/">Privacy policy</a></li>
+<li id="menu-item-981" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-981"><a href="https://kiranworkspace.com/licenses/">License</a></li>
+<li id="menu-item-1067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1067"><a href="https://kiranworkspace.com/contact/">Contact</a></li>
+</ul></div>					</div>
+				</div>
+			</div>
+        </footer>
+
+        <script>hljs.initHighlightingOnLoad();</script>
+		<script type="text/javascript" id="edd-ajax-js-extra">
+/* <![CDATA[ */
+var edd_scripts = {"ajaxurl":"https:\/\/kiranworkspace.com\/wp-admin\/admin-ajax.php","position_in_cart":"","has_purchase_links":"","already_in_cart_message":"You have already added this item to your cart","empty_cart_message":"Your cart is empty","loading":"Loading","select_option":"Please select an option","is_checkout":"0","default_gateway":"","redirect_to_checkout":"0","checkout_page":"https:\/\/kiranworkspace.com\/checkout\/","permalinks":"1","quantities_enabled":"","taxes_enabled":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/edd-ajax.min.js.download" id="edd-ajax-js"></script>
+<script type="text/javascript" src="./SASS Architecture _ 7-1 Pattern _ Kiran Workspace_files/wp-embed.min.js.download" id="wp-embed-js"></script>
+    
+</body></html>

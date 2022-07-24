@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://cdpn.io/AmeliaBR/fullembedgrid/emoPVL?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - SVG Fallbacks: SVG as img</title>
+  <meta name="viewport" content="width=device-width">
+  
+  <link rel="stylesheet" href="./myvGPN.css">
+  
+<style>
+img {
+  display: block;
+  width: 248px; height: 248px;
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <h1>JS Fallback for SVG as &lt;img&gt;</h1>
+ <img src="./svg-ok.svg" data-fallback="//s3-us-west-2.amazonaws.com/s.cdpn.io/91525/svg-no.png" alt="SVG Support Icon">
+    <script src="./stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js.download"></script>
+
+  
+      <script id="rendered-js">
+function svgasimg() {
+  return document.implementation.hasFeature(
+  "http://www.w3.org/TR/SVG11/feature#Image", "1.1");
+}
+
+if (!svgasimg()) {
+  var e = document.getElementsByTagName("img");
+  if (!e.length) {
+    e = document.getElementsByTagName("IMG");
+  }
+  for (var i = 0, n = e.length; i < n; i++) {if (window.CP.shouldStopExecution(0)) break;
+    var img = e[i],
+    src = img.getAttribute("src");
+    if (src.match(/svgz?$/)) {
+      /* URL ends in svg or svgz */
+      img.setAttribute("src",
+      img.getAttribute("data-fallback"));
+    }
+  }window.CP.exitedLoop(0);
+}
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src="./iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js.download"></script>
+
+
+
+ 
+</body></html>

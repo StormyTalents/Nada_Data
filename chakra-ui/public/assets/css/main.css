@@ -1,0 +1,17 @@
+@font-face {
+  font-family: TommyBlack;
+  src: url('/assets/fonts/made_tommy/MADE TOMMY Black_PERSONAL USE.otf')
+    format('opentype');
+}
+
+@font-face {
+  font-family: Tommy;
+  src: url('/assets/fonts/made_tommy/MADE TOMMY Regular_PERSONAL USE.otf')
+    format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+p {
+  font-family: Tommy;
+}

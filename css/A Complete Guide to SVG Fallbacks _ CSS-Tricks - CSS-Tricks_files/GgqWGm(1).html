@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://cdpn.io/davatron5000/fullembedgrid/GgqWGm?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - Critical Inline SVG Fallbacks v2</title>
+  
+  
+  
+  
+<style>
+html, body {
+  background: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 5%;
+  line-height: 1.6em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.buttons {
+  text-align: center;
+}
+
+pre {
+  background: #fff;
+  padding: 1em;
+  max-height: 20em;
+  overflow: auto;
+  margin-bottom: 5%;
+}
+
+button {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.inline-svg {
+  display: inline-block;
+}
+
+span.inline-svg {
+  font-family: "Arial Unicode MS", Arial, sans-serif;
+}
+
+svg.inline-svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: text-top;
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <svg style="display:none;">
+  <defs>
+    <symbol id="icon-heart" viewBox="0 0 32 32" fill="currentColor">
+      <path d="M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10  "></path>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 32 32" fill="currentColor">
+      <path d="M4 8 L8 4 L16 12 L24 4 L28 8 L20 16 L28 24 L24 28 L16 20 L8 28 L4 24 L12 16 z "></path>
+    </symbol>
+    <symbol id="icon-hamburger" viewBox="0 0 32 32" fill="currentColor">
+      <path d="M3 8 A3 3 0 0 0 9 8 A3 3 0 0 0 3 8 M12 6 L28 6 L28 10 L12 10z M3 16 A3 3 0 0 0 9 16 A3 3 0 0 0 3 16 M12 14 L28 14 L28 18 L12 18z M3 24 A3 3 0 0 0 9 24 A3 3 0 0 0 3 24 M12 22 L28 22 L28 26 L12 26z "></path>
+    </symbol>
+  </defs>
+</svg>
+<h1>Progressive SVGs</h1>
+<div class="buttons" data-codeblock="">
+  <button aria-label="Like">
+    <svg class="inline-svg"><use xlink:href="#icon-heart"></use></svg>
+  </button>
+  <button aria-label="Close">
+    <svg class="inline-svg"><use xlink:href="#icon-close"></use></svg>
+  </button>
+  <button aria-label="Menu">
+    <svg class="inline-svg"><use xlink:href="#icon-hamburger"></use></svg>
+  </button>
+  <p><a href="https://cdpn.io/davatron5000/fullembedgrid/GgqWGm?animations=run&amp;type=embed#">Do you <svg class="inline-svg" title="like"><use xlink:href="#icon-heart"></use></svg> me?</a></p>
+  <button aria-label="Like">
+    <svg class="inline-svg"><use xlink:href="#icon-heart"></use></svg> Like
+  </button>
+</div><pre><code>&lt;div class="buttons"&gt;
+  &lt;button aria-label="Like"&gt;
+    &lt;span class="inline-svg" data-xlink="#icon-heart"&gt;♥&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button aria-label="Close"&gt;
+    &lt;span class="inline-svg" data-xlink="#icon-close"&gt;Close&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button aria-label="Menu"&gt;
+    &lt;span class="inline-svg" data-xlink="#icon-hamburger"&gt;≡&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;p&gt;&lt;a href="#"&gt;Do you &lt;span class="inline-svg" data-xlink="#icon-heart" title="like"&gt;♥&lt;/span&gt; me?&lt;/a&gt;&lt;/p&gt;
+  &lt;button aria-label="Like"&gt;
+    &lt;span class="inline-svg" data-xlink="#icon-heart"&gt;♥&lt;/span&gt; Like
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+<h2>Working theory:</h2>
+<p>Most inline SVGs don't need fallbacks, they're icon candy paired with assistive text and/or they are decorative (like icon-fonts). This aims at <strong>progressively enhancing critical fallbacks</strong> when absolutely necessary. So, we take a span, with a little extra meta and replace it with an SVG <code>&lt;use&gt;</code> element when it appears enhanceable.</p>
+<p>How it looks in IE8</p>
+<p><img src="./Screenshot_2014-12-17_17.19.56.png" alt=""></p>
+<h2>Approach</h2>
+<p>I try to scope the Image Replacement (IR) to either text or unicode. There are 5 examples here:</p>
+<ol>
+<li>A Like <code>button</code> with a Unicode "BLACK HEART SUIT" (♥) fallback. This heart is generally supported. Added an <code>aria-label</code> on the <code>button</code> to avoid screenreaders stumbling on wonky Unicode. VoiceOver failed on reading SVG <code>title</code> attributes in a <code>button</code>.</li>
+<li>A Close button with "Close" as a text fallback. The Unicode "MULTIPLICATION SIGN" (×) character has decent support, but I wanted an example where you might fall back to text. Same ARIA approach as above.</li>
+<li>A Hamburger button with fallback Unicode "IDENTICAL TO" (≡) character. Same ARIA approach, but very necessary due to the desired label being "Menu" which is very different than the character's meaning.</li>
+<li>A link with a Unicode heart (♥) fallback. Adding a <code>title</code> attribute here actually improved the accessibility for both SVG and fallback span.</li>
+<li>A Like button with "Like" text. This doesn't really even require a fallback.</li>
+</ol>
+<h2>Rules</h2>
+<ul>
+<li>Use similar Unicode when you can get away with it.
+<ul>
+<li>See <a href="https://unicode.johnholtripley.co.uk/all/support">Unify</a> by John Ripley to guage how well a character is supported across devices and screenreaders.</li>
+</ul>
+</li>
+<li>There's a bit of CSS you'll need to make sure old Windows uses 'Arial Unicode MS' as a fallback font with Unicode support.</li>
+<li>A lot of Zach Leatherman's <a href="https://www.filamentgroup.com/lab/bulletproof_icon_fonts.html">Bulletproof Icon Fonts</a> applies here.</li>
+<li>Must be Accessible. Avoid wonky Unicode reading:
+<ul>
+<li>Add <code>aria-label</code> to parent <code>button</code> elements.</li>
+<li>Use <code>title</code> attributes otherwise.</li>
+</ul>
+</li>
+<li>If you used an external SVG (e.g., <code>some.svg#icon-hamburger</code>), you might be able to save legacy browsers the double download.</li>
+</ul>
+<p><small>SVGs from <a href="http://geomicons.com/">Geomicons</a></small></p>
+    <script src="./stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js.download"></script>
+
+  <script src="./jquery.min.js.download"></script>
+<script src="./html5shiv.min.js.download"></script>
+<script src="./DBNwzR.js.download"></script>
+      <script id="rendered-js">
+(function (window, document) {
+  // Feature Test
+  // TODO: Could be improved to detect INLINE only.
+  var supportsSvg = function () {
+    return document.implementation && document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1");
+  };
+
+  // Enhance!
+  if (supportsSvg) {
+    var inlineSvgs = document.querySelectorAll('span.inline-svg');
+
+    for (i = 0; i < inlineSvgs.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+      var span = inlineSvgs[i];
+      var svgns = "http://www.w3.org/2000/svg";
+      var xlinkns = "http://www.w3.org/1999/xlink";
+      var svg = document.createElementNS(svgns, "svg");
+      var use = document.createElementNS(svgns, "use");
+
+      // Prepare the <use> element
+      use.setAttributeNS(xlinkns, 'xlink:href', span.getAttribute('data-xlink'));
+
+      // Append it
+      svg.appendChild(use);
+
+      // Prepare the SVG
+      svg.setAttribute('class', "inline-svg");
+
+      // Set a title if necessary.
+      if (span.getAttribute('title')) {
+        svg.setAttribute('title', span.getAttribute('title'));
+      }
+
+      // Inject the SVG
+      span.parentNode.insertBefore(svg, span);
+
+      // 6 Minute Abs™, for your DOM.
+      span.remove();
+    }window.CP.exitedLoop(0);
+  }
+})(window, document, undefined);
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src="./iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js.download"></script>
+
+
+
+ 
+</body></html>

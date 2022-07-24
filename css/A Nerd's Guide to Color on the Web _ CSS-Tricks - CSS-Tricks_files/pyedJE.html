@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://cdpn.io/sdras/fullembedgrid/pyedJE?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - React-Motion and Color Animation Experiment</title>
+  
+  <link rel="stylesheet" href="./normalize.min.css">
+
+  
+  
+<style>
+.demo .s1 {
+  border-left: 1px solid #666666;
+  border-right: 1px solid #666666;
+}
+.demo .s2 {
+  border-left: 1px solid #5e666e;
+  border-right: 1px solid #5e666e;
+}
+.demo .s3 {
+  border-left: 1px solid #575c75;
+  border-right: 1px solid #575c75;
+}
+.demo .s4 {
+  border-left: 1px solid #554f7d;
+  border-right: 1px solid #554f7d;
+}
+.demo .s5 {
+  border-left: 1px solid #624785;
+  border-right: 1px solid #624785;
+}
+.demo .s6 {
+  border-left: 1px solid #79408c;
+  border-right: 1px solid #79408c;
+}
+.demo .s7 {
+  border-left: 1px solid #94388e;
+  border-right: 1px solid #94388e;
+}
+.demo .s8 {
+  border-left: 1px solid #9c3073;
+  border-right: 1px solid #9c3073;
+}
+.demo .s9 {
+  border-left: 1px solid #a3294f;
+  border-right: 1px solid #a3294f;
+}
+.demo .s10 {
+  border-left: 1px solid #ab2121;
+  border-right: 1px solid #ab2121;
+}
+.demo .s11 {
+  border-left: 1px solid #b3491a;
+  border-right: 1px solid #b3491a;
+}
+.demo .s12 {
+  border-left: 1px solid #ba7b12;
+  border-right: 1px solid #ba7b12;
+}
+.demo .s13 {
+  border-left: 1px solid #c2b60a;
+  border-right: 1px solid #c2b60a;
+}
+.demo .s14 {
+  border-left: 1px solid #98c903;
+  border-right: 1px solid #98c903;
+}
+.demo .s15 {
+  border-left: 1px solid #59cc00;
+  border-right: 1px solid #59cc00;
+}
+.demo .s16 {
+  border-left: 1px solid #1acc00;
+  border-right: 1px solid #1acc00;
+}
+.demo .s17 {
+  border-left: 1px solid #00cc26;
+  border-right: 1px solid #00cc26;
+}
+.demo .s18 {
+  border-left: 1px solid #00cc66;
+  border-right: 1px solid #00cc66;
+}
+.demo .s19 {
+  border-left: 1px solid #00cca6;
+  border-right: 1px solid #00cca6;
+}
+.demo .s20 {
+  border-left: 1px solid #00b3cc;
+  border-right: 1px solid #00b3cc;
+}
+.demo .playthings {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+html,
+body {
+  background: #333;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  cursor: crosshair;
+}
+
+@media screen and (max-width: 600px) {
+  .demo .playthings {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <div id="app"><div data-reactid=".0"><div class="demo" data-reactid=".0.0"><div class="playthings s0" style="transform: translate3d(75px, 125px, 0px) rotate(0deg);" data-reactid=".0.0.$0"></div><div class="playthings s1" style="transform: translate3d(-174.656px, -174.588px, 0px) rotate(0.578845deg);" data-reactid=".0.0.$1"></div><div class="playthings s2" style="transform: translate3d(-175px, -175px, 0px) rotate(1.15769deg);" data-reactid=".0.0.$2"></div><div class="playthings s3" style="transform: translate3d(-175px, -175px, 0px) rotate(1.73653deg);" data-reactid=".0.0.$3"></div><div class="playthings s4" style="transform: translate3d(-175px, -175px, 0px) rotate(2.31538deg);" data-reactid=".0.0.$4"></div><div class="playthings s5" style="transform: translate3d(-175px, -175px, 0px) rotate(2.89422deg);" data-reactid=".0.0.$5"></div><div class="playthings s6" style="transform: translate3d(-175px, -175px, 0px) rotate(3.47307deg);" data-reactid=".0.0.$6"></div><div class="playthings s7" style="transform: translate3d(-175px, -175px, 0px) rotate(4.05191deg);" data-reactid=".0.0.$7"></div><div class="playthings s8" style="transform: translate3d(-175px, -175px, 0px) rotate(4.63076deg);" data-reactid=".0.0.$8"></div><div class="playthings s9" style="transform: translate3d(-175px, -175px, 0px) rotate(5.2096deg);" data-reactid=".0.0.$9"></div><div class="playthings s10" style="transform: translate3d(-175px, -175px, 0px) rotate(5.78845deg);" data-reactid=".0.0.$10"></div><div class="playthings s11" style="transform: translate3d(-175px, -175px, 0px) rotate(6.36729deg);" data-reactid=".0.0.$11"></div><div class="playthings s12" style="transform: translate3d(-175px, -175px, 0px) rotate(6.94614deg);" data-reactid=".0.0.$12"></div><div class="playthings s13" style="transform: translate3d(-175px, -175px, 0px) rotate(7.52498deg);" data-reactid=".0.0.$13"></div><div class="playthings s14" style="transform: translate3d(-175px, -175px, 0px) rotate(8.10383deg);" data-reactid=".0.0.$14"></div><div class="playthings s15" style="transform: translate3d(-175px, -175px, 0px) rotate(8.68267deg);" data-reactid=".0.0.$15"></div><div class="playthings s16" style="transform: translate3d(-175px, -175px, 0px) rotate(9.26152deg);" data-reactid=".0.0.$16"></div><div class="playthings s17" style="transform: translate3d(-175px, -175px, 0px) rotate(9.84036deg);" data-reactid=".0.0.$17"></div><div class="playthings s18" style="transform: translate3d(-175px, -175px, 0px) rotate(10.4192deg);" data-reactid=".0.0.$18"></div><div class="playthings s19" style="transform: translate3d(-175px, -175px, 0px) rotate(10.9981deg);" data-reactid=".0.0.$19"></div><div class="playthings s20" style="transform: translate3d(-175px, -175px, 0px) rotate(11.5769deg);" data-reactid=".0.0.$20"></div><div class="playthings s21" style="transform: translate3d(-175px, -175px, 0px) rotate(12.1557deg);" data-reactid=".0.0.$21"></div><div class="playthings s22" style="transform: translate3d(-175px, -175px, 0px) rotate(12.7346deg);" data-reactid=".0.0.$22"></div><div class="playthings s23" style="transform: translate3d(-175px, -175px, 0px) rotate(13.3134deg);" data-reactid=".0.0.$23"></div><div class="playthings s24" style="transform: translate3d(-175px, -175px, 0px) rotate(13.8923deg);" data-reactid=".0.0.$24"></div><div class="playthings s25" style="transform: translate3d(-175px, -175px, 0px) rotate(14.4711deg);" data-reactid=".0.0.$25"></div><div class="playthings s26" style="transform: translate3d(-175px, -175px, 0px) rotate(15.05deg);" data-reactid=".0.0.$26"></div><div class="playthings s27" style="transform: translate3d(-175px, -175px, 0px) rotate(15.6288deg);" data-reactid=".0.0.$27"></div><div class="playthings s28" style="transform: translate3d(-175px, -175px, 0px) rotate(16.2077deg);" data-reactid=".0.0.$28"></div><div class="playthings s29" style="transform: translate3d(-175px, -175px, 0px) rotate(16.7865deg);" data-reactid=".0.0.$29"></div><div class="playthings s30" style="transform: translate3d(-175px, -175px, 0px) rotate(17.3653deg);" data-reactid=".0.0.$30"></div><div class="playthings s31" style="transform: translate3d(-175px, -175px, 0px) rotate(17.9442deg);" data-reactid=".0.0.$31"></div><div class="playthings s32" style="transform: translate3d(-175px, -175px, 0px) rotate(18.523deg);" data-reactid=".0.0.$32"></div><div class="playthings s33" style="transform: translate3d(-175px, -175px, 0px) rotate(19.1019deg);" data-reactid=".0.0.$33"></div><div class="playthings s34" style="transform: translate3d(-175px, -175px, 0px) rotate(19.6807deg);" data-reactid=".0.0.$34"></div><div class="playthings s35" style="transform: translate3d(-175px, -175px, 0px) rotate(20.2596deg);" data-reactid=".0.0.$35"></div><div class="playthings s36" style="transform: translate3d(-175px, -175px, 0px) rotate(20.8384deg);" data-reactid=".0.0.$36"></div><div class="playthings s37" style="transform: translate3d(-175px, -175px, 0px) rotate(21.4173deg);" data-reactid=".0.0.$37"></div><div class="playthings s38" style="transform: translate3d(-175px, -175px, 0px) rotate(21.9961deg);" data-reactid=".0.0.$38"></div><div class="playthings s39" style="transform: translate3d(-175px, -175px, 0px) rotate(22.5749deg);" data-reactid=".0.0.$39"></div><div class="playthings s40" style="transform: translate3d(-175px, -175px, 0px) rotate(23.1538deg);" data-reactid=".0.0.$40"></div><div class="playthings s41" style="transform: translate3d(-175px, -175px, 0px) rotate(23.7326deg);" data-reactid=".0.0.$41"></div><div class="playthings s42" style="transform: translate3d(-175px, -175px, 0px) rotate(24.3115deg);" data-reactid=".0.0.$42"></div><div class="playthings s43" style="transform: translate3d(-175px, -175px, 0px) rotate(24.8903deg);" data-reactid=".0.0.$43"></div><div class="playthings s44" style="transform: translate3d(-175px, -175px, 0px) rotate(25.4692deg);" data-reactid=".0.0.$44"></div><div class="playthings s45" style="transform: translate3d(-175px, -175px, 0px) rotate(26.048deg);" data-reactid=".0.0.$45"></div><div class="playthings s46" style="transform: translate3d(-175px, -175px, 0px) rotate(26.6269deg);" data-reactid=".0.0.$46"></div><div class="playthings s47" style="transform: translate3d(-175px, -175px, 0px) rotate(27.2057deg);" data-reactid=".0.0.$47"></div><div class="playthings s48" style="transform: translate3d(-175px, -175px, 0px) rotate(27.7845deg);" data-reactid=".0.0.$48"></div><div class="playthings s49" style="transform: translate3d(-175px, -175px, 0px) rotate(28.3634deg);" data-reactid=".0.0.$49"></div></div></div></div>
+    <script src="./stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js.download"></script>
+
+  <script src="./react-with-addons-0.14.0.js.download"></script>
+<script src="./react-motion.js.download"></script>
+      <script id="rendered-js">
+const { StaggeredMotion, spring } = ReactMotion;
+
+const Demo = React.createClass({ displayName: "Demo",
+  getInitialState() {
+    return { x: 250, y: 300, rotate: 0 };
+  },
+
+  componentDidMount() {
+    window.addEventListener('mousemove', this.handleMouseMove);
+    window.addEventListener('touchmove', this.handleTouchMove);
+  },
+
+  //we're setting the state to be equal to the position
+  handleMouseMove({ pageX: x, pageY: y }) {
+    this.setState({ x, y });
+  },
+
+  handleTouchMove({ touches }) {
+    this.handleMouseMove(touches[0]);
+  },
+
+  getStyles(prevStyles) {
+    // we're using the previous style to update the next ones placement
+    const endValue = prevStyles.map((_, i) => {
+      let stiff = 200,damp = 15;
+      return i === 0 ?
+      this.state :
+      {
+        x: spring(prevStyles[i - 1].x, { stiffness: stiff, damping: damp }),
+        y: spring(prevStyles[i - 1].y, { stiffness: stiff, damping: damp }),
+        rotate: spring(i * 10, { stiffness: stiff, damping: damp }) };
+
+    });
+    return endValue;
+  },
+
+  render() {
+    let arr = [],amtHalf = 175;
+    for (var i = 0; i < 50; i++) {if (window.CP.shouldStopExecution(0)) break;
+      arr.push({ x: 0, y: 0, rotate: 0 });
+    }window.CP.exitedLoop(0);
+    return /*#__PURE__*/(
+      React.createElement("div", null, /*#__PURE__*/
+      React.createElement(StaggeredMotion, {
+        defaultStyles: arr,
+        styles: this.getStyles },
+      (lines) => /*#__PURE__*/
+      React.createElement("div", { className: "demo" },
+      lines.map(({ x, y, rotate }, i) => /*#__PURE__*/
+      React.createElement("div", {
+        key: i,
+        className: `playthings s${i}`
+        // we have to subtract half the amount of $amt in the CSS panel so that the mouse stays in the center of the object we're creating
+        , style: {
+          WebkitTransform: `translate3d(${x - amtHalf}px, ${y - amtHalf}px, 0) rotate(${rotate}deg)`,
+          transform: `translate3d(${x - amtHalf}px, ${y - amtHalf}px, 0) rotate(${rotate}deg)` } }))))));
+
+
+
+
+
+
+
+  } });
+
+
+React.render( /*#__PURE__*/React.createElement(Demo, null), document.querySelector('#app'));
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src="./iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js.download"></script>
+
+
+
+ 
+</body></html>

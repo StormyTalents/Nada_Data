@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://codepen.io/anon/embed/ydvqXw?height=600&theme-id=1&slug-hash=ydvqXw&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - hsl() and hsla()</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="Am4VKmvT+q94DjDlPLSlUJ4CttAf07r1ggXDfF/+WuqcLj2ur6tP6k/qanx+yWUdIlXBUaC5VoCICSx48vsC8Q==">
+<link rel="stylesheet" media="all" href="./embed-cfcfc09d3a2a2d8442e259e76ffd024c6c4f053ad5f0a901b60b61cd48dd31e2.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #28282a;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./highcontrast-dark-6be871a736c4bb4dcfd61a856f05a32a290df49061bbbf884cd741080c0644eb.css">
+<link rel="stylesheet" href="./maVRwd.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/anon/embed/ydvqXw?height=600&amp;theme-id=1&amp;slug-hash=ydvqXw&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/anon/embed/ydvqXw?height=600&amp;theme-id=1&amp;slug-hash=ydvqXw&amp;default-tab=result#css-box" role="button" aria-pressed="false">
+SCSS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/anon/embed/ydvqXw?height=600&amp;theme-id=1&amp;slug-hash=ydvqXw&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/anon/embed/ydvqXw?height=600&amp;theme-id=1&amp;slug-hash=ydvqXw&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/ericwbailey/pen/ydvqXw" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">header</span> <span class="cm-attribute">class</span>=<span class="cm-string">"header"</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"header__title"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>hsl() and hsla()<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"header__reference"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ul</span> <span class="cm-attribute">class</span>=<span class="cm-string">"reference-list"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"reference-list__link"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#HSL_colors"</span><span class="cm-tag cm-bracket">&gt;</span>MDN reference<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"reference-list__link"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"https://caniuse.com/#feat=mdn-css_properties_color_alpha"</span><span class="cm-tag cm-bracket">&gt;</span>caniuse Support<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ul</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">header</span><span class="cm-tag cm-bracket">&gt;</span>
+
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">main</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"example"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+      In this example, we are declaring three CSS Custom Properties in the <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>:root<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span> selector: 
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ol</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>--hue<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>--saturation<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>--lightness<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ol</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+      The three CSS Custom Properties are then combined in a <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>hsl()<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span> function in the order requried by its <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>h<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>, <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>s<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>, and <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>l<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span> arguments. The <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>var()<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span> function allows us to do this, creating a light yellow color<span class="cm-atom">&amp;nbsp;</span>(<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"swatch"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>). 
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+      Then, within each of the classes that are used to construct the warning banner example, we redefine the <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>--lightness<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span> CSS Custom property to darken the yellow color.
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"example__demo example__demo--hsl-and-hlsa"</span><span class="cm-tag cm-bracket">&gt;</span>
+
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">aside</span> <span class="cm-attribute">class</span>=<span class="cm-string">"warning warning__background"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"warning__icon"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">svg</span> <span class="cm-attribute">aria-hidden</span>=<span class="cm-string">"true"</span> <span class="cm-attribute">focusable</span>=<span class="cm-string">"false"</span> <span class="cm-attribute">xmlns</span>=<span class="cm-string">"http://www.w3.org/2000/svg"</span><span class="cm-tag cm-bracket">&gt;</span>
+            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M28 56C12.536 56 0 43.464 0 28S12.536 0 28 0s28 12.536 28 28-12.536 28-28 28zm0-7c11.598 0 21-9.402 21-21S39.598 7 28 7 7 16.402 7 28s9.402 21 21 21zm0-7a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm-3.5-28h7v17.5h-7V14z"</span> <span class="cm-attribute">fill-rule</span>=<span class="cm-string">"nonzero"</span><span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">svg</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"warning__message"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span> <span class="cm-attribute">class</span>=<span class="cm-string">"warning__title"</span><span class="cm-tag cm-bracket">&gt;</span>Warning<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"warning__body"</span><span class="cm-tag cm-bracket">&gt;</span>That thing you did also did other things.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag cm-error">div</span><span class="cm-tag cm-bracket cm-error">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+      Try changing <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>--hue<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>'s value in the <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>:root<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span> selector in this Pen to adjust the warning banner's overall color. For example, using a value of <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>90<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span> will turn everything different shades of green!
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag cm-error">main</span><span class="cm-tag cm-bracket cm-error">&gt;</span></code></pre>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code" class=" cm-s-default"><span class="cm-comment">// Demo</span>
+:<span class="cm-variable-3">root</span> {
+  <span class="cm-variable-2">--hue</span>: <span class="cm-number">50</span>;
+  <span class="cm-variable-2">--saturation</span>: <span class="cm-number">100%</span>;
+  <span class="cm-variable-2">--lightness</span>: <span class="cm-number">87%</span>;
+}
+
+<span class="cm-qualifier">.warning__background</span> {
+  <span class="cm-property">background-color</span>: <span class="cm-variable cm-callee">hsl</span>(<span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--hue</span>), <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--saturation</span>), <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--lightness</span>));
+}
+
+<span class="cm-qualifier">.warning__icon</span> {
+  <span class="cm-variable-2">--lightness</span>: <span class="cm-number">40%</span>;
+
+  <span class="cm-property">fill</span>: <span class="cm-variable cm-callee">hsl</span>(<span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--hue</span>), <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--saturation</span>), <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--lightness</span>));
+}
+
+<span class="cm-qualifier">.warning__body</span> { 
+  <span class="cm-variable-2">--lightness</span>: <span class="cm-number">24%</span>;
+
+  <span class="cm-property">color</span>: <span class="cm-variable cm-callee">hsl</span>(<span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--hue</span>), <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--saturation</span>), <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--lightness</span>));
+}
+
+<span class="cm-qualifier">.warning__title</span> {
+  <span class="cm-variable-2">--lightness</span>: <span class="cm-number">14%</span>;
+
+  <span class="cm-property">color</span>: <span class="cm-variable cm-callee">hsl</span>(<span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--hue</span>), <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--saturation</span>), <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--lightness</span>));
+}
+
+
+<span class="cm-comment">// Pen Setup</span>
+<span class="cm-qualifier">.example__demo--hsl-and-hlsa</span> {
+  <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">background-color</span>: <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--color-cinder</span>);
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+  <span class="cm-property">flex-direction</span>: <span class="cm-atom">row</span>;
+  <span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>; 
+  <span class="cm-property">min-height</span>: <span class="cm-number">15rem</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">0</span>;
+}
+
+<span class="cm-qualifier">.warning</span> {
+  <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--border-radius-medium</span>);
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+  <span class="cm-property">flex-direction</span>: <span class="cm-atom">row</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">0.75rem</span> <span class="cm-number">2rem</span> <span class="cm-number">0.75rem</span> <span class="cm-number">1.25rem</span>;
+}
+
+<span class="cm-qualifier">.warning__icon</span> {
+  <span class="cm-property">height</span>: <span class="cm-number">3rem</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">3rem</span>;
+}
+
+<span class="cm-qualifier">.warning__title</span> {
+  <span class="cm-property">font-size</span>: <span class="cm-number">1.25rem</span>;
+  <span class="cm-property">letter-spacing</span>: <span class="cm-number">0.05em</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">text-transform</span>: <span class="cm-atom">uppercase</span>;
+}
+
+<span class="cm-qualifier">.warning__message</span> {
+  <span class="cm-property">margin-left</span>: <span class="cm-number">1rem</span>;
+}
+
+<span class="cm-qualifier">.warning__body</span> {
+  <span class="cm-property">margin-left</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">margin-bottom</span>: <span class="cm-number">0.25rem</span>;
+}
+
+<span class="cm-qualifier">.swatch</span> {
+  <span class="cm-property">background-color</span>: <span class="cm-variable cm-callee">hsl</span>(<span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--hue</span>), <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--saturation</span>), <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--lightness</span>));
+  <span class="cm-property">border</span>: <span class="cm-number">2px</span> <span class="cm-atom">solid</span> <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--color-cinder</span>);
+  <span class="cm-property">display</span>: <span class="cm-atom">inline-block</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">0.8rem</span>;
+  <span class="cm-property">margin-left</span>: <span class="cm-number">0.15rem</span>;
+  <span class="cm-property">margin-right</span>: <span class="cm-number">0.15rem</span>;
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">1px</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">0.8rem</span>;
+}</code></pre>
+<a href="https://codepen.io/anon/embed/ydvqXw?height=600&amp;theme-id=1&amp;slug-hash=ydvqXw&amp;default-tab=result#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+View Compiled
+</a>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for hsl() and hsla()" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" scrolling="yes" title="CodePen Preview for hsl() and hsla()" data-src="https://cdpn.io/ericwbailey/fullembedgrid/ydvqXw?animations=run&amp;type=embed" src="./ydvqXw(1).html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/ericwbailey" target="_blank" rel="noopener"><img src="./default.png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/ericwbailey" target="_blank" rel="noopener">Eric Bailey</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/ericwbailey" target="_blank" rel="noopener" class="about-user-more">
+See more by @ericwbailey on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<ol class="list-of-resources">
+<li>
+<a href="https://codepen.io/ericwbailey/pen/vMXWgz.scss" target="_blank">https://codepen.io/ericwbailey/pen/vMXWgz.scss</a>
+</li>
+</ol>
+<h3>External JavaScript</h3>
+<p>
+This Pen doesn't use any external JavaScript resources.
+</p>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;header class=&quot;header&quot;&gt;\n  &lt;div class=&quot;header__title&quot;&gt;\n    &lt;h1&gt;\n      &lt;code&gt;hsl() and hsla()&lt;/code&gt;\n    &lt;/h1&gt;\n  &lt;/div&gt;\n  &lt;div class=&quot;header__reference&quot;&gt;\n    &lt;ul class=&quot;reference-list&quot;&gt;\n      &lt;li&gt;&lt;a class=&quot;reference-list__link&quot; href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#HSL_colors&quot;&gt;MDN reference&lt;/a&gt;&lt;/li&gt;\n      &lt;li&gt;&lt;a class=&quot;reference-list__link&quot; href=&quot;https://caniuse.com/#feat=mdn-css_properties_color_alpha&quot;&gt;caniuse Support&lt;/a&gt;&lt;/li&gt;\n    &lt;/ul&gt;\n  &lt;/div&gt;\n&lt;/header&gt;\n\n&lt;main&gt;\n  &lt;div class=&quot;example&quot;&gt;\n    &lt;p&gt;\n      In this example, we are declaring three CSS Custom Properties in the &lt;code&gt;:root&lt;/code&gt; selector: \n    &lt;/p&gt;\n    &lt;ol&gt;\n      &lt;li&gt;&lt;code&gt;--hue&lt;/code&gt;&lt;/li&gt;\n      &lt;li&gt;&lt;code&gt;--saturation&lt;/code&gt;&lt;/li&gt;\n      &lt;li&gt;&lt;code&gt;--lightness&lt;/code&gt;&lt;/li&gt;\n    &lt;/ol&gt;\n    &lt;p&gt;\n      The three CSS Custom Properties are then combined in a &lt;code&gt;hsl()&lt;/code&gt; function in the order requried by its &lt;code&gt;h&lt;/code&gt;, &lt;code&gt;s&lt;/code&gt;, and &lt;code&gt;l&lt;/code&gt; arguments. The &lt;code&gt;var()&lt;/code&gt; function allows us to do this, creating a light yellow color&amp;nbsp;(&lt;span class=&quot;swatch&quot;&gt;&lt;/span&gt;). \n    &lt;/p&gt;\n    &lt;p&gt;\n      Then, within each of the classes that are used to construct the warning banner example, we redefine the &lt;code&gt;--lightness&lt;/code&gt; CSS Custom property to darken the yellow color.\n    &lt;/p&gt;\n\n    &lt;div class=&quot;example__demo example__demo--hsl-and-hlsa&quot;&gt;\n\n      &lt;aside class=&quot;warning warning__background&quot;&gt;\n        &lt;div class=&quot;warning__icon&quot;&gt;\n          &lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;\n            &lt;path d=&quot;M28 56C12.536 56 0 43.464 0 28S12.536 0 28 0s28 12.536 28 28-12.536 28-28 28zm0-7c11.598 0 21-9.402 21-21S39.598 7 28 7 7 16.402 7 28s9.402 21 21 21zm0-7a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm-3.5-28h7v17.5h-7V14z&quot; fill-rule=&quot;nonzero&quot;/&gt;\n          &lt;/svg&gt;\n        &lt;/div&gt;\n        &lt;div class=&quot;warning__message&quot;&gt;\n          &lt;h2 class=&quot;warning__title&quot;&gt;Warning&lt;/h2&gt;\n          &lt;p class=&quot;warning__body&quot;&gt;That thing you did also did other things.&lt;/p&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;p&gt;\n      Try changing &lt;code&gt;--hue&lt;/code&gt;&#39;s value in the &lt;code&gt;:root&lt;/code&gt; selector in this Pen to adjust the warning banner&#39;s overall color. For example, using a value of &lt;code&gt;90&lt;/code&gt; will turn everything different shades of green!\n    &lt;/p&gt;\n  &lt;/div&gt;\n&lt;/main&gt;","css":"@charset &quot;UTF-8&quot;;\n:root {\n  --scale: 1.618;\n  --size-legal: 0.85rem;\n  --size-zeta: 1rem;\n  --size-epsilon: calc(var(--scale) * var(--size-zeta));\n  --size-delta: calc(var(--scale) * var(--size-epsilon));\n  --size-beta: calc(var(--scale) * var(--size-delta));\n  --size-alpha: calc(var(--scale) * var(--size-beta));\n  --size-giga: calc(var(--scale) * var(--size-alpha));\n  --border-radius-medium: 0.5rem;\n  --border-radius-small: 0.25rem;\n  --color-cerulean: #03a9f4;\n  --color-charade: #302c3b;\n  --color-cinder: #0e0c15;\n  --color-hibiscus: #c83361;\n  --color-fern: #53b256;\n  --color-jaffa: #f29235;\n  --color-sand: #f5d67b;\n  --color-topaz: #7a7a8b;\n  --color-white: #ffffff;\n  --font-body: &quot;Rubik&quot;, sans-serif;\n  --font-code: &quot;Inconsolata&quot;, monospace;\n  --transition-duration-short: 125ms;\n  --transition-duration-long: 200ms;\n  --transition-duration-longer: 750ms;\n}\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\nhtml {\n  font-size: 20px;\n  margin: 0;\n  min-height: 100%;\n  overflow-y: scroll;\n  padding: 0;\n  -webkit-text-size-adjust: 100%;\n     -moz-text-size-adjust: 100%;\n          text-size-adjust: 100%;\n  -ms-overflow-style: scrollbar;\n}\n\nbody {\n  background-color: var(--color-cinder);\n  color: var(--color-white);\n  font-family: var(--font-body);\n  font-size: calc(var(--size-zeta) / 1.25);\n  line-height: var(--scale);\n  min-height: 100%;\n  overflow-x: hidden;\n  padding: var(--size-zeta) 0;\n}\n@media screen and (min-width: 48em) {\n  body {\n    font-size: var(--size-zeta);\n    padding: var(--size-epsilon);\n  }\n}\n\nh1 {\n  font-size: var(--size-epsilon);\n  line-height: 1;\n  margin: 0 var(--size-zeta) 0.5rem var(--size-zeta);\n}\n@media screen and (min-width: 48em) {\n  h1 {\n    margin-bottom: 0;\n  }\n}\n\ncode {\n  font-family: var(--font-code);\n}\np code, li code {\n  background-color: var(--color-cinder);\n  border-radius: var(--border-radius-small);\n  color: var(--color-white);\n  font-size: 110%;\n  margin-left: 0.1em;\n  margin-right: 0.1em;\n  padding: 0.25em 0.4em;\n}\n\nsmall {\n  font-size: 85%;\n}\nsmall a {\n  color: var(--color-topaz);\n}\nsmall a:hover, small a:focus {\n  text-decoration: none;\n}\n\np {\n  margin-top: var(--size-epsilon);\n  margin-bottom: 0;\n}\naside p {\n  color: var(--color-topaz);\n  line-height: 1.2;\n  margin-left: var(--border-radius-medium);\n}\n\n.header {\n  display: flex;\n  flex-direction: column;\n}\n@media screen and (min-width: 48em) {\n  .header {\n    align-items: baseline;\n    flex-direction: row;\n    font-size: var(--size-epsilon);\n    justify-content: space-between;\n  }\n}\n\n.header__title {\n  margin-bottom: 0.5rem;\n}\n@media screen and (min-width: 48em) {\n  .header__title {\n    margin-bottom: 0;\n  }\n}\n\n.header__reference {\n  margin-left: var(--size-zeta);\n}\n\n.reference-list {\n  list-style-type: none;\n  margin-top: auto;\n  padding: 0 var(--size-zeta) 0 0;\n}\n@media screen and (min-width: 48em) {\n  .reference-list {\n    display: flex;\n    flex-direction: row;\n  }\n}\n.reference-list li {\n  line-height: 1.5;\n}\n@media screen and (min-width: 48em) {\n  .reference-list li {\n    line-height: 1;\n  }\n}\n.reference-list li::before {\n  content: &quot;​&quot;;\n}\n.reference-list li:first-of-type {\n  margin-right: var(--size-zeta);\n}\n\n.reference-list__link {\n  color: var(--color-cerulean);\n  font-size: var(--size-legal);\n}\n.reference-list__link:hover, .reference-list__link:focus {\n  text-decoration: none;\n}\n\n.button {\n  border: 3px solid var(--color-topaz);\n  border-radius: 100rem;\n  background-color: transparent;\n  color: var(--color-white);\n  font-weight: bold;\n  letter-spacing: 0.025em;\n  margin-top: var(--size-zeta);\n  padding: 0.75rem 1.5rem;\n  transition: border-color var(--transition-duration-short) ease-in-out;\n}\n.button:hover, .button:focus {\n  border-color: var(--color-white);\n  outline: 0;\n  transition: border-color var(--transition-duration-short) ease-in-out;\n}\n.button:active, .button[aria-pressed=true] {\n  background-color: var(--color-white);\n  color: var(--color-cinder);\n}\n\n.support-warning {\n  background-color: var(--color-hibiscus);\n  border-radius: var(--border-radius-small);\n  font-size: var(--size-legal);\n  color: var(--color-white);\n  padding: var(--size-zeta);\n}\n\n.reduced-motion-notification {\n  display: none;\n}\n@media screen and (prefers-reduced-motion: reduce) {\n  .reduced-motion-notification {\n    background-color: var(--color-sand);\n    border: 4px solid var(--color-white);\n    color: var(--color-charade);\n    display: block;\n    font-size: var(--size-zeta);\n    outline: 1000rem solid rgba(47, 43, 59, 0.75);\n    padding: var(--size-epsilon);\n    line-height: 1.4;\n    position: absolute;\n    top: var(--size-delta);\n    left: 8%;\n    width: 84%;\n  }\n}\n@media screen and (prefers-reduced-motion: reduce) {\n  .reduced-motion-notification p {\n    margin-top: 0;\n  }\n}\n@media screen and (prefers-reduced-motion: reduce) {\n  .reduced-motion-notification a {\n    color: var(--color-charade);\n    display: inline-block;\n    font-size: var(--size-legal);\n    margin-top: 0.75rem;\n  }\n}\n\n.example {\n  background-color: var(--color-charade);\n  padding: var(--size-zeta);\n}\n@media screen and (min-width: 48em) {\n  .example {\n    border-radius: var(--border-radius-medium);\n    padding: var(--size-epsilon);\n  }\n}\n.example a {\n  color: var(--color-white);\n}\n.example a:hover, .example a:focus {\n  text-decoration: none;\n}\n.example p:first-of-type {\n  margin-top: 0;\n}\n\n.example__demo {\n  background-color: var(--color-white);\n  margin-top: var(--size-epsilon);\n  padding: var(--size-epsilon);\n  width: 100%;\n}\n\ninput[type=range] {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  border-radius: 0;\n  box-sizing: border-box;\n  font-family: inherit;\n  font-size: inherit;\n  font-weight: inherit;\n  line-height: normal;\n  margin: 1em 0;\n  overflow: visible;\n  text-transform: none;\n  width: 100%;\n}\ninput[type=range]::-ms-clear {\n  display: none;\n  height: 0;\n  width: 0;\n}\n\ninput[type=range]::-webkit-slider-runnable-track {\n  background: var(--color-topaz);\n  width: 100%;\n  height: 0.5em;\n}\n\ninput[type=range]::-moz-range-track {\n  background: var(--color-topaz);\n  width: 100%;\n  height: 0.35em;\n}\n\ninput[type=range]::-ms-track {\n  background: transparent;\n  border-color: transparent;\n  border-width: 1em 0;\n  color: transparent;\n  height: 0.4em;\n  width: 100%;\n}\n\ninput[type=range]::-ms-fill-lower {\n  background: var(--color-topaz);\n}\n\ninput[type=range]::-ms-fill-upper {\n  background: var(--color-topaz);\n}\n\ninput[type=range]::-webkit-slider-thumb {\n  background-color: var(--color-white);\n  border: 1px solid var(--color-topaz);\n  border-radius: 0.1rem;\n  cursor: -webkit-grab;\n  cursor: grab;\n  position: relative;\n  z-index: 3;\n  height: 2em;\n  margin: -0.825em 0 0;\n  width: 1.25em;\n  -webkit-appearance: none;\n}\n\ninput[type=range]::-moz-range-thumb {\n  background-color: var(--color-white);\n  border: 1px solid var(--color-topaz);\n  border-radius: 0.1rem;\n  cursor: grab;\n  position: relative;\n  z-index: 3;\n  height: 1.825em;\n  width: 1.125em;\n}\n\ninput[type=range]::-ms-thumb {\n  background-color: var(--color-white);\n  border: 1px solid var(--color-topaz);\n  border-radius: 0.1rem;\n  cursor: grab;\n  position: relative;\n  z-index: 3;\n  height: 1.825em;\n  margin: 0;\n  width: 1.125em;\n}\n\ninput[type=range]:not([disabled])::-webkit-slider-thumb:active {\n  cursor: -webkit-grabbing;\n  cursor: grabbing;\n}\n\ninput[type=range]:not([disabled])::-moz-range-thumb:active {\n  cursor: grabbing;\n}\n\n.color-hibiscus {\n  color: var(--color-hibiscus);\n}\n\n.color-fern {\n  color: var(--color-fern);\n}\n\n.color-cerulean {\n  color: var(--color-cerulean);\n}\n\n.margin-top-zeta {\n  margin-top: var(--size-epsilon);\n}\n\n:root {\n  --hue: 50;\n  --saturation: 100%;\n  --lightness: 87%;\n}\n\n.warning__background {\n  background-color: hsl(var(--hue), var(--saturation), var(--lightness));\n}\n\n.warning__icon {\n  --lightness: 40%;\n  fill: hsl(var(--hue), var(--saturation), var(--lightness));\n}\n\n.warning__body {\n  --lightness: 24%;\n  color: hsl(var(--hue), var(--saturation), var(--lightness));\n}\n\n.warning__title {\n  --lightness: 14%;\n  color: hsl(var(--hue), var(--saturation), var(--lightness));\n}\n\n.example__demo--hsl-and-hlsa {\n  align-items: center;\n  background-color: var(--color-cinder);\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  min-height: 15rem;\n  padding: 0;\n}\n\n.warning {\n  align-items: center;\n  border-radius: var(--border-radius-medium);\n  display: flex;\n  flex-direction: row;\n  padding: 0.75rem 2rem 0.75rem 1.25rem;\n}\n\n.warning__icon {\n  height: 3rem;\n  width: 3rem;\n}\n\n.warning__title {\n  font-size: 1.25rem;\n  letter-spacing: 0.05em;\n  margin: 0;\n  text-transform: uppercase;\n}\n\n.warning__message {\n  margin-left: 1rem;\n}\n\n.warning__body {\n  margin-left: 0;\n  margin-bottom: 0.25rem;\n}\n\n.swatch {\n  background-color: hsl(var(--hue), var(--saturation), var(--lightness));\n  border: 2px solid var(--color-cinder);\n  display: inline-block;\n  height: 0.8rem;\n  margin-left: 0.15rem;\n  margin-right: 0.15rem;\n  position: relative;\n  top: 1px;\n  width: 0.8rem;\n}","js":""};
+    __preprocessors = {
+      "html": "none",
+      "css": "scss",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "SCSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-2fdb1b1f31d291596e822bdc8654418037277f5fdfa32b43ee91e7729ea84388.js.download"></script>
+
+
+</body></html>

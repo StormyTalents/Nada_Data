@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+[build.environment]
+  YARN_VERSION = "1.22.15"
+  YARN_FLAGS = "--production=false"
+  NODE_ENV = "production"

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://cdpn.io/chriscoyier/fullembedgrid/rNaEvgp?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - Data Attribute Based Columns</title>
+  
+  
+  
+  
+<style>
+[data-columns] {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+[data-columns] > div {
+  height: 100px;
+  background: white;
+}
+
+[data-columns="2"] {
+  background: #64B5F6;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+[data-columns="3"] {
+  background: #9CCC65;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+[data-columns="4"] {
+  background: #FFB74D;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+
+
+
+
+
+body {
+  margin: 1rem;
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <div data-columns="2">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div data-columns="3">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div data-columns="4">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+  
+  
+  
+  
+
+  <script src="./iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js.download"></script>
+
+
+
+ 
+</body></html>

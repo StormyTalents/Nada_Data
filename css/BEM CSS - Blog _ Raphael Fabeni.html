@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://raphaelfabeni.com/bem-css-overview/ -->
+<html lang="en" class="font-loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  <title>BEM CSS - Blog | Raphael Fabeni</title> <link rel="alternate" hreflang="pt-br" href="https://www.raphaelfabeni.com/bem-css/"> <link rel="alternate" hreflang="en" href="https://www.raphaelfabeni.com/bem-css-overview/"> <link rel="alternate" hreflang="x-default" href="https://www.raphaelfabeni.com/bem-css-overview/"> <link rel="preconnect" href="https://fonts.gstatic.com/"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="description" content="Block element and modifier. A simple overview about BEM CSS."> <!-- Facebook --> <meta property="fb:app_id" content="588516207935765"> <meta property="fb:admins" content="100000808831074"> <meta property="og:description" content="Block element and modifier. A simple overview about BEM CSS."> <meta property="og:title" content="BEM CSS - Blog | Raphael Fabeni"> <meta property="og:site_name" content="Raphael Fabeni"> <meta property="og:url" content="https://www.raphaelfabeni.com/bem-css-overview/"> <meta property="og:type" content="article"> <meta property="og:image" content="https://cloud.githubusercontent.com/assets/1345662/11520648/792ca134-988c-11e5-8d8a-3e5eb70b2bd7.jpg"> <meta property="twittter:image" content="https://cloud.githubusercontent.com/assets/1345662/11520648/792ca134-988c-11e5-8d8a-3e5eb70b2bd7.jpg"> <meta property="article:author" content="https://www.facebook.com/raphaelfabeni"> <meta property="article:publisher" content="https://www.facebook.com/raphaelfabeni"> <!-- Twitter --> <meta name="twitter:card" content="summary"> <meta name="twitter:creator" content="@raphaelfabeni"> <meta name="twitter:site" content="@raphaelfabeni"> <meta name="twitter:domain" content="https://www.raphaelfabeni.com"> <meta name="twitter:title" content="BEM CSS - Blog | Raphael Fabeni"> <meta name="twitter:description" content="Block element and modifier. A simple overview about BEM CSS."> <link rel="canonical" href="https://www.raphaelfabeni.com/bem-css-overview/"> <link href="https://raphaelfabeni.com.br/feed.xml" rel="alternate" type="application/atom+xml"> <link rel="apple-touch-icon" sizes="57x57" href="https://raphaelfabeni.com/dist/images/favicon/apple-icon-57x57.png"> <link rel="apple-touch-icon" sizes="60x60" href="https://raphaelfabeni.com/dist/images/favicon/apple-icon-60x60.png"> <link rel="apple-touch-icon" sizes="72x72" href="https://raphaelfabeni.com/dist/images/favicon/apple-icon-72x72.png"> <link rel="apple-touch-icon" sizes="76x76" href="https://raphaelfabeni.com/dist/images/favicon/apple-icon-76x76.png"> <link rel="apple-touch-icon" sizes="114x114" href="https://raphaelfabeni.com/dist/images/favicon/apple-icon-114x114.png"> <link rel="apple-touch-icon" sizes="120x120" href="https://raphaelfabeni.com/dist/images/favicon/apple-icon-120x120.png"> <link rel="apple-touch-icon" sizes="144x144" href="https://raphaelfabeni.com/dist/images/favicon/apple-icon-144x144.png"> <link rel="apple-touch-icon" sizes="152x152" href="https://raphaelfabeni.com/dist/images/favicon/apple-icon-152x152.png"> <link rel="apple-touch-icon" sizes="180x180" href="https://raphaelfabeni.com/dist/images/favicon/apple-icon-180x180.png"> <link rel="icon" type="image/png" sizes="192x192" href="https://raphaelfabeni.com/dist/images/favicon/android-icon-192x192.png"> <link rel="icon" type="image/png" sizes="32x32" href="https://raphaelfabeni.com/dist/images/favicon/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="96x96" href="https://raphaelfabeni.com/dist/images/favicon/favicon-96x96.png"> <link rel="icon" type="image/png" sizes="16x16" href="https://raphaelfabeni.com/dist/images/favicon/favicon-16x16.png"> <link rel="manifest" href="https://raphaelfabeni.com/dist/images/favicon/manifest.json"> <meta name="msapplication-TileColor" content="#ffffff"> <meta name="msapplication-TileImage" content="/dist/images/favicon/ms-icon-144x144.png"> <meta name="theme-color" content="#ffffff"> <!-- CSS --> <link rel="stylesheet" href="./BEM CSS - Blog _ Raphael Fabeni_files/main.min.css"> <script async="" src="./BEM CSS - Blog _ Raphael Fabeni_files/5fb7c760aaef1000126fdf46.js.download"></script><script type="text/javascript" async="" src="./BEM CSS - Blog _ Raphael Fabeni_files/analytics.js.download"></script><script async="" src="./BEM CSS - Blog _ Raphael Fabeni_files/js"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-16831060-1'); </script> <script src="./BEM CSS - Blog _ Raphael Fabeni_files/netlify-identity-widget.js.download"></script> <script> if (window.netlifyIdentity) { window.netlifyIdentity.on("init", user => { if (!user) { window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; }); } }); } </script> <link href="./BEM CSS - Blog _ Raphael Fabeni_files/css2" rel="stylesheet"><style type="text/css">#st-2 {
+  font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  backface-visibility: hidden;
+  display: block;
+  position: fixed;
+  opacity: 1;
+  text-align: left;
+  top: 150px;
+  z-index: 94034;
+}
+#st-2.st-left {
+  left: 0px;
+}
+#st-2.st-hidden.st-left {
+  left: -48px;
+}
+#st-2.st-hidden {
+  width: 96px;
+}
+#st-2 > div {
+  clear: left;
+  float: left;
+}
+#st-2 .st-btn {
+  -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  height: 48px;
+  line-height: 24px;
+  margin-bottom: 0;
+  opacity: 1;
+  overflow: hidden;
+  padding: 12px;
+  position: relative;
+  text-align: left;
+  top: 0;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 48px;
+}
+#st-2 .st-btn.st-first {
+  border-top: none;
+  border-top-right-radius: undefinedpx;
+}
+#st-2 .st-btn.st-last {
+  border-bottom: none;
+  border-bottom-right-radius: undefinedpx;
+}
+#st-2 .st-btn > svg {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  height: 24px;
+  margin-left: 0;
+  vertical-align: top;
+  width: 24px;
+}
+#st-2 .st-btn > img {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  height: 24px;
+  margin-left: 0;
+  vertical-align: top;
+  width: 24px;
+}
+#st-2 .st-btn > span {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  left: -35px;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  padding: 0 6px;
+  position: relative;
+  vertical-align: top;
+  filter: alpha(opacity=0);
+}
+#st-2 .st-btn.st-hide-label > span {
+  display: none !important;
+}
+#st-2 .st-total {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  background: #fff;
+  color: #555;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 18px;
+  margin-right: 0;
+  min-height: 34px;
+  max-width: 80px;
+  opacity: 1;
+  padding: 4px 0;
+  text-align: center;
+  width: 48px;
+}
+#st-2 .st-total.st-hidden {
+  display: none;
+}
+#st-2 .st-total > span {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0;
+}
+#st-2 .st-total > span.st-shares {
+  font-size: 11px;
+  line-height: 11px;
+}
+#st-2 .st-toggle {
+  left: -48px;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  background: #ccc;
+  border-bottom-right-radius: undefinedpx;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 24px;
+  position: relative;
+  text-align: center;
+  width: 48px;
+}
+#st-2.st-hidden .st-toggle {
+  border-top-right-radius: undefinedpx;
+}
+#st-2.st-left .st-toggle .st-left {
+  display: inline-block;
+}
+#st-2.st-left.st-hidden .st-toggle .st-left {
+  display: none;
+}
+#st-2.st-left .st-toggle .st-right {
+  display: none;
+}
+#st-2.st-left.st-hidden .st-toggle .st-right {
+  display: inline-block;
+}#st-2:hover .st-toggle {
+  left: 0;
+}
+#st-2.st-hidden:hover .st-toggle {
+  left: 48px;
+}
+#st-2.st-toggleable:hover .st-btn.st-last {
+  border-bottom-right-radius: 0;
+}
+#st-2.st-toggleable:hover .st-btn.st-last:hover {
+  border-bottom-right-radius: undefinedpx;
+}
+#st-2 .st-btn:hover {
+  border-bottom-right-radius: undefinedpx;
+  border-top-right-radius: undefinedpx;
+}
+#st-2.st-has-labels .st-btn:hover {
+  width: 120px;
+}
+#st-2:not(.st-has-labels) .st-btn:hover {
+  width: 62px;
+}
+#st-2 .st-btn.st-hide-label:hover {
+  width: 62px;
+}
+#st-2 .st-btn:hover > svg {
+  margin-left: 5px;
+}
+#st-2 .st-btn:hover > img {
+  margin-left: 5px;
+}
+#st-2 .st-btn:hover > span {
+  opacity: 1;
+  display: inline-block;
+  left: 0;
+  filter: alpha(opacity=100);
+}
+@media (max-width: 1024px) {
+  #st-2 .st-btn:hover > svg {
+    margin-left: 0;
+  }
+  #st-2 .st-btn:hover > span {
+    display: none;
+  }
+}@media (max-width: 1024px) {
+  #st-2 {
+  bottom: 0;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: auto;
+  width: 100%;
+}
+#st-2.st-hidden {
+  bottom: -48px;
+  width: 100%;
+}
+#st-2.st-hidden.st-left {
+  left: 0;
+}
+#st-2.st-hidden.st-right {
+  right: 0;
+}
+#st-2 > div {
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  clear: none;
+  flex: 1;
+  float: none;
+}
+#st-2 .st-total {
+  background: #fff;
+  padding: 6px 8px;
+}
+#st-2 .st-btn {
+  -moz-border-radius: 0 !important;
+-webkit-border-radius: 0 !important;
+border-radius: 0 !important;
+  text-align: center;
+  width: auto;
+}
+#st-2 .st-btn > span {
+  display: none;
+}
+#st-2 .st-toggle {
+  display: none;
+}body { padding-bottom: 48px; }
+}#st-2 .st-btn[data-network='facebook'] {
+  background-color: #4267B2
+}
+#st-2 .st-btn[data-network='facebook'] img {
+  filter: 
+}
+#st-2 .st-btn[data-network='facebook'] > span {
+  color: #fff
+}
+#st-2 .st-btn[data-network='twitter'] {
+  background-color: #55acee
+}
+#st-2 .st-btn[data-network='twitter'] img {
+  filter: 
+}
+#st-2 .st-btn[data-network='twitter'] > span {
+  color: #fff
+}
+#st-2 .st-btn[data-network='whatsapp'] {
+  background-color: #25d366
+}
+#st-2 .st-btn[data-network='whatsapp'] img {
+  filter: 
+}
+#st-2 .st-btn[data-network='whatsapp'] > span {
+  color: #fff
+}
+#st-2 .st-btn[data-network='linkedin'] {
+  background-color: #0077b5
+}
+#st-2 .st-btn[data-network='linkedin'] img {
+  filter: 
+}
+#st-2 .st-btn[data-network='linkedin'] > span {
+  color: #fff
+}#st-2 .st-btn[data-network='snapchat'] > span {
+  color: #333};
+}</style></head> <body data-hold="" class="post-page"> <header class="header container container--full" role="banner"> <button class="navigation-button" role="button" data-nav-button="">Menu</button> <nav class="navigation" role="menu" data-navigation=""> <a class="navigation__link" href="https://raphaelfabeni.com/">✨ Home</a> <a class="navigation__link" href="https://raphaelfabeni.com/blog">🇺🇸 Blog</a> <a class="navigation__link" href="https://raphaelfabeni.com/pt-br/blog">🇧🇷 Blog</a> <a class="navigation__link" href="https://raphaelfabeni.com/my-closet">🗃Closet</a> <a class="navigation__link" href="https://raphaelfabeni.com/thoughts">💭 Thoughts</a> <a class="navigation__link" href="https://raphaelfabeni.com/gear">⚙️ Gear</a> <button class="navigation__close" role="button" data-nav-close="">x</button> </nav> <div class="header__info"> <div> <h1 class="header__title"><a href="https://raphaelfabeni.com/">Raphael Fabeni</a></h1> <!-- <h2 class="header__subtitle">Front-end developer</h2> --> </div> </div> </header> <div class="container container--full-np"> <div class="header-post" style="background-image: url(https://cloud.githubusercontent.com/assets/1345662/11520648/792ca134-988c-11e5-8d8a-3e5eb70b2bd7.jpg);"> <button class="header-post__arrow" data-post-arrow=""></button> </div> <h1 class="post-title" data-post-title="">BEM CSS</h1> </div> <div class="full"> <div class="container container--small container--spacing"> <article role="main" class="post-content"> <p>CSS is easy to learn? Most would say that yes, mainly because of the facility and the possibility of quickly seeing what we are doing. However, of course, that exists negative points and, when we talk about them, one of the principal is related to maintenance/organization of CSS.</p> <p>Open a file and writing CSS is very easy and quick; however, give maintenance, organize it, and scale it are not trivial things. As your project grows, you start to lose patience with CSS or <em>break windows</em> get bigger and bigger. A good reading tip is an article (in pt-BR) <a href="https://medium.com/@shankarcabus/css-escalavel-parte-1-41e7e863799e#.4hmtk7tuv">Scalable CSS</a> do <a href="https://twitter.com/shankarcabus?lang=pt">Shankar Cabus</a>.</p> <h2 id="bem-css">BEM CSS</h2> <p>Several alternatives/thoughts/methodologies attempt to correct and assist in organizing and structuring a CSS project. One is the <strong>BEM</strong> (<em>Block Element Modifier</em>), created by the <strong>Yandex</strong> guys, a Russian search site.</p> <p>As can be noted, the basic idea is to have three things:</p> <ul> <li><em>Block</em> =&gt; like a component. The father.</li> <li><em>Element</em> =&gt; part (s) which form (s) a block;</li> <li><em>Modifier</em> =&gt; A possible status of the two previous items.</li> </ul> <p>Huh?! Imagine a list of items with an active item, something more like this:</p> <script src="./BEM CSS - Blog _ Raphael Fabeni_files/d0160a9ac2a44f687c16a936c4ce7794.js.download"> </script><link rel="stylesheet" href="./BEM CSS - Blog _ Raphael Fabeni_files/gist-embed-862c6e83e243.css"><div id="gist95931368" class="gist">
+    <div class="gist-file" translate="no">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-css-bem-01-html" class="file my-2">
+    
+    <div itemprop="text" class="Box-body p-0 blob-wrapper data type-html  ">
+
+        
+<div class="js-check-bidi js-blob-code-container blob-code-content">
+
+  <template class="js-file-alert-template"></template>
+<template class="js-line-alert-template"></template>
+
+  <table data-hpc="" class="highlight tab-size js-file-line-container js-code-nav-container js-tagsearch-file js-search-container" data-tab-size="8" data-paste-markdown-skip="" data-tagsearch-lang="HTML" data-tagsearch-path="css-bem-01.html">
+        <tbody><tr>
+          <td id="file-css-bem-01-html-L1" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="1"></td>
+          <td id="file-css-bem-01-html-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">ul</span> <span class="pl-c1">class</span>="<span class="pl-s">list</span>"<span class="pl-kos">&gt;</span></td>
+        </tr>
+        <tr>
+          <td id="file-css-bem-01-html-L2" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="2"></td>
+          <td id="file-css-bem-01-html-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">li</span> <span class="pl-c1">class</span>="<span class="pl-s">list-item active</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span></td>
+        </tr>
+        <tr>
+          <td id="file-css-bem-01-html-L3" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="3"></td>
+          <td id="file-css-bem-01-html-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">li</span> <span class="pl-c1">class</span>="<span class="pl-s">list-item</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span></td>
+        </tr>
+        <tr>
+          <td id="file-css-bem-01-html-L4" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="4"></td>
+          <td id="file-css-bem-01-html-LC4" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">li</span> <span class="pl-c1">class</span>="<span class="pl-s">list-item</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span></td>
+        </tr>
+        <tr>
+          <td id="file-css-bem-01-html-L5" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="5"></td>
+          <td id="file-css-bem-01-html-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;/</span><span class="pl-ent">ul</span><span class="pl-kos">&gt;</span></td>
+        </tr>
+  </tbody></table>
+</div>
+
+
+    </div>
+
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/raphaelfabeni/d0160a9ac2a44f687c16a936c4ce7794/raw/3a18080ac3acddb8535ce1cbf36958d5fa4e9158/css-bem-01.html" style="float:right">view raw</a>
+        <a href="https://gist.github.com/raphaelfabeni/d0160a9ac2a44f687c16a936c4ce7794#file-css-bem-01-html">
+          css-bem-01.html
+        </a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+ <script src="./BEM CSS - Blog _ Raphael Fabeni_files/0cff30a4a26cd400ff465c86f3326cf0.js.download"> </script><link rel="stylesheet" href="./BEM CSS - Blog _ Raphael Fabeni_files/gist-embed-862c6e83e243.css"><div id="gist95931374" class="gist">
+    <div class="gist-file" translate="no">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-css-bem-02-css" class="file my-2">
+    
+    <div itemprop="text" class="Box-body p-0 blob-wrapper data type-css  ">
+
+        
+<div class="js-check-bidi js-blob-code-container blob-code-content">
+
+  <template class="js-file-alert-template"></template>
+<template class="js-line-alert-template"></template>
+
+  <table data-hpc="" class="highlight tab-size js-file-line-container js-code-nav-container js-tagsearch-file js-search-container" data-tab-size="8" data-paste-markdown-skip="" data-tagsearch-lang="CSS" data-tagsearch-path="css-bem-02.css">
+        <tbody><tr>
+          <td id="file-css-bem-02-css-L1" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="1"></td>
+          <td id="file-css-bem-02-css-LC1" class="blob-code blob-code-inner js-file-line">.<span class="pl-c1">list</span> {}</td>
+        </tr>
+        <tr>
+          <td id="file-css-bem-02-css-L2" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="2"></td>
+          <td id="file-css-bem-02-css-LC2" class="blob-code blob-code-inner js-file-line">.<span class="pl-c1">list-item</span> {}</td>
+        </tr>
+        <tr>
+          <td id="file-css-bem-02-css-L3" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="3"></td>
+          <td id="file-css-bem-02-css-LC3" class="blob-code blob-code-inner js-file-line">.<span class="pl-c1">list-item</span>.<span class="pl-c1">active</span> {}</td>
+        </tr>
+  </tbody></table>
+</div>
+
+
+    </div>
+
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/raphaelfabeni/0cff30a4a26cd400ff465c86f3326cf0/raw/95b939fb9f1d966fac2e89f2aff012b92a7cd29d/css-bem-02.css" style="float:right">view raw</a>
+        <a href="https://gist.github.com/raphaelfabeni/0cff30a4a26cd400ff465c86f3326cf0#file-css-bem-02-css">
+          css-bem-02.css
+        </a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+ <p>Applying the <em>BEM</em>, we have something like this:</p> <script src="./BEM CSS - Blog _ Raphael Fabeni_files/891e8543949e0669cc81978e21942d13.js.download"> </script><link rel="stylesheet" href="./BEM CSS - Blog _ Raphael Fabeni_files/gist-embed-862c6e83e243.css"><div id="gist95931379" class="gist">
+    <div class="gist-file" translate="no">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-css-bem-03-html" class="file my-2">
+    
+    <div itemprop="text" class="Box-body p-0 blob-wrapper data type-html  ">
+
+        
+<div class="js-check-bidi js-blob-code-container blob-code-content">
+
+  <template class="js-file-alert-template"></template>
+<template class="js-line-alert-template"></template>
+
+  <table data-hpc="" class="highlight tab-size js-file-line-container js-code-nav-container js-tagsearch-file js-search-container" data-tab-size="8" data-paste-markdown-skip="" data-tagsearch-lang="HTML" data-tagsearch-path="css-bem-03.html">
+        <tbody><tr>
+          <td id="file-css-bem-03-html-L1" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="1"></td>
+          <td id="file-css-bem-03-html-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">ul</span> <span class="pl-c1">class</span>="<span class="pl-s">list</span>"<span class="pl-kos">&gt;</span></td>
+        </tr>
+        <tr>
+          <td id="file-css-bem-03-html-L2" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="2"></td>
+          <td id="file-css-bem-03-html-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">li</span> <span class="pl-c1">class</span>="<span class="pl-s">list__item</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span></td>
+        </tr>
+        <tr>
+          <td id="file-css-bem-03-html-L3" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="3"></td>
+          <td id="file-css-bem-03-html-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">li</span> <span class="pl-c1">class</span>="<span class="pl-s">list__item</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span></td>
+        </tr>
+        <tr>
+          <td id="file-css-bem-03-html-L4" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="4"></td>
+          <td id="file-css-bem-03-html-LC4" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">li</span> <span class="pl-c1">class</span>="<span class="pl-s">list__item list__item--active</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span></td>
+        </tr>
+        <tr>
+          <td id="file-css-bem-03-html-L5" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="5"></td>
+          <td id="file-css-bem-03-html-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;/</span><span class="pl-ent">ul</span><span class="pl-kos">&gt;</span></td>
+        </tr>
+  </tbody></table>
+</div>
+
+
+    </div>
+
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/raphaelfabeni/891e8543949e0669cc81978e21942d13/raw/d1c221f61789d33a199357104de49d28d5a32efb/css-bem-03.html" style="float:right">view raw</a>
+        <a href="https://gist.github.com/raphaelfabeni/891e8543949e0669cc81978e21942d13#file-css-bem-03-html">
+          css-bem-03.html
+        </a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+ <script src="./BEM CSS - Blog _ Raphael Fabeni_files/64909d9f695c856d4483bb5b305afc4e.js.download"> </script><link rel="stylesheet" href="./BEM CSS - Blog _ Raphael Fabeni_files/gist-embed-862c6e83e243.css"><div id="gist95931386" class="gist">
+    <div class="gist-file" translate="no">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-css-bem-04-css" class="file my-2">
+    
+    <div itemprop="text" class="Box-body p-0 blob-wrapper data type-css  ">
+
+        
+<div class="js-check-bidi js-blob-code-container blob-code-content">
+
+  <template class="js-file-alert-template"></template>
+<template class="js-line-alert-template"></template>
+
+  <table data-hpc="" class="highlight tab-size js-file-line-container js-code-nav-container js-tagsearch-file js-search-container" data-tab-size="8" data-paste-markdown-skip="" data-tagsearch-lang="CSS" data-tagsearch-path="css-bem-04.css">
+        <tbody><tr>
+          <td id="file-css-bem-04-css-L1" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="1"></td>
+          <td id="file-css-bem-04-css-LC1" class="blob-code blob-code-inner js-file-line">.<span class="pl-c1">list</span> {}</td>
+        </tr>
+        <tr>
+          <td id="file-css-bem-04-css-L2" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="2"></td>
+          <td id="file-css-bem-04-css-LC2" class="blob-code blob-code-inner js-file-line">.<span class="pl-c1">list__item</span> {}</td>
+        </tr>
+        <tr>
+          <td id="file-css-bem-04-css-L3" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="3"></td>
+          <td id="file-css-bem-04-css-LC3" class="blob-code blob-code-inner js-file-line">.<span class="pl-c1">list__item--active</span> {}</td>
+        </tr>
+  </tbody></table>
+</div>
+
+
+    </div>
+
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/raphaelfabeni/64909d9f695c856d4483bb5b305afc4e/raw/c5a66de17f9e8675640368bcc495d53f25067a09/css-bem-04.css" style="float:right">view raw</a>
+        <a href="https://gist.github.com/raphaelfabeni/64909d9f695c856d4483bb5b305afc4e#file-css-bem-04-css">
+          css-bem-04.css
+        </a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+ <p>I need to admit that some time ago when I discovered the <strong>BEM</strong> methodology, I thought: <em>“This is so weird!”</em>. All those <code class="language-plaintext highlighter-rouge">__</code> and <code class="language-plaintext highlighter-rouge">--</code> were so strange. But now that I know more about the idea, I can say that it convinced me. Of course, like any other thoughts/methodologies, there are positive and negative points, and it is up to you, give the final word.</p> <p>Only some topics that I realized using the <strong>BEM</strong> (but are my opinions):</p> <ul> <li>Easy <em>perception</em> of things: looking quickly at the HTML markup or CSS, you can understand what each thing does.</li> <li>Easier reuse of <em>components</em>.</li> </ul> </article> <a href="https://raphaelfabeni.com/blog/" class="button button--default button--big button--center">More posts</a> </div> </div> <a rel="author" class="sr-only" href="https://plus.google.com/u/0/+RaphaelFabeni">Raphael Fabeni</a> <script src="./BEM CSS - Blog _ Raphael Fabeni_files/home.min.js.download"></script> <script src="./BEM CSS - Blog _ Raphael Fabeni_files/arrow.min.js.download"></script> <script type="text/javascript" src="./BEM CSS - Blog _ Raphael Fabeni_files/sharethis.js.download" async="async"></script>  
+<iframe id="netlify-identity-widget" title="Netlify identity widget" style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; " src="./BEM CSS - Blog _ Raphael Fabeni_files/saved_resource.html"></iframe><div id="st-2" class=" st-sticky-share-buttons st-left st-toggleable st-has-labels "><div class="st-btn st-first" data-network="facebook" style="display: inline-block;">
+  <img alt="facebook sharing button" src="./BEM CSS - Blog _ Raphael Fabeni_files/facebook.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-btn" data-network="twitter" style="display: inline-block;">
+  <img alt="twitter sharing button" src="./BEM CSS - Blog _ Raphael Fabeni_files/twitter.svg">
+  <span class="st-label">Tweet</span>
+</div><div class="st-btn" data-network="whatsapp" style="display: inline-block;">
+  <img alt="whatsapp sharing button" src="./BEM CSS - Blog _ Raphael Fabeni_files/whatsapp.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-btn st-last" data-network="linkedin" style="display: inline-block;">
+  <img alt="linkedin sharing button" src="./BEM CSS - Blog _ Raphael Fabeni_files/linkedin.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-toggle">
+  <div class="st-left">
+    <img alt="arrow_left sharing button" src="./BEM CSS - Blog _ Raphael Fabeni_files/arrow_left.svg">
+  </div>
+  <div class="st-right">
+    <img alt="arrow_right sharing button" src="./BEM CSS - Blog _ Raphael Fabeni_files/arrow_right.svg">
+  </div>
+</div></div><script src="https://www.instagram.com/embed.js" async=""></script></body></html>

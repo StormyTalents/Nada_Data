@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://cdpn.io/team/css-tricks/fullembedgrid/bdVNEV?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - SVG Fallbacks: Inline SVG Icons</title>
+  <meta name="viewport" content="width=device-width">
+  
+  <link rel="stylesheet" href="./myvGPN.css">
+  
+<style>
+.svg-defs {
+  position: absolute;
+  height: 0; width: 0;
+  overflow: hidden;
+}
+svg.icon {
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+}
+p {
+  font-size: 125%;
+}
+
+/* fallback styles */
+.icon a, 
+.icon + a { 
+  /* The first selector is for Android, the second for IE.
+     The sibling selector is because old IE won't treat
+     an unrecognized element as a container.
+  */
+  display: inline;
+  display: inline-block;
+  min-height: 24px;
+  min-width: 24px;
+  background-position: center;
+  background-color: #AAF;  
+    /* color is not required, it is included 
+       so you can see the size of the element
+       if the image does not load */
+}
+.icon .svg-status,
+.icon + .svg-status{
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/91525/svg-no-24x24.png');
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <h1>IE7+ Fallback Inline SVG icons using background images </h1>
+<div class="svg-defs">
+<svg>
+  <symbol id="svg-ok" viewBox="-20 -20 40 40">
+    <title>SVG OK</title>
+    <circle fill="limegreen" r="19"></circle>
+    <path stroke="forestgreen" fill="none" stroke-width="6" d="M-12,3 L-3,10 11,-12"></path>
+    <text dy="0.35em" text-anchor="middle" font-weight="bold" font-size="18px" font-family="sans-serif" fill="indigo">SVG</text>
+  </symbol>
+</svg>
+</div>
+<p>Somewhere in the text...
+<svg class="icon">
+  <a class="svg-status"></a>
+  <use xlink:href="#svg-ok"></use>
+</svg>
+...there is an icon</p>
+  
+  
+  
+  
+
+  <script src="./iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js.download"></script>
+
+
+
+ 
+</body></html>

@@ -1,0 +1,88 @@
+import { Typography } from '@material-ui/core';
+import { formatDistance } from 'date-fns';
+import React, { useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import slugify from 'slugify';
+import styled from 'styled-components';
+import { NumberParam, useQueryParam } from 'use-query-params';
+
+import { chooseContentTypeColor } from '../../common/home/home';
+import { useFindContents } from '../../hooks/contents/useFindContents';
+
+const StyledDiv = styled.div`
+  a:hover {
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  .title {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .summary {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+`;
+const HomeArticlesCard: React.FC<{ showLimit?: number; columns?: number }> = ({
+  showLimit,
+  columns = 3,
+}) => {
+  const navigate = useNavigate();
+  const { findContents, contentList } = useFindContents(false);
+  const [page = 0, setPage] = useQueryParam('page', NumberParam);
+  const [limit = showLimit || 100, setLimit] = useQueryParam(
+    'limit',
+    NumberParam
+  );
+
+  useEffect(() => {
+    findContents({
+      limit,
+    });
+  }, []);
+  return (
+    <StyledDiv>
+      <div className={``}>
+        {contentList?.data?.map((content) => (
+          <div>
+            <Link
+              to={`/articles/${content?.id}/${slugify(content?.title)}`}
+              className='block mt-4'
+            >
+              <p className='text-xl font-semibold text-gray-900 title'>
+                <span
+                  className={`inline-flex  mr-4 items-center px-3 py-0.5 rounded-full text-sm font-medium ${chooseContentTypeColor(
+                    content.contenttype?.name
+                  )}`}
+                >
+                  {content.contenttype?.name || 'Blog'}
+                </span>
+
+                {content.title}
+                <Typography variant='caption'>
+                  {' '}
+                  -{' '}
+                  <time dateTime='2020-03-16'>
+                    {content.created &&
+                      formatDistance(content.created, new Date(), {
+                        addSuffix: true,
+                      })}
+                  </time>
+                </Typography>
+              </p>
+              <p className='mt-3 text-base text-gray-500 summary'>
+                {content.summary}
+              </p>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </StyledDiv>
+  );
+};
+
+export default HomeArticlesCard;

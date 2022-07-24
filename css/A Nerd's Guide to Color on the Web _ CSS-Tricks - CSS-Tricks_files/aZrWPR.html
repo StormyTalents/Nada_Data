@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://cdpn.io/sdras/fullembedgrid/aZrWPR?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - Animating transparent mask</title>
+  
+  
+  
+  
+<style>
+html, body {
+  background: #000;
+}
+
+svg {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -250px;
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <svg width="500" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <lineargradient id="Gradient">
+      <stop id="stop1" offset="-0.41200000000000025" stop-color="white" stop-opacity="0"></stop>
+      <stop id="stop2" offset="0.5879999999999997" stop-color="white" stop-opacity="1"></stop>
+    </lineargradient>
+    <mask id="Mask">
+      <rect x="0" y="0" width="500" height="200" fill="url(#Gradient)"></rect>
+    </mask>
+  </defs>
+
+  <rect x="0" y="0" width="500" height="200" fill="#480048"></rect>
+  <rect x="0" y="0" width="500" height="200" fill="#C04848" mask="url(#Mask)"></rect>
+</svg>
+    <script src="./stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js.download"></script>
+
+  <script src="./TweenMax.min.js.download"></script>
+      <script id="rendered-js">
+TweenMax.fromTo("#stop1", 1.5, {
+  attr: { offset: -1 } },
+{
+  attr: { offset: 1 },
+  repeat: -1,
+  yoyo: true,
+  ease: Linear.easeNone });
+
+TweenMax.fromTo("#stop2", 1.5, {
+  attr: { offset: 0 } },
+{
+  attr: { offset: 2 },
+  repeat: -1,
+  yoyo: true,
+  ease: Linear.easeNone });
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src="./iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js.download"></script>
+
+
+
+ 
+</body></html>

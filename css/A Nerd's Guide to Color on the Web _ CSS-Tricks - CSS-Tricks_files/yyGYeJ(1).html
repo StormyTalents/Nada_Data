@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://codepen.io/anon/embed/yyGYeJ?height=450&theme-id=1&slug-hash=yyGYeJ&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - Playing with Lists and Scroll</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="LhoifZvGC+Nj50ih+/Sd0907mCNogAaTVwwtuqsXjdCwWgr5X76+plQDEji5iV2eYWzvotfq6uZdAMK+BhLVyw==">
+<link rel="stylesheet" media="all" href="./embed-cfcfc09d3a2a2d8442e259e76ffd024c6c4f053ad5f0a901b60b61cd48dd31e2.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #28282a;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./highcontrast-dark-6be871a736c4bb4dcfd61a856f05a32a290df49061bbbf884cd741080c0644eb.css">
+<link rel="stylesheet" href="./maVRwd.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/anon/embed/yyGYeJ?height=450&amp;theme-id=1&amp;slug-hash=yyGYeJ&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/anon/embed/yyGYeJ?height=450&amp;theme-id=1&amp;slug-hash=yyGYeJ&amp;default-tab=result#css-box" role="button" aria-pressed="false">
+SCSS
+</a>
+</li>
+<li class="code-type">
+<a id="js-link" href="https://codepen.io/anon/embed/yyGYeJ?height=450&amp;theme-id=1&amp;slug-hash=yyGYeJ&amp;default-tab=result#js-box" role="button" aria-pressed="false">
+JS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/anon/embed/yyGYeJ?height=450&amp;theme-id=1&amp;slug-hash=yyGYeJ&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/anon/embed/yyGYeJ?height=450&amp;theme-id=1&amp;slug-hash=yyGYeJ&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/sdras/pen/yyGYeJ" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">article</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>Scroll the List Below<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ul</span> <span class="cm-attribute">class</span>=<span class="cm-string">"fly-reverse"</span><span class="cm-tag cm-bracket">&gt;</span>  
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>One<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Two<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Three<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Four<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Five<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Six<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Seven<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eight<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Nine<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Ten<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eleven<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Twelve<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Thirteen<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fourteen<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fifteen<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Sixteen<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Seventeen<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eighteen<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Nineteen<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Twenty<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Twentyone<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Twentytwo<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Twentythree<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Twentyfour<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Twentyfive<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Twentysix<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Twentyseven<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Twentyeight<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Twentynine<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Thirty<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Thirtyone<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Thirtytwo<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Thirtythree<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Thirtyfour<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Thirtyfive<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Thirtysix<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Thirtyseven<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Thirtyeight<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Thirtynine<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fourty<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fourtyone<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fourtytwo<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fourtythree<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fourtyfour<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fourtyfive<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fourtysix<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fourtyseven<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fourtyeight<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fourtynine<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fifty<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fiftyone<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fiftytwo<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fiftythree<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fiftyfour<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fiftyfive<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fiftysix<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fiftyseven<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fiftyeight<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Fiftynine<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Sixty<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Sixtyone<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Sixtytwo<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Sixtythree<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Sixtyfour<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Sixtyfive<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Sixtysix<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Sixtyseven<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Sixtyeight<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Sixtynine<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Seventy<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Seventyone<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Seventytwo<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Seventythree<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Seventyfour<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Seventyfive<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Seventysix<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Seventyseven<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Seventyeight<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Seventynine<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eighty<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eightyone<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eightytwo<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eightythree<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eightyfour<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eightyfive<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eightysix<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eightyseven<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eightyeight<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Eightynine<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Ninety<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Ninetyone<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Ninetytwo<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Ninetythree<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Ninetyfour<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Ninetyfive<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Ninetysix<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Ninetyseven<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Ninetyeight<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Ninetynine<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ul</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">article</span><span class="cm-tag cm-bracket">&gt;</span>
+</code></pre>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code" class=" cm-s-default"><span class="cm-def">@mixin</span> <span class="cm-variable cm-callee">colors</span>(<span class="cm-variable-2">$max-count</span>, <span class="cm-variable-2">$color-frequency</span>){
+  <span class="cm-variable-2">$color</span>: <span class="cm-number">360</span><span class="cm-operator">/</span><span class="cm-variable-2">$max-count</span>;
+  
+  <span class="cm-def">@for</span> <span class="cm-variable-2">$i</span> <span class="cm-tag">from</span> <span class="cm-number">1</span> <span class="cm-tag">through</span> <span class="cm-variable-2">$max-count</span> {
+    &amp;:<span class="cm-variable cm-callee">nth-child</span>(#{<span class="cm-variable-2">$max-count</span>}<span class="cm-variable">n</span> + #{<span class="cm-variable-2">$i</span>}) {
+      <span class="cm-property">background</span>: <span class="cm-variable cm-callee">hsl</span>((<span class="cm-variable-2">$i</span> - <span class="cm-number">1</span>)*(<span class="cm-variable-2">$color</span> <span class="cm-operator">/</span> <span class="cm-variable-2">$color-frequency</span>), <span class="cm-number">80%</span>, <span class="cm-number">60%</span>);
+      <span class="cm-property">color</span>: <span class="cm-variable cm-callee">hsl</span>((<span class="cm-variable-2">$i</span> - <span class="cm-number">1</span>)*(<span class="cm-variable-2">$color</span> <span class="cm-operator">/</span> <span class="cm-variable-2">$color-frequency</span>), <span class="cm-number">80%</span>, <span class="cm-number">50%</span>);
+    }
+  }
+}
+
+<span class="cm-tag">body</span> {
+  <span class="cm-property">background</span>: <span class="cm-atom">#222</span>;
+  <span class="cm-property">font-family</span>: <span class="cm-string">'Gudea'</span>, <span class="cm-atom">sans-serif</span>;
+  <span class="cm-property">font-weight</span>: <span class="cm-atom">bold</span>;
+  <span class="cm-property">font-size</span>: <span class="cm-number">16px</span>;
+  <span class="cm-property">margin-bottom</span>: <span class="cm-number">40px</span>;
+  <span class="cm-property">line-height</span>: <span class="cm-number">1</span>;
+}
+
+<span class="cm-tag">article</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">inline-block</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">20px</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">90%</span>;
+  <span class="cm-property">margin-left</span>: <span class="cm-number">5%</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">280px</span>;
+  <span class="cm-tag">h2</span> { 
+    <span class="cm-property">color</span>: <span class="cm-atom">#ccc</span>; 
+    <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+    <span class="cm-property">margin-top</span>: <span class="cm-number">0</span>;
+  }
+}
+
+<span class="cm-tag">ul</span> {
+  <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">280px</span>;
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">overflow-x</span>: <span class="cm-atom">hidden</span>;
+  <span class="cm-property">overflow-y</span>: <span class="cm-atom">scroll</span>;
+  <span class="cm-property">list-style</span>: <span class="cm-atom">none</span>;
+  <span class="cm-property">perspective</span>: <span class="cm-number">400px</span>;
+  <span class="cm-tag">li</span> {
+    <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+    <span class="cm-property">padding</span>: <span class="cm-number">15px</span>;
+    <span class="cm-property">background</span>: <span class="cm-atom">#eee</span>;
+    <span class="cm-property">color</span>: <span class="cm-atom">#252525</span>;
+    <span class="cm-property">font-size</span>: <span class="cm-number">18px</span>;
+    <span class="cm-property">z-index</span>: <span class="cm-number">2</span>;
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translateZ</span>(<span class="cm-number">0px</span>);
+    <span class="cm-def">@include</span> <span class="cm-variable cm-callee">colors</span>(<span class="cm-number">50</span>,<span class="cm-number">1</span>); 
+    <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+  }
+}
+
+<span class="cm-qualifier">.fly-reverse</span> {
+  <span class="cm-property">perspective</span>: <span class="cm-number">400px</span>;
+  <span class="cm-property">perspective-origin</span>: <span class="cm-number">50%</span> <span class="cm-number">50%</span>;
+    <span class="cm-tag">li</span> {
+      <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">600ms</span> <span class="cm-atom">ease</span>, <span class="cm-atom">opacity</span> <span class="cm-number">300ms</span> <span class="cm-atom">ease</span>;
+      <span class="cm-property">transform-origin</span>: <span class="cm-number">50%</span> <span class="cm-number">50%</span> <span class="cm-number">-50px</span>;
+      &amp;<span class="cm-qualifier">.past</span> {
+        <span class="cm-property">opacity</span>: <span class="cm-number">0</span>;
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotateX</span>( <span class="cm-number">-180deg</span> );
+      }
+      &amp;<span class="cm-qualifier">.future</span> {
+        <span class="cm-property">opacity</span>: <span class="cm-number">0</span>;
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotateX</span>( <span class="cm-number">180deg</span> );
+      }
+    }
+  }</code></pre>
+<a href="https://codepen.io/anon/embed/yyGYeJ?height=450&amp;theme-id=1&amp;slug-hash=yyGYeJ&amp;default-tab=result#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+View Compiled
+</a>
+</div>
+<div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+<pre tabindex="0"><code data-lang="javascript" id="actual-js-code" class=" cm-s-default"><span class="cm-variable">stroll</span>.<span class="cm-property">bind</span>( <span class="cm-string">'ul.fly-reverse'</span> );</code></pre>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Playing with Lists and Scroll" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" scrolling="yes" title="CodePen Preview for Playing with Lists and Scroll" data-src="https://cdpn.io/sdras/fullembedgrid/yyGYeJ?animations=run&amp;type=embed" src="./yyGYeJ.html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/sdras" target="_blank" rel="noopener"><img src="./default.png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/sdras" target="_blank" rel="noopener">Sarah Drasner</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/sdras" target="_blank" rel="noopener" class="about-user-more">
+See more by @sdras on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<ol class="list-of-resources">
+<li>
+<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/stroll.min.js" target="_blank">https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/stroll.min.js</a>
+</li>
+</ol>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;article&gt;\n  &lt;h2&gt;Scroll the List Below&lt;/h2&gt;\n\t\t\t\t  &lt;ul class=&quot;fly-reverse&quot;&gt;  \n    &lt;li&gt;One&lt;/li&gt;&lt;li&gt;Two&lt;/li&gt;&lt;li&gt;Three&lt;/li&gt;&lt;li&gt;Four&lt;/li&gt;&lt;li&gt;Five&lt;/li&gt;&lt;li&gt;Six&lt;/li&gt;&lt;li&gt;Seven&lt;/li&gt;&lt;li&gt;Eight&lt;/li&gt;&lt;li&gt;Nine&lt;/li&gt;&lt;li&gt;Ten&lt;/li&gt;&lt;li&gt;Eleven&lt;/li&gt;&lt;li&gt;Twelve&lt;/li&gt;&lt;li&gt;Thirteen&lt;/li&gt;&lt;li&gt;Fourteen&lt;/li&gt;&lt;li&gt;Fifteen&lt;/li&gt;&lt;li&gt;Sixteen&lt;/li&gt;&lt;li&gt;Seventeen&lt;/li&gt;&lt;li&gt;Eighteen&lt;/li&gt;&lt;li&gt;Nineteen&lt;/li&gt;&lt;li&gt;Twenty&lt;/li&gt;&lt;li&gt;Twentyone&lt;/li&gt;&lt;li&gt;Twentytwo&lt;/li&gt;&lt;li&gt;Twentythree&lt;/li&gt;&lt;li&gt;Twentyfour&lt;/li&gt;&lt;li&gt;Twentyfive&lt;/li&gt;&lt;li&gt;Twentysix&lt;/li&gt;&lt;li&gt;Twentyseven&lt;/li&gt;&lt;li&gt;Twentyeight&lt;/li&gt;&lt;li&gt;Twentynine&lt;/li&gt;&lt;li&gt;Thirty&lt;/li&gt;&lt;li&gt;Thirtyone&lt;/li&gt;&lt;li&gt;Thirtytwo&lt;/li&gt;&lt;li&gt;Thirtythree&lt;/li&gt;&lt;li&gt;Thirtyfour&lt;/li&gt;&lt;li&gt;Thirtyfive&lt;/li&gt;&lt;li&gt;Thirtysix&lt;/li&gt;&lt;li&gt;Thirtyseven&lt;/li&gt;&lt;li&gt;Thirtyeight&lt;/li&gt;&lt;li&gt;Thirtynine&lt;/li&gt;&lt;li&gt;Fourty&lt;/li&gt;&lt;li&gt;Fourtyone&lt;/li&gt;&lt;li&gt;Fourtytwo&lt;/li&gt;&lt;li&gt;Fourtythree&lt;/li&gt;&lt;li&gt;Fourtyfour&lt;/li&gt;&lt;li&gt;Fourtyfive&lt;/li&gt;&lt;li&gt;Fourtysix&lt;/li&gt;&lt;li&gt;Fourtyseven&lt;/li&gt;&lt;li&gt;Fourtyeight&lt;/li&gt;&lt;li&gt;Fourtynine&lt;/li&gt;&lt;li&gt;Fifty&lt;/li&gt;&lt;li&gt;Fiftyone&lt;/li&gt;&lt;li&gt;Fiftytwo&lt;/li&gt;&lt;li&gt;Fiftythree&lt;/li&gt;&lt;li&gt;Fiftyfour&lt;/li&gt;&lt;li&gt;Fiftyfive&lt;/li&gt;&lt;li&gt;Fiftysix&lt;/li&gt;&lt;li&gt;Fiftyseven&lt;/li&gt;&lt;li&gt;Fiftyeight&lt;/li&gt;&lt;li&gt;Fiftynine&lt;/li&gt;&lt;li&gt;Sixty&lt;/li&gt;&lt;li&gt;Sixtyone&lt;/li&gt;&lt;li&gt;Sixtytwo&lt;/li&gt;&lt;li&gt;Sixtythree&lt;/li&gt;&lt;li&gt;Sixtyfour&lt;/li&gt;&lt;li&gt;Sixtyfive&lt;/li&gt;&lt;li&gt;Sixtysix&lt;/li&gt;&lt;li&gt;Sixtyseven&lt;/li&gt;&lt;li&gt;Sixtyeight&lt;/li&gt;&lt;li&gt;Sixtynine&lt;/li&gt;&lt;li&gt;Seventy&lt;/li&gt;&lt;li&gt;Seventyone&lt;/li&gt;&lt;li&gt;Seventytwo&lt;/li&gt;&lt;li&gt;Seventythree&lt;/li&gt;&lt;li&gt;Seventyfour&lt;/li&gt;&lt;li&gt;Seventyfive&lt;/li&gt;&lt;li&gt;Seventysix&lt;/li&gt;&lt;li&gt;Seventyseven&lt;/li&gt;&lt;li&gt;Seventyeight&lt;/li&gt;&lt;li&gt;Seventynine&lt;/li&gt;&lt;li&gt;Eighty&lt;/li&gt;&lt;li&gt;Eightyone&lt;/li&gt;&lt;li&gt;Eightytwo&lt;/li&gt;&lt;li&gt;Eightythree&lt;/li&gt;&lt;li&gt;Eightyfour&lt;/li&gt;&lt;li&gt;Eightyfive&lt;/li&gt;&lt;li&gt;Eightysix&lt;/li&gt;&lt;li&gt;Eightyseven&lt;/li&gt;&lt;li&gt;Eightyeight&lt;/li&gt;&lt;li&gt;Eightynine&lt;/li&gt;&lt;li&gt;Ninety&lt;/li&gt;&lt;li&gt;Ninetyone&lt;/li&gt;&lt;li&gt;Ninetytwo&lt;/li&gt;&lt;li&gt;Ninetythree&lt;/li&gt;&lt;li&gt;Ninetyfour&lt;/li&gt;&lt;li&gt;Ninetyfive&lt;/li&gt;&lt;li&gt;Ninetysix&lt;/li&gt;&lt;li&gt;Ninetyseven&lt;/li&gt;&lt;li&gt;Ninetyeight&lt;/li&gt;&lt;li&gt;Ninetynine&lt;/li&gt;\n  &lt;/ul&gt;\n\t\t\t&lt;/article&gt;","css":"body {\n  background: #222;\n  font-family: &quot;Gudea&quot;, sans-serif;\n  font-weight: bold;\n  font-size: 16px;\n  margin-bottom: 40px;\n  line-height: 1;\n}\n\narticle {\n  display: inline-block;\n  margin: 20px;\n  width: 90%;\n  margin-left: 5%;\n  height: 280px;\n}\narticle h2 {\n  color: #ccc;\n  text-align: center;\n  margin-top: 0;\n}\n\nul {\n  width: 100%;\n  height: 280px;\n  position: relative;\n  margin: 0;\n  padding: 0;\n  overflow-x: hidden;\n  overflow-y: scroll;\n  list-style: none;\n  perspective: 400px;\n}\nul li {\n  position: relative;\n  padding: 15px;\n  background: #eee;\n  color: #252525;\n  font-size: 18px;\n  z-index: 2;\n  transform: translateZ(0px);\n  text-align: center;\n}\nul li:nth-child(50n+1) {\n  background: #eb4747;\n  color: #e61a1a;\n}\nul li:nth-child(50n+2) {\n  background: #eb5b47;\n  color: #e6321a;\n}\nul li:nth-child(50n+3) {\n  background: #eb6f47;\n  color: #e64a1a;\n}\nul li:nth-child(50n+4) {\n  background: #eb8247;\n  color: #e6631a;\n}\nul li:nth-child(50n+5) {\n  background: #eb9647;\n  color: #e67b1a;\n}\nul li:nth-child(50n+6) {\n  background: #eba947;\n  color: #e6941a;\n}\nul li:nth-child(50n+7) {\n  background: #ebbd47;\n  color: #e6ac1a;\n}\nul li:nth-child(50n+8) {\n  background: #ebd047;\n  color: #e6c51a;\n}\nul li:nth-child(50n+9) {\n  background: #ebe447;\n  color: #e6dd1a;\n}\nul li:nth-child(50n+10) {\n  background: #deeb47;\n  color: #d5e61a;\n}\nul li:nth-child(50n+11) {\n  background: #caeb47;\n  color: #bde61a;\n}\nul li:nth-child(50n+12) {\n  background: #b6eb47;\n  color: #a4e61a;\n}\nul li:nth-child(50n+13) {\n  background: #a3eb47;\n  color: #8ce61a;\n}\nul li:nth-child(50n+14) {\n  background: #8feb47;\n  color: #73e61a;\n}\nul li:nth-child(50n+15) {\n  background: #7ceb47;\n  color: #5be61a;\n}\nul li:nth-child(50n+16) {\n  background: #68eb47;\n  color: #42e61a;\n}\nul li:nth-child(50n+17) {\n  background: #54eb47;\n  color: #2ae61a;\n}\nul li:nth-child(50n+18) {\n  background: #47eb4e;\n  color: #1ae622;\n}\nul li:nth-child(50n+19) {\n  background: #47eb62;\n  color: #1ae63a;\n}\nul li:nth-child(50n+20) {\n  background: #47eb75;\n  color: #1ae653;\n}\nul li:nth-child(50n+21) {\n  background: #47eb89;\n  color: #1ae66b;\n}\nul li:nth-child(50n+22) {\n  background: #47eb9c;\n  color: #1ae684;\n}\nul li:nth-child(50n+23) {\n  background: #47ebb0;\n  color: #1ae69c;\n}\nul li:nth-child(50n+24) {\n  background: #47ebc3;\n  color: #1ae6b5;\n}\nul li:nth-child(50n+25) {\n  background: #47ebd7;\n  color: #1ae6cd;\n}\nul li:nth-child(50n+26) {\n  background: #47ebeb;\n  color: #1ae6e6;\n}\nul li:nth-child(50n+27) {\n  background: #47d7eb;\n  color: #1acde6;\n}\nul li:nth-child(50n+28) {\n  background: #47c3eb;\n  color: #1ab5e6;\n}\nul li:nth-child(50n+29) {\n  background: #47b0eb;\n  color: #1a9ce6;\n}\nul li:nth-child(50n+30) {\n  background: #479ceb;\n  color: #1a84e6;\n}\nul li:nth-child(50n+31) {\n  background: #4789eb;\n  color: #1a6be6;\n}\nul li:nth-child(50n+32) {\n  background: #4775eb;\n  color: #1a53e6;\n}\nul li:nth-child(50n+33) {\n  background: #4762eb;\n  color: #1a3ae6;\n}\nul li:nth-child(50n+34) {\n  background: #474eeb;\n  color: #1a22e6;\n}\nul li:nth-child(50n+35) {\n  background: #5447eb;\n  color: #2a1ae6;\n}\nul li:nth-child(50n+36) {\n  background: #6847eb;\n  color: #421ae6;\n}\nul li:nth-child(50n+37) {\n  background: #7c47eb;\n  color: #5b1ae6;\n}\nul li:nth-child(50n+38) {\n  background: #8f47eb;\n  color: #731ae6;\n}\nul li:nth-child(50n+39) {\n  background: #a347eb;\n  color: #8c1ae6;\n}\nul li:nth-child(50n+40) {\n  background: #b647eb;\n  color: #a41ae6;\n}\nul li:nth-child(50n+41) {\n  background: #ca47eb;\n  color: #bd1ae6;\n}\nul li:nth-child(50n+42) {\n  background: #de47eb;\n  color: #d51ae6;\n}\nul li:nth-child(50n+43) {\n  background: #eb47e4;\n  color: #e61add;\n}\nul li:nth-child(50n+44) {\n  background: #eb47d0;\n  color: #e61ac5;\n}\nul li:nth-child(50n+45) {\n  background: #eb47bd;\n  color: #e61aac;\n}\nul li:nth-child(50n+46) {\n  background: #eb47a9;\n  color: #e61a94;\n}\nul li:nth-child(50n+47) {\n  background: #eb4796;\n  color: #e61a7b;\n}\nul li:nth-child(50n+48) {\n  background: #eb4782;\n  color: #e61a63;\n}\nul li:nth-child(50n+49) {\n  background: #eb476f;\n  color: #e61a4a;\n}\nul li:nth-child(50n+50) {\n  background: #eb475b;\n  color: #e61a32;\n}\n\n.fly-reverse {\n  perspective: 400px;\n  perspective-origin: 50% 50%;\n}\n.fly-reverse li {\n  transition: all 600ms ease, opacity 300ms ease;\n  transform-origin: 50% 50% -50px;\n}\n.fly-reverse li.past {\n  opacity: 0;\n  transform: rotateX(-180deg);\n}\n.fly-reverse li.future {\n  opacity: 0;\n  transform: rotateX(180deg);\n}","js":"stroll.bind(&#39;ul.fly-reverse&#39;);"};
+    __preprocessors = {
+      "html": "none",
+      "css": "scss",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "SCSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-2fdb1b1f31d291596e822bdc8654418037277f5fdfa32b43ee91e7729ea84388.js.download"></script>
+
+
+</body></html>

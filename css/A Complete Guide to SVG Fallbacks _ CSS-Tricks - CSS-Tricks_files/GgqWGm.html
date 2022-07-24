@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://codepen.io/anon/embed/GgqWGm?height=450&theme-id=1&slug-hash=GgqWGm&default-tab=js,result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - Critical Inline SVG Fallbacks v2</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="/vtVTD4zhGVGNBSrbbo/6WAaz05pEQziAueIYsSaJaBgu33I+ksxIHHQTjIvx/+k3E24z9Z74JcI62dmaZ99uw==">
+<link rel="stylesheet" media="all" href="./embed-cfcfc09d3a2a2d8442e259e76ffd024c6c4f053ad5f0a901b60b61cd48dd31e2.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #28282a;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./highcontrast-dark-6be871a736c4bb4dcfd61a856f05a32a290df49061bbbf884cd741080c0644eb.css">
+<link rel="stylesheet" href="./maVRwd.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body split-output static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/anon/embed/GgqWGm?height=450&amp;theme-id=1&amp;slug-hash=GgqWGm&amp;default-tab=js,result#html-box" role="button" aria-pressed="false">
+Markdown
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/anon/embed/GgqWGm?height=450&amp;theme-id=1&amp;slug-hash=GgqWGm&amp;default-tab=js,result#css-box" role="button" aria-pressed="false">
+SCSS
+</a>
+</li>
+<li class="code-type">
+<a id="js-link" href="https://codepen.io/anon/embed/GgqWGm?height=450&amp;theme-id=1&amp;slug-hash=GgqWGm&amp;default-tab=js,result#js-box" role="button" class="active" aria-pressed="true">
+JS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/anon/embed/GgqWGm?height=450&amp;theme-id=1&amp;slug-hash=GgqWGm&amp;default-tab=js,result#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/anon/embed/GgqWGm?height=450&amp;theme-id=1&amp;slug-hash=GgqWGm&amp;default-tab=js,result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/davatron5000/pen/GgqWGm" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="markdown" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">svg</span> <span class="cm-attribute">style</span>=<span class="cm-string">"display:none;"</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">defs</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">symbol</span> <span class="cm-attribute">id</span>=<span class="cm-string">"icon-heart"</span> <span class="cm-attribute">viewBox</span>=<span class="cm-string">"0 0 32 32"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"currentColor"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10  "</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">path</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">symbol</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">symbol</span> <span class="cm-attribute">id</span>=<span class="cm-string">"icon-close"</span> <span class="cm-attribute">viewBox</span>=<span class="cm-string">"0 0 32 32"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"currentColor"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M4 8 L8 4 L16 12 L24 4 L28 8 L20 16 L28 24 L24 28 L16 20 L8 28 L4 24 L12 16 z "</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">path</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">symbol</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">symbol</span> <span class="cm-attribute">id</span>=<span class="cm-string">"icon-hamburger"</span> <span class="cm-attribute">viewBox</span>=<span class="cm-string">"0 0 32 32"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"currentColor"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M3 8 A3 3 0 0 0 9 8 A3 3 0 0 0 3 8 M12 6 L28 6 L28 10 L12 10z M3 16 A3 3 0 0 0 9 16 A3 3 0 0 0 3 16 M12 14 L28 14 L28 18 L12 18z M3 24 A3 3 0 0 0 9 24 A3 3 0 0 0 3 24 M12 22 L28 22 L28 26 L12 26z "</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">path</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">symbol</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">defs</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">svg</span><span class="cm-tag cm-bracket">&gt;</span>
+
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>Progressive SVGs<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>
+
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"buttons"</span> <span class="cm-attribute">data-codeblock</span><span class="cm-tag cm-bracket">&gt;</span>
+  
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">aria-label</span>=<span class="cm-string">"Like"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"inline-svg"</span> <span class="cm-attribute">data-xlink</span>=<span class="cm-string">"#icon-heart"</span><span class="cm-tag cm-bracket">&gt;</span>♥<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;</span>
+
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">aria-label</span>=<span class="cm-string">"Close"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"inline-svg"</span> <span class="cm-attribute">data-xlink</span>=<span class="cm-string">"#icon-close"</span><span class="cm-tag cm-bracket">&gt;</span>Close<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;</span>
+
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">aria-label</span>=<span class="cm-string">"Menu"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"inline-svg"</span> <span class="cm-attribute">data-xlink</span>=<span class="cm-string">"#icon-hamburger"</span> <span class="cm-tag cm-bracket">&gt;</span><span class="cm-atom">&amp;#x2261;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;</span>
+
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span>Do you <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"inline-svg"</span> <span class="cm-attribute">data-xlink</span>=<span class="cm-string">"#icon-heart"</span> <span class="cm-attribute">title</span>=<span class="cm-string">"like"</span><span class="cm-tag cm-bracket">&gt;</span>♥<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span> me?<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">aria-label</span>=<span class="cm-string">"Like"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"inline-svg"</span> <span class="cm-attribute">data-xlink</span>=<span class="cm-string">"#icon-heart"</span><span class="cm-tag cm-bracket">&gt;</span>♥<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span> Like
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;</span>
+
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+
+
+<span class="cm-header cm-header-2">## </span><span class="cm-header cm-header-2">Working</span><span class="cm-header cm-header-2"> </span><span class="cm-header cm-header-2">theory</span><span class="cm-header cm-header-2">:</span>
+
+Most inline SVGs don't need fallbacks, they're icon candy paired with assistive text and/or they are decorative (like icon-fonts). This aims at <span class="cm-strong">**</span><span class="cm-strong">progressively</span><span class="cm-strong"> </span><span class="cm-strong">enhancing</span><span class="cm-strong"> </span><span class="cm-strong">critical</span><span class="cm-strong"> </span><span class="cm-strong">fallbacks</span><span class="cm-strong">**</span> when absolutely necessary. So, we take a span, with a little extra meta and replace it with an SVG <span class="cm-comment">`</span><span class="cm-comment">&lt;</span><span class="cm-comment">use</span><span class="cm-comment">&gt;</span><span class="cm-comment">`</span> element when it appears enhanceable.
+
+How it looks in IE8
+
+<span class="cm-image cm-image-marker">!</span><span class="cm-image cm-image-alt-text cm-link">[</span><span class="cm-image cm-image-alt-text cm-link">]</span><span class="cm-string cm-url">(</span><span class="cm-string cm-url">https://s3-us-west-2.amazonaws.com/s.cdpn.io/17/Screenshot_2014-12-17_17.19.56.png</span><span class="cm-string cm-url">)</span>
+
+
+<span class="cm-header cm-header-2">## </span><span class="cm-header cm-header-2">Approach</span>
+
+I try to scope the Image Replacement (IR) to either text or unicode. There are 5 examples here:
+
+<span class="cm-variable-2">1. </span><span class="cm-variable-2">A</span><span class="cm-variable-2"></span><span class="cm-variable-2"> </span><span class="cm-variable-2">Like</span><span class="cm-variable-2"> </span><span class="cm-comment cm-variable-2">`</span><span class="cm-comment cm-variable-2">button</span><span class="cm-comment cm-variable-2">`</span><span class="cm-variable-2"> </span><span class="cm-variable-2">with</span><span class="cm-variable-2"> </span><span class="cm-variable-2">a</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Unicode</span><span class="cm-variable-2"> </span><span class="cm-variable-2">"</span><span class="cm-variable-2">BLACK</span><span class="cm-variable-2"> </span><span class="cm-variable-2">HEART</span><span class="cm-variable-2"> </span><span class="cm-variable-2">SUIT</span><span class="cm-variable-2">"</span><span class="cm-variable-2"> </span><span class="cm-variable-2">(</span><span class="cm-variable-2">♥)</span><span class="cm-variable-2"> </span><span class="cm-variable-2">fallback.</span><span class="cm-variable-2"> </span><span class="cm-variable-2">This</span><span class="cm-variable-2"> </span><span class="cm-variable-2">heart</span><span class="cm-variable-2"> </span><span class="cm-variable-2">is</span><span class="cm-variable-2"> </span><span class="cm-variable-2">generally</span><span class="cm-variable-2"> </span><span class="cm-variable-2">supported.</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Added</span><span class="cm-variable-2"> </span><span class="cm-variable-2">an</span><span class="cm-variable-2"> </span><span class="cm-comment cm-variable-2">`</span><span class="cm-comment cm-variable-2">aria-label</span><span class="cm-comment cm-variable-2">`</span><span class="cm-variable-2"> </span><span class="cm-variable-2">on</span><span class="cm-variable-2"> </span><span class="cm-variable-2">the</span><span class="cm-variable-2"> </span><span class="cm-comment cm-variable-2">`</span><span class="cm-comment cm-variable-2">button</span><span class="cm-comment cm-variable-2">`</span><span class="cm-variable-2"> </span><span class="cm-variable-2">to</span><span class="cm-variable-2"> </span><span class="cm-variable-2">avoid</span><span class="cm-variable-2"> </span><span class="cm-variable-2">screenreaders</span><span class="cm-variable-2"> </span><span class="cm-variable-2">stumbling</span><span class="cm-variable-2"> </span><span class="cm-variable-2">on</span><span class="cm-variable-2"> </span><span class="cm-variable-2">wonky</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Unicode.</span><span class="cm-variable-2"> </span><span class="cm-variable-2">VoiceOver</span><span class="cm-variable-2"> </span><span class="cm-variable-2">failed</span><span class="cm-variable-2"> </span><span class="cm-variable-2">on</span><span class="cm-variable-2"> </span><span class="cm-variable-2">reading</span><span class="cm-variable-2"> </span><span class="cm-variable-2">SVG</span><span class="cm-variable-2"> </span><span class="cm-comment cm-variable-2">`</span><span class="cm-comment cm-variable-2">title</span><span class="cm-comment cm-variable-2">`</span><span class="cm-variable-2"> </span><span class="cm-variable-2">attributes</span><span class="cm-variable-2"> </span><span class="cm-variable-2">in</span><span class="cm-variable-2"> </span><span class="cm-variable-2">a</span><span class="cm-variable-2"> </span><span class="cm-comment cm-variable-2">`</span><span class="cm-comment cm-variable-2">button</span><span class="cm-comment cm-variable-2">`</span><span class="cm-variable-2">.</span>
+<span class="cm-variable-2">1. </span><span class="cm-variable-2">A</span><span class="cm-variable-2"></span><span class="cm-variable-2"> </span><span class="cm-variable-2">Close</span><span class="cm-variable-2"> </span><span class="cm-variable-2">button</span><span class="cm-variable-2"> </span><span class="cm-variable-2">with</span><span class="cm-variable-2"> </span><span class="cm-variable-2">"</span><span class="cm-variable-2">Close</span><span class="cm-variable-2">"</span><span class="cm-variable-2"> </span><span class="cm-variable-2">as</span><span class="cm-variable-2"> </span><span class="cm-variable-2">a</span><span class="cm-variable-2"> </span><span class="cm-variable-2">text</span><span class="cm-variable-2"> </span><span class="cm-variable-2">fallback.</span><span class="cm-variable-2"> </span><span class="cm-variable-2">The</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Unicode</span><span class="cm-variable-2"> </span><span class="cm-variable-2">"</span><span class="cm-variable-2">MULTIPLICATION</span><span class="cm-variable-2"> </span><span class="cm-variable-2">SIGN</span><span class="cm-variable-2">"</span><span class="cm-variable-2"> </span><span class="cm-variable-2">(</span><span class="cm-variable-2">×)</span><span class="cm-variable-2"> </span><span class="cm-variable-2">character</span><span class="cm-variable-2"> </span><span class="cm-variable-2">has</span><span class="cm-variable-2"> </span><span class="cm-variable-2">decent</span><span class="cm-variable-2"> </span><span class="cm-variable-2">support,</span><span class="cm-variable-2"> </span><span class="cm-variable-2">but</span><span class="cm-variable-2"> </span><span class="cm-variable-2">I</span><span class="cm-variable-2"> </span><span class="cm-variable-2">wanted</span><span class="cm-variable-2"> </span><span class="cm-variable-2">an</span><span class="cm-variable-2"> </span><span class="cm-variable-2">example</span><span class="cm-variable-2"> </span><span class="cm-variable-2">where</span><span class="cm-variable-2"> </span><span class="cm-variable-2">you</span><span class="cm-variable-2"> </span><span class="cm-variable-2">might</span><span class="cm-variable-2"> </span><span class="cm-variable-2">fall</span><span class="cm-variable-2"> </span><span class="cm-variable-2">back</span><span class="cm-variable-2"> </span><span class="cm-variable-2">to</span><span class="cm-variable-2"> </span><span class="cm-variable-2">text.</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Same</span><span class="cm-variable-2"> </span><span class="cm-variable-2">ARIA</span><span class="cm-variable-2"> </span><span class="cm-variable-2">approach</span><span class="cm-variable-2"> </span><span class="cm-variable-2">as</span><span class="cm-variable-2"> </span><span class="cm-variable-2">above.</span>
+<span class="cm-variable-2">1. </span><span class="cm-variable-2">A</span><span class="cm-variable-2"></span><span class="cm-variable-2"> </span><span class="cm-variable-2">Hamburger</span><span class="cm-variable-2"> </span><span class="cm-variable-2">button</span><span class="cm-variable-2"> </span><span class="cm-variable-2">with</span><span class="cm-variable-2"> </span><span class="cm-variable-2">fallback</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Unicode</span><span class="cm-variable-2"> </span><span class="cm-variable-2">"</span><span class="cm-variable-2">IDENTICAL</span><span class="cm-variable-2"> </span><span class="cm-variable-2">TO</span><span class="cm-variable-2">"</span><span class="cm-variable-2"> </span><span class="cm-variable-2">(</span><span class="cm-variable-2">≡)</span><span class="cm-variable-2"> </span><span class="cm-variable-2">character.</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Same</span><span class="cm-variable-2"> </span><span class="cm-variable-2">ARIA</span><span class="cm-variable-2"> </span><span class="cm-variable-2">approach,</span><span class="cm-variable-2"> </span><span class="cm-variable-2">but</span><span class="cm-variable-2"> </span><span class="cm-variable-2">very</span><span class="cm-variable-2"> </span><span class="cm-variable-2">necessary</span><span class="cm-variable-2"> </span><span class="cm-variable-2">due</span><span class="cm-variable-2"> </span><span class="cm-variable-2">to</span><span class="cm-variable-2"> </span><span class="cm-variable-2">the</span><span class="cm-variable-2"> </span><span class="cm-variable-2">desired</span><span class="cm-variable-2"> </span><span class="cm-variable-2">label</span><span class="cm-variable-2"> </span><span class="cm-variable-2">being</span><span class="cm-variable-2"> </span><span class="cm-variable-2">"</span><span class="cm-variable-2">Menu</span><span class="cm-variable-2">"</span><span class="cm-variable-2"> </span><span class="cm-variable-2">which</span><span class="cm-variable-2"> </span><span class="cm-variable-2">is</span><span class="cm-variable-2"> </span><span class="cm-variable-2">very</span><span class="cm-variable-2"> </span><span class="cm-variable-2">different</span><span class="cm-variable-2"> </span><span class="cm-variable-2">than</span><span class="cm-variable-2"> </span><span class="cm-variable-2">the</span><span class="cm-variable-2"> </span><span class="cm-variable-2">character</span><span class="cm-variable-2">'</span><span class="cm-variable-2">s</span><span class="cm-variable-2"> </span><span class="cm-variable-2">meaning.</span>
+<span class="cm-variable-2">1. </span><span class="cm-variable-2">A</span><span class="cm-variable-2"></span><span class="cm-variable-2"> </span><span class="cm-variable-2">link</span><span class="cm-variable-2"> </span><span class="cm-variable-2">with</span><span class="cm-variable-2"> </span><span class="cm-variable-2">a</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Unicode</span><span class="cm-variable-2"> </span><span class="cm-variable-2">heart</span><span class="cm-variable-2"> </span><span class="cm-variable-2">(</span><span class="cm-variable-2">♥)</span><span class="cm-variable-2"> </span><span class="cm-variable-2">fallback.</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Adding</span><span class="cm-variable-2"> </span><span class="cm-variable-2">a</span><span class="cm-variable-2"> </span><span class="cm-comment cm-variable-2">`</span><span class="cm-comment cm-variable-2">title</span><span class="cm-comment cm-variable-2">`</span><span class="cm-variable-2"> </span><span class="cm-variable-2">attribute</span><span class="cm-variable-2"> </span><span class="cm-variable-2">here</span><span class="cm-variable-2"> </span><span class="cm-variable-2">actually</span><span class="cm-variable-2"> </span><span class="cm-variable-2">improved</span><span class="cm-variable-2"> </span><span class="cm-variable-2">the</span><span class="cm-variable-2"> </span><span class="cm-variable-2">accessibility</span><span class="cm-variable-2"> </span><span class="cm-variable-2">for</span><span class="cm-variable-2"> </span><span class="cm-variable-2">both</span><span class="cm-variable-2"> </span><span class="cm-variable-2">SVG</span><span class="cm-variable-2"> </span><span class="cm-variable-2">and</span><span class="cm-variable-2"> </span><span class="cm-variable-2">fallback</span><span class="cm-variable-2"> </span><span class="cm-variable-2">span.</span>
+<span class="cm-variable-2">1. </span><span class="cm-variable-2">A</span><span class="cm-variable-2"></span><span class="cm-variable-2"> </span><span class="cm-variable-2">Like</span><span class="cm-variable-2"> </span><span class="cm-variable-2">button</span><span class="cm-variable-2"> </span><span class="cm-variable-2">with</span><span class="cm-variable-2"> </span><span class="cm-variable-2">"</span><span class="cm-variable-2">Like</span><span class="cm-variable-2">"</span><span class="cm-variable-2"> </span><span class="cm-variable-2">text.</span><span class="cm-variable-2"> </span><span class="cm-variable-2">This</span><span class="cm-variable-2"> </span><span class="cm-variable-2">doesn</span><span class="cm-variable-2">'</span><span class="cm-variable-2">t</span><span class="cm-variable-2"> </span><span class="cm-variable-2">really</span><span class="cm-variable-2"> </span><span class="cm-variable-2">even</span><span class="cm-variable-2"> </span><span class="cm-variable-2">require</span><span class="cm-variable-2"> </span><span class="cm-variable-2">a</span><span class="cm-variable-2"> </span><span class="cm-variable-2">fallback.</span>
+
+<span class="cm-header cm-header-2">## </span><span class="cm-header cm-header-2">Rules</span>
+
+<span class="cm-variable-2">- </span><span class="cm-variable-2">Use</span><span class="cm-variable-2"></span><span class="cm-variable-2"> </span><span class="cm-variable-2">similar</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Unicode</span><span class="cm-variable-2"> </span><span class="cm-variable-2">when</span><span class="cm-variable-2"> </span><span class="cm-variable-2">you</span><span class="cm-variable-2"> </span><span class="cm-variable-2">can</span><span class="cm-variable-2"> </span><span class="cm-variable-2">get</span><span class="cm-variable-2"> </span><span class="cm-variable-2">away</span><span class="cm-variable-2"> </span><span class="cm-variable-2">with</span><span class="cm-variable-2"> </span><span class="cm-variable-2">it.</span><span class="cm-variable-2"> </span>
+  <span class="cm-variable-3">- </span><span class="cm-variable-3">See</span><span class="cm-variable-3"></span><span class="cm-variable-3"> </span><span class="cm-link cm-variable-3">[</span><span class="cm-link cm-variable-3">Unify</span><span class="cm-link cm-variable-3">]</span><span class="cm-string cm-url cm-variable-3">(</span><span class="cm-string cm-url cm-variable-3">https://unicode.johnholtripley.co.uk/all/support</span><span class="cm-string cm-url cm-variable-3">)</span><span class="cm-variable-3"> </span><span class="cm-variable-3">by</span><span class="cm-variable-3"> </span><span class="cm-variable-3">John</span><span class="cm-variable-3"> </span><span class="cm-variable-3">Ripley</span><span class="cm-variable-3"> </span><span class="cm-variable-3">to</span><span class="cm-variable-3"> </span><span class="cm-variable-3">guage</span><span class="cm-variable-3"> </span><span class="cm-variable-3">how</span><span class="cm-variable-3"> </span><span class="cm-variable-3">well</span><span class="cm-variable-3"> </span><span class="cm-variable-3">a</span><span class="cm-variable-3"> </span><span class="cm-variable-3">character</span><span class="cm-variable-3"> </span><span class="cm-variable-3">is</span><span class="cm-variable-3"> </span><span class="cm-variable-3">supported</span><span class="cm-variable-3"> </span><span class="cm-variable-3">across</span><span class="cm-variable-3"> </span><span class="cm-variable-3">devices</span><span class="cm-variable-3"> </span><span class="cm-variable-3">and</span><span class="cm-variable-3"> </span><span class="cm-variable-3">screenreaders.</span><span class="cm-variable-3"> </span>
+<span class="cm-variable-2">- </span><span class="cm-variable-2">There</span><span class="cm-variable-2"></span><span class="cm-variable-2">'</span><span class="cm-variable-2">s</span><span class="cm-variable-2"> </span><span class="cm-variable-2">a</span><span class="cm-variable-2"> </span><span class="cm-variable-2">bit</span><span class="cm-variable-2"> </span><span class="cm-variable-2">of</span><span class="cm-variable-2"> </span><span class="cm-variable-2">CSS</span><span class="cm-variable-2"> </span><span class="cm-variable-2">you</span><span class="cm-variable-2">'</span><span class="cm-variable-2">ll</span><span class="cm-variable-2"> </span><span class="cm-variable-2">need</span><span class="cm-variable-2"> </span><span class="cm-variable-2">to</span><span class="cm-variable-2"> </span><span class="cm-variable-2">make</span><span class="cm-variable-2"> </span><span class="cm-variable-2">sure</span><span class="cm-variable-2"> </span><span class="cm-variable-2">old</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Windows</span><span class="cm-variable-2"> </span><span class="cm-variable-2">uses</span><span class="cm-variable-2"> </span><span class="cm-variable-2">'</span><span class="cm-variable-2">Arial</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Unicode</span><span class="cm-variable-2"> </span><span class="cm-variable-2">MS</span><span class="cm-variable-2">'</span><span class="cm-variable-2"> </span><span class="cm-variable-2">as</span><span class="cm-variable-2"> </span><span class="cm-variable-2">a</span><span class="cm-variable-2"> </span><span class="cm-variable-2">fallback</span><span class="cm-variable-2"> </span><span class="cm-variable-2">font</span><span class="cm-variable-2"> </span><span class="cm-variable-2">with</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Unicode</span><span class="cm-variable-2"> </span><span class="cm-variable-2">support.</span>
+<span class="cm-variable-2">- </span><span class="cm-variable-2">A</span><span class="cm-variable-2"></span><span class="cm-variable-2"> </span><span class="cm-variable-2">lot</span><span class="cm-variable-2"> </span><span class="cm-variable-2">of</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Zach</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Leatherman</span><span class="cm-variable-2">'</span><span class="cm-variable-2">s</span><span class="cm-variable-2"> </span><span class="cm-link cm-variable-2">[</span><span class="cm-link cm-variable-2">Bulletproof</span><span class="cm-link cm-variable-2"> </span><span class="cm-link cm-variable-2">Icon</span><span class="cm-link cm-variable-2"> </span><span class="cm-link cm-variable-2">Fonts</span><span class="cm-link cm-variable-2">]</span><span class="cm-string cm-url cm-variable-2">(</span><span class="cm-string cm-url cm-variable-2">https://www.filamentgroup.com/lab/bulletproof_icon_fonts.html</span><span class="cm-string cm-url cm-variable-2">)</span><span class="cm-variable-2"> </span><span class="cm-variable-2">applies</span><span class="cm-variable-2"> </span><span class="cm-variable-2">here.</span>
+<span class="cm-variable-2">- </span><span class="cm-variable-2">Must</span><span class="cm-variable-2"></span><span class="cm-variable-2"> </span><span class="cm-variable-2">be</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Accessible.</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Avoid</span><span class="cm-variable-2"> </span><span class="cm-variable-2">wonky</span><span class="cm-variable-2"> </span><span class="cm-variable-2">Unicode</span><span class="cm-variable-2"> </span><span class="cm-variable-2">reading</span><span class="cm-variable-2">:</span>
+  <span class="cm-variable-3">- </span><span class="cm-variable-3">Add</span><span class="cm-variable-3"></span><span class="cm-variable-3"> </span><span class="cm-comment cm-variable-3">`</span><span class="cm-comment cm-variable-3">aria-label</span><span class="cm-comment cm-variable-3">`</span><span class="cm-variable-3"> </span><span class="cm-variable-3">to</span><span class="cm-variable-3"> </span><span class="cm-variable-3">parent</span><span class="cm-variable-3"> </span><span class="cm-comment cm-variable-3">`</span><span class="cm-comment cm-variable-3">button</span><span class="cm-comment cm-variable-3">`</span><span class="cm-variable-3"> </span><span class="cm-variable-3">elements.</span>
+  <span class="cm-variable-3">- </span><span class="cm-variable-3">Use</span><span class="cm-variable-3"></span><span class="cm-variable-3"> </span><span class="cm-comment cm-variable-3">`</span><span class="cm-comment cm-variable-3">title</span><span class="cm-comment cm-variable-3">`</span><span class="cm-variable-3"> </span><span class="cm-variable-3">attributes</span><span class="cm-variable-3"> </span><span class="cm-variable-3">otherwise.</span>
+<span class="cm-variable-2">- </span><span class="cm-variable-2">If</span><span class="cm-variable-2"></span><span class="cm-variable-2"> </span><span class="cm-variable-2">you</span><span class="cm-variable-2"> </span><span class="cm-variable-2">used</span><span class="cm-variable-2"> </span><span class="cm-variable-2">an</span><span class="cm-variable-2"> </span><span class="cm-variable-2">external</span><span class="cm-variable-2"> </span><span class="cm-variable-2">SVG</span><span class="cm-variable-2"> </span><span class="cm-variable-2">(</span><span class="cm-variable-2">e.g.,</span><span class="cm-variable-2"> </span><span class="cm-comment cm-variable-2">`</span><span class="cm-comment cm-variable-2">some.svg</span><span class="cm-comment cm-variable-2">#</span><span class="cm-comment cm-variable-2">icon-hamburger</span><span class="cm-comment cm-variable-2">`</span><span class="cm-variable-2">),</span><span class="cm-variable-2"> </span><span class="cm-variable-2">you</span><span class="cm-variable-2"> </span><span class="cm-variable-2">might</span><span class="cm-variable-2"> </span><span class="cm-variable-2">be</span><span class="cm-variable-2"> </span><span class="cm-variable-2">able</span><span class="cm-variable-2"> </span><span class="cm-variable-2">to</span><span class="cm-variable-2"> </span><span class="cm-variable-2">save</span><span class="cm-variable-2"> </span><span class="cm-variable-2">legacy</span><span class="cm-variable-2"> </span><span class="cm-variable-2">browsers</span><span class="cm-variable-2"> </span><span class="cm-variable-2">the</span><span class="cm-variable-2"> </span><span class="cm-variable-2">double</span><span class="cm-variable-2"> </span><span class="cm-variable-2">download.</span>
+
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">small</span><span class="cm-tag cm-bracket">&gt;</span>SVGs from <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"http://geomicons.com/"</span><span class="cm-tag cm-bracket">&gt;</span>Geomicons<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">small</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+<a href="https://codepen.io/anon/embed/GgqWGm?height=450&amp;theme-id=1&amp;slug-hash=GgqWGm&amp;default-tab=js,result#0" id="view-html-compiled-button" class="action-button bottom right view-compiled-button" data-type="html">
+View Compiled
+</a>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code" class=" cm-s-default"><span class="cm-comment">// General Style</span>
+<span class="cm-tag">html</span>, <span class="cm-tag">body</span> {
+  <span class="cm-property">background</span>: <span class="cm-atom">#f0f0f0</span>;
+}
+
+<span class="cm-tag">h1</span> {
+  <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+}
+
+<span class="cm-tag">body</span> {
+  <span class="cm-property">font-family</span>: <span class="cm-atom">sans-serif</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">5%</span>;
+  <span class="cm-property">line-height</span>: <span class="cm-number">1.6em</span>;
+}
+
+<span class="cm-tag">img</span> {
+  <span class="cm-property">max-width</span>: <span class="cm-number">100%</span>;
+  <span class="cm-property">height</span>: <span class="cm-atom">auto</span>;
+}
+
+<span class="cm-qualifier">.buttons</span> {
+  <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+}
+
+<span class="cm-tag">pre</span> {
+  <span class="cm-property">background</span>: <span class="cm-atom">#fff</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">1em</span>;
+  <span class="cm-property">max-height</span>: <span class="cm-number">20em</span>;
+  <span class="cm-property">overflow</span>: <span class="cm-atom">auto</span>;
+  <span class="cm-property">margin-bottom</span>: <span class="cm-number">5%</span>;
+}
+
+<span class="cm-tag">button</span> {
+  <span class="cm-property">font-size</span>: <span class="cm-number">1em</span>;
+  <span class="cm-property">line-height</span>: <span class="cm-number">1em</span>;
+}
+
+<span class="cm-comment">// Inline SVG Code</span>
+<span class="cm-comment">// ====================================================</span>
+<span class="cm-qualifier">.inline-svg</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">inline-block</span>;
+}
+
+<span class="cm-tag">span</span><span class="cm-qualifier">.inline-svg</span> {
+  <span class="cm-comment">// Unicode chars need a Unicode font on old browsers.</span>
+  <span class="cm-property">font-family</span>: <span class="cm-string">'Arial Unicode MS'</span>, <span class="cm-variable">Arial</span>, <span class="cm-atom">sans-serif</span>;
+}
+
+<span class="cm-tag">svg</span><span class="cm-qualifier">.inline-svg</span> {
+  <span class="cm-comment">// Tailor to suite your needs.</span>
+  <span class="cm-property">width</span>: <span class="cm-number">1em</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">1em</span>;
+  <span class="cm-property">vertical-align</span>: <span class="cm-atom">text-top</span>;
+}</code></pre>
+<a href="https://codepen.io/anon/embed/GgqWGm?height=450&amp;theme-id=1&amp;slug-hash=GgqWGm&amp;default-tab=js,result#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+View Compiled
+</a>
+</div>
+<div id="js-box" class="code-wrap code-box box active" role="region" aria-label="JS">
+<pre tabindex="0"><code data-lang="javascript" id="actual-js-code" class=" cm-s-default">(<span class="cm-keyword">function</span>(<span class="cm-def">window</span>, <span class="cm-def">document</span>){
+  <span class="cm-comment">// Feature Test</span>
+  <span class="cm-comment">// TODO: Could be improved to detect INLINE only.</span>
+  <span class="cm-keyword">var</span> <span class="cm-def">supportsSvg</span> <span class="cm-operator">=</span> <span class="cm-keyword">function</span>(){
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">document</span>.<span class="cm-property">implementation</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable-2">document</span>.<span class="cm-property">implementation</span>.<span class="cm-property">hasFeature</span>(<span class="cm-string">"http://www.w3.org/TR/SVG11/feature#Image"</span>, <span class="cm-string">"1.1"</span>);
+  };
+
+  <span class="cm-comment">// Enhance!</span>
+  <span class="cm-keyword">if</span>(<span class="cm-variable-2">supportsSvg</span>) {
+    <span class="cm-keyword">var</span> <span class="cm-def">inlineSvgs</span> <span class="cm-operator">=</span> <span class="cm-variable-2">document</span>.<span class="cm-property">querySelectorAll</span>(<span class="cm-string">'span.inline-svg'</span>);
+
+    <span class="cm-keyword">for</span>(<span class="cm-variable">i</span><span class="cm-operator">=</span><span class="cm-number">0</span>;<span class="cm-variable">i</span><span class="cm-operator">&lt;</span><span class="cm-variable-2">inlineSvgs</span>.<span class="cm-property">length</span>;<span class="cm-variable">i</span><span class="cm-operator">++</span>) {
+      <span class="cm-keyword">var</span> <span class="cm-def">span</span> <span class="cm-operator">=</span> <span class="cm-variable-2">inlineSvgs</span>[<span class="cm-variable">i</span>];
+      <span class="cm-keyword">var</span> <span class="cm-def">svgns</span> <span class="cm-operator">=</span> <span class="cm-string">"http://www.w3.org/2000/svg"</span>;
+      <span class="cm-keyword">var</span> <span class="cm-def">xlinkns</span> <span class="cm-operator">=</span> <span class="cm-string">"http://www.w3.org/1999/xlink"</span>;
+      <span class="cm-keyword">var</span> <span class="cm-def">svg</span> <span class="cm-operator">=</span> <span class="cm-variable-2">document</span>.<span class="cm-property">createElementNS</span>(<span class="cm-variable-2">svgns</span>, <span class="cm-string">"svg"</span>);
+      <span class="cm-keyword">var</span> <span class="cm-def">use</span> <span class="cm-operator">=</span> <span class="cm-variable-2">document</span>.<span class="cm-property">createElementNS</span>(<span class="cm-variable-2">svgns</span>, <span class="cm-string">"use"</span>);
+      
+      <span class="cm-comment">// Prepare the &lt;use&gt; element</span>
+      <span class="cm-variable-2">use</span>.<span class="cm-property">setAttributeNS</span>(<span class="cm-variable-2">xlinkns</span>, <span class="cm-string">'xlink:href'</span>, <span class="cm-variable-2">span</span>.<span class="cm-property">getAttribute</span>(<span class="cm-string">'data-xlink'</span>) );
+
+      <span class="cm-comment">// Append it</span>
+      <span class="cm-variable-2">svg</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable-2">use</span>);
+      
+      <span class="cm-comment">// Prepare the SVG</span>
+      <span class="cm-variable-2">svg</span>.<span class="cm-property">setAttribute</span>(<span class="cm-string">'class'</span>, <span class="cm-string">"inline-svg"</span>);
+
+      <span class="cm-comment">// Set a title if necessary.</span>
+      <span class="cm-keyword">if</span>(<span class="cm-variable-2">span</span>.<span class="cm-property">getAttribute</span>(<span class="cm-string">'title'</span>)) {
+        <span class="cm-variable-2">svg</span>.<span class="cm-property">setAttribute</span>(<span class="cm-string">'title'</span>, <span class="cm-variable-2">span</span>.<span class="cm-property">getAttribute</span>(<span class="cm-string">'title'</span>));      
+      }
+
+      <span class="cm-comment">// Inject the SVG</span>
+      <span class="cm-variable-2">span</span>.<span class="cm-property">parentNode</span>.<span class="cm-property">insertBefore</span>(<span class="cm-variable-2">svg</span>, <span class="cm-variable-2">span</span>);
+      
+      <span class="cm-comment">// 6 Minute Abs™, for your DOM.</span>
+      <span class="cm-variable-2">span</span>.<span class="cm-property">remove</span>();
+    }
+  }
+})(<span class="cm-variable">window</span>, <span class="cm-variable">document</span>, <span class="cm-atom">undefined</span>);</code></pre>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Critical Inline SVG Fallbacks v2" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" scrolling="yes" title="CodePen Preview for Critical Inline SVG Fallbacks v2" data-src="https://cdpn.io/davatron5000/fullembedgrid/GgqWGm?animations=run&amp;type=embed" src="./GgqWGm(1).html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/davatron5000" target="_blank" rel="noopener"><img src="./user-default-avatar.jpg" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/davatron5000" target="_blank" rel="noopener">Dave Rupert</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/davatron5000" target="_blank" rel="noopener" class="about-user-more">
+See more by @davatron5000 on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<ol class="list-of-resources">
+<li>
+<a href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" target="_blank">//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js</a>
+</li>
+<li>
+<a href="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" target="_blank">//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js</a>
+</li>
+<li>
+<a href="https://codepen.io/davatron5000/pen/tzJKh.js" target="_blank">//codepen.io/davatron5000/pen/tzJKh.js</a>
+</li>
+</ol>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;svg style=&quot;display:none;&quot;&gt;\n  &lt;defs&gt;\n    &lt;symbol id=&quot;icon-heart&quot; viewBox=&quot;0 0 32 32&quot; fill=&quot;currentColor&quot;&gt;\n      &lt;path d=&quot;M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10  &quot;&gt;&lt;/path&gt;\n    &lt;/symbol&gt;\n    &lt;symbol id=&quot;icon-close&quot; viewBox=&quot;0 0 32 32&quot; fill=&quot;currentColor&quot;&gt;\n      &lt;path d=&quot;M4 8 L8 4 L16 12 L24 4 L28 8 L20 16 L28 24 L24 28 L16 20 L8 28 L4 24 L12 16 z &quot;&gt;&lt;/path&gt;\n    &lt;/symbol&gt;\n    &lt;symbol id=&quot;icon-hamburger&quot; viewBox=&quot;0 0 32 32&quot; fill=&quot;currentColor&quot;&gt;\n      &lt;path d=&quot;M3 8 A3 3 0 0 0 9 8 A3 3 0 0 0 3 8 M12 6 L28 6 L28 10 L12 10z M3 16 A3 3 0 0 0 9 16 A3 3 0 0 0 3 16 M12 14 L28 14 L28 18 L12 18z M3 24 A3 3 0 0 0 9 24 A3 3 0 0 0 3 24 M12 22 L28 22 L28 26 L12 26z &quot;&gt;&lt;/path&gt;\n    &lt;/symbol&gt;\n  &lt;/defs&gt;\n&lt;/svg&gt;\n&lt;h1&gt;Progressive SVGs&lt;/h1&gt;\n&lt;div class=&quot;buttons&quot; data-codeblock&gt;\n  &lt;button aria-label=&quot;Like&quot;&gt;\n    &lt;span class=&quot;inline-svg&quot; data-xlink=&quot;#icon-heart&quot;&gt;♥&lt;/span&gt;\n  &lt;/button&gt;\n  &lt;button aria-label=&quot;Close&quot;&gt;\n    &lt;span class=&quot;inline-svg&quot; data-xlink=&quot;#icon-close&quot;&gt;Close&lt;/span&gt;\n  &lt;/button&gt;\n  &lt;button aria-label=&quot;Menu&quot;&gt;\n    &lt;span class=&quot;inline-svg&quot; data-xlink=&quot;#icon-hamburger&quot; &gt;&amp;#x2261;&lt;/span&gt;\n  &lt;/button&gt;\n  &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Do you &lt;span class=&quot;inline-svg&quot; data-xlink=&quot;#icon-heart&quot; title=&quot;like&quot;&gt;♥&lt;/span&gt; me?&lt;/a&gt;&lt;/p&gt;\n  &lt;button aria-label=&quot;Like&quot;&gt;\n    &lt;span class=&quot;inline-svg&quot; data-xlink=&quot;#icon-heart&quot;&gt;♥&lt;/span&gt; Like\n  &lt;/button&gt;\n&lt;/div&gt;\n&lt;h2&gt;Working theory:&lt;/h2&gt;\n&lt;p&gt;Most inline SVGs don&#39;t need fallbacks, they&#39;re icon candy paired with assistive text and/or they are decorative (like icon-fonts). This aims at &lt;strong&gt;progressively enhancing critical fallbacks&lt;/strong&gt; when absolutely necessary. So, we take a span, with a little extra meta and replace it with an SVG &lt;code&gt;&amp;lt;use&amp;gt;&lt;/code&gt; element when it appears enhanceable.&lt;/p&gt;\n&lt;p&gt;How it looks in IE8&lt;/p&gt;\n&lt;p&gt;&lt;img src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/17/Screenshot_2014-12-17_17.19.56.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;\n&lt;h2&gt;Approach&lt;/h2&gt;\n&lt;p&gt;I try to scope the Image Replacement (IR) to either text or unicode. There are 5 examples here:&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;A Like &lt;code&gt;button&lt;/code&gt; with a Unicode &amp;quot;BLACK HEART SUIT&amp;quot; (♥) fallback. This heart is generally supported. Added an &lt;code&gt;aria-label&lt;/code&gt; on the &lt;code&gt;button&lt;/code&gt; to avoid screenreaders stumbling on wonky Unicode. VoiceOver failed on reading SVG &lt;code&gt;title&lt;/code&gt; attributes in a &lt;code&gt;button&lt;/code&gt;.&lt;/li&gt;\n&lt;li&gt;A Close button with &amp;quot;Close&amp;quot; as a text fallback. The Unicode &amp;quot;MULTIPLICATION SIGN&amp;quot; (×) character has decent support, but I wanted an example where you might fall back to text. Same ARIA approach as above.&lt;/li&gt;\n&lt;li&gt;A Hamburger button with fallback Unicode &amp;quot;IDENTICAL TO&amp;quot; (≡) character. Same ARIA approach, but very necessary due to the desired label being &amp;quot;Menu&amp;quot; which is very different than the character&#39;s meaning.&lt;/li&gt;\n&lt;li&gt;A link with a Unicode heart (♥) fallback. Adding a &lt;code&gt;title&lt;/code&gt; attribute here actually improved the accessibility for both SVG and fallback span.&lt;/li&gt;\n&lt;li&gt;A Like button with &amp;quot;Like&amp;quot; text. This doesn&#39;t really even require a fallback.&lt;/li&gt;\n&lt;/ol&gt;\n&lt;h2&gt;Rules&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;Use similar Unicode when you can get away with it.\n&lt;ul&gt;\n&lt;li&gt;See &lt;a href=&quot;https://unicode.johnholtripley.co.uk/all/support&quot;&gt;Unify&lt;/a&gt; by John Ripley to guage how well a character is supported across devices and screenreaders.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;There&#39;s a bit of CSS you&#39;ll need to make sure old Windows uses &#39;Arial Unicode MS&#39; as a fallback font with Unicode support.&lt;/li&gt;\n&lt;li&gt;A lot of Zach Leatherman&#39;s &lt;a href=&quot;https://www.filamentgroup.com/lab/bulletproof_icon_fonts.html&quot;&gt;Bulletproof Icon Fonts&lt;/a&gt; applies here.&lt;/li&gt;\n&lt;li&gt;Must be Accessible. Avoid wonky Unicode reading:\n&lt;ul&gt;\n&lt;li&gt;Add &lt;code&gt;aria-label&lt;/code&gt; to parent &lt;code&gt;button&lt;/code&gt; elements.&lt;/li&gt;\n&lt;li&gt;Use &lt;code&gt;title&lt;/code&gt; attributes otherwise.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;If you used an external SVG (e.g., &lt;code&gt;some.svg#icon-hamburger&lt;/code&gt;), you might be able to save legacy browsers the double download.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;small&gt;SVGs from &lt;a href=&quot;http://geomicons.com/&quot;&gt;Geomicons&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;","css":"html, body {\n  background: #f0f0f0;\n}\n\nh1 {\n  text-align: center;\n}\n\nbody {\n  font-family: sans-serif;\n  padding: 5%;\n  line-height: 1.6em;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\n.buttons {\n  text-align: center;\n}\n\npre {\n  background: #fff;\n  padding: 1em;\n  max-height: 20em;\n  overflow: auto;\n  margin-bottom: 5%;\n}\n\nbutton {\n  font-size: 1em;\n  line-height: 1em;\n}\n\n.inline-svg {\n  display: inline-block;\n}\n\nspan.inline-svg {\n  font-family: &quot;Arial Unicode MS&quot;, Arial, sans-serif;\n}\n\nsvg.inline-svg {\n  width: 1em;\n  height: 1em;\n  vertical-align: text-top;\n}","js":"(function (window, document) {\n  // Feature Test\n  // TODO: Could be improved to detect INLINE only.\n  var supportsSvg = function () {\n    return document.implementation &amp;&amp; document.implementation.hasFeature(&quot;http://www.w3.org/TR/SVG11/feature#Image&quot;, &quot;1.1&quot;);\n  };\n\n  // Enhance!\n  if (supportsSvg) {\n    var inlineSvgs = document.querySelectorAll(&#39;span.inline-svg&#39;);\n\n    for (i = 0; i &lt; inlineSvgs.length; i++) {if (window.CP.shouldStopExecution(0)) break;\n      var span = inlineSvgs[i];\n      var svgns = &quot;http://www.w3.org/2000/svg&quot;;\n      var xlinkns = &quot;http://www.w3.org/1999/xlink&quot;;\n      var svg = document.createElementNS(svgns, &quot;svg&quot;);\n      var use = document.createElementNS(svgns, &quot;use&quot;);\n\n      // Prepare the &lt;use&gt; element\n      use.setAttributeNS(xlinkns, &#39;xlink:href&#39;, span.getAttribute(&#39;data-xlink&#39;));\n\n      // Append it\n      svg.appendChild(use);\n\n      // Prepare the SVG\n      svg.setAttribute(&#39;class&#39;, &quot;inline-svg&quot;);\n\n      // Set a title if necessary.\n      if (span.getAttribute(&#39;title&#39;)) {\n        svg.setAttribute(&#39;title&#39;, span.getAttribute(&#39;title&#39;));\n      }\n\n      // Inject the SVG\n      span.parentNode.insertBefore(svg, span);\n\n      // 6 Minute Abs™, for your DOM.\n      span.remove();\n    }window.CP.exitedLoop(0);\n  }\n})(window, document, undefined);"};
+    __preprocessors = {
+      "html": "markdown",
+      "css": "scss",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "Markdown",
+      "css": "SCSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-2fdb1b1f31d291596e822bdc8654418037277f5fdfa32b43ee91e7729ea84388.js.download"></script>
+
+
+</body></html>
